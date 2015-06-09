@@ -105,5 +105,10 @@
     </propertyDefinitions>
   </nodeType>
 
+  <nodeType name="exo:contactFolder" isMixin="true" hasOrderableChildNodes="false" primaryItemName="">
+    <supertypes>
+      <supertype>nt:base</supertype>
+    </supertypes>
+  </nodeType>
   
 </nodeTypes>

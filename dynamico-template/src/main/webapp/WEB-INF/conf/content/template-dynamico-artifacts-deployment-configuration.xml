@@ -1442,7 +1442,6 @@
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeWelcome</string></value>
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeWhyUs</string></value>
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/mailAddress</string></value>
-								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/mailContactForm</string></value>
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/mailContactUs</string></value>
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/servicesServices</string></value>
               </collection>

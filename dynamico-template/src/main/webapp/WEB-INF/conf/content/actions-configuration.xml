@@ -25,10 +25,20 @@
                       <field  name="description"><string>trigger actions for items in Contact Requests folder</string></field>
                       <field  name="srcWorkspace"><string>collaboration</string></field>
                       <field  name="srcPath"><string>/sites</string></field>
-                      <field  name="isDeep"><boolean>false</boolean></field>
+                      <field  name="isDeep"><boolean>true</boolean></field>
                       <field  name="lifecyclePhase">
                         <collection type="java.util.ArrayList">
                          <value><string>node_added</string></value>
+                        </collection>
+                      </field>
+                      <field  name="affectedNodeTypes">
+                        <collection type="java.util.ArrayList">
+                          <value><string>exo:contact</string></value>
+                        </collection>
+                      </field>
+                      <field  name="nodeTypeName">
+                        <collection type="java.util.ArrayList">
+                          <value><string>exo:contactFolder</string></value>
                         </collection>
                       </field>
                     </object>  
