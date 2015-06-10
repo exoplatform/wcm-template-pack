@@ -12,17 +12,17 @@
  def email = _ctx.appRes("Contact.dialog.label.Email");
  def phone = _ctx.appRes("Contact.dialog.label.Phone");
  def message = _ctx.appRes("Contact.dialog.label.Message");
- 
+
 %>
-<div class="uiForm FormLayout FormScrollLayout">  
-<% uiform.begin() %>    
+<div class="uiForm FormLayout FormScrollLayout">
+<% uiform.begin() %>
   <%/* start render action*/%>
   <% if (uiform.isShowActionsOnTop()) {
             uiform.processRenderAction()
           }
   %>
   <%/* end render action*/%>
-    <div class="form-horizontal">
+    <div class="form-inline dynamico-contact-form">
       <div class="control-group" style="display:none;">
         <label class="control-label"><%=_ctx.appRes("FormGenerator.dialog.label.Date")%></label>
         <div class="controls">
@@ -35,59 +35,59 @@
           </div>
         </div>
       </div>
-      <div class="row-fluidzz">
-      
-        <div class="span4">
-          <div class="control-group">
-             <div class="controls">         
-               <%
-                String[] your_nameFieldName = ["jcrPath=/node/exo:userName", "defaultValues=", ""];           
-                uicomponent.addTextField("your_nameFieldName", your_nameFieldName);          
-               %>        
-             </div>      
-          </div>     
-        </div><br/>
+      <div class="row-fluid">
+
         <div class="span4">
           <div class="control-group">
              <div class="controls">
                <%
-                String[] your_email_addressFieldName = ["jcrPath=/node/exo:userEmail", "defaultValues=", ""];           
-                uicomponent.addTextField("your_email_addressFieldName", your_email_addressFieldName);          
-               %>        
-             </div>      
+                String[] your_nameFieldName = ["jcrPath=/node/exo:userName", "defaultValues=", ""];
+                uicomponent.addTextField("your_nameFieldName", your_nameFieldName);
+               %>
+             </div>
           </div>
-        </div><br/>
+        </div>
         <div class="span4">
           <div class="control-group">
              <div class="controls">
                <%
-                String[] your_phone_numberFieldName = ["jcrPath=/node/exo:userPhone", "defaultValues=", ""];           
-                uicomponent.addTextField("your_phone_numberFieldName", your_phone_numberFieldName);          
-               %>        
-             </div>      
+                String[] your_email_addressFieldName = ["jcrPath=/node/exo:userEmail", "defaultValues=", ""];
+                uicomponent.addTextField("your_email_addressFieldName", your_email_addressFieldName);
+               %>
+             </div>
+          </div>
+        </div>
+        <div class="span4">
+          <div class="control-group">
+             <div class="controls">
+               <%
+                String[] your_phone_numberFieldName = ["jcrPath=/node/exo:userPhone", "defaultValues=", ""];
+                uicomponent.addTextField("your_phone_numberFieldName", your_phone_numberFieldName);
+               %>
+             </div>
           </div>
         </div>
       </div>
       <div class="control-group">
-        <div class="controls">         
+        <div class="controls">
           <%
-             String[] your_messageFieldName = ["jcrPath=/node/exo:userMessage", "defaultValues=", ""];           
-             uicomponent.addTextAreaField("your_messageFieldName", your_messageFieldName);          
-          %>        
+             String[] your_messageFieldName = ["jcrPath=/node/exo:userMessage", "defaultValues=", ""];
+             uicomponent.addTextAreaField("your_messageFieldName", your_messageFieldName);
+          %>
         </div>
       </div>
-    </div>    
+    </div>
 
   <% if (!uiform.isShowActionsOnTop()) { %>
-  <div class="uiAction">        
-    <%                
+  <div class="uiAction">
+    <%
      for(action in uicomponent.getActions()) {
-      String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action);                  
-      String link = uicomponent.event(action);                  %>                    
-            <button type="button" href="javascript:void(0);" onclick="$link" class="btn">$actionLabel</button>                          
-     <% }  %>            
+      String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action);
+      String link = uicomponent.event(action);                  %>
+            <button type="button" href="javascript:void(0);" onclick="$link" class="btn btn-xlarge">$actionLabel</button>
+     <% }  %>
   </div>
-  <% } %> 
+  <% } %>
 <% uiform.end() %>
 </div>
 

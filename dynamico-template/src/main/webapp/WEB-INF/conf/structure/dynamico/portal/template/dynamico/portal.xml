@@ -29,7 +29,7 @@
     <entry key="showPortletInfo">0</entry>
   </properties>
   <portal-layout id="template-Dynamico">
-    <container id="Dynamico-TopPanel" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
+    <container id="Dynamico-TopPanel" template="system:/groovy/portal/webui/container/UIResponsiveTableSmallBigColumnContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <container id="Dynamico-Logo" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>

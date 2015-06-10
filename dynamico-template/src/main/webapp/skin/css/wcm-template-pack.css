@@ -1,5 +1,3 @@
-body{}
-
 .uiItemSelector.uiFormInputItemSelector .itemDetailList .dynamicoImage {
 background: url("../image/dynamico.png") no-repeat top;
 margin: 3px auto;
@@ -43,4 +41,51 @@ background-size: 100%;
 
 .UIEditInlineWS .uiContainerList .BigSmallColumnResponsiveContainerLayout {
   background-position: 5px -506px;
+}
+
+.dynamico-contact-form textarea,
+.dynamico-contact-form input[type="text"],
+.dynamico-contact-form input[type="password"],
+.dynamico-contact-form input[type="datetime"],
+.dynamico-contact-form input[type="datetime-local"],
+.dynamico-contact-form input[type="date"],
+.dynamico-contact-form input[type="month"],
+.dynamico-contact-form input[type="time"],
+.dynamico-contact-form input[type="week"],
+.dynamico-contact-form input[type="number"],
+.dynamico-contact-form input[type="email"],
+.dynamico-contact-form input[type="url"],
+.dynamico-contact-form input[type="search"],
+.dynamico-contact-form input[type="tel"],
+.dynamico-contact-form input[type="color"],
+.dynamico-contact-form .uneditable-input {
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 0;
+	padding: 8px 15px 10px;
+}
+
+.dynamico-contact-form input[type="text"],
+.dynamico-contact-form input[type="password"],
+.dynamico-contact-form input[type="datetime"],
+.dynamico-contact-form input[type="datetime-local"],
+.dynamico-contact-form input[type="date"],
+.dynamico-contact-form input[type="month"],
+.dynamico-contact-form input[type="time"],
+.dynamico-contact-form input[type="week"],
+.dynamico-contact-form input[type="number"],
+.dynamico-contact-form input[type="email"],
+.dynamico-contact-form input[type="url"],
+.dynamico-contact-form input[type="search"],
+.dynamico-contact-form input[type="tel"],
+.dynamico-contact-form input[type="color"],
+.dynamico-contact-form .uneditable-input {
+	height: 42px;
+}
+
+.dynamico-contact-form .control-group {
+	margin-bottom: 30px;
 }

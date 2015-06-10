@@ -786,7 +786,7 @@
     <title>About</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>editor:/platform/web-contributors</edit-permission>
-    <container id="DynamicoAbout" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
+    <container id="DynamicoAbout" template="system:/groovy/portal/webui/container/UIResponsiveTableSmallBigColumnContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <container id="AboutLeft" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
@@ -1205,7 +1205,7 @@
     <title>Blog</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>editor:/platform/web-contributors</edit-permission>
-    <container id="DynamicoBlog" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
+    <container id="DynamicoBlog" template="system:/groovy/portal/webui/container/UIResponsiveTableBigSmallColumnContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <container id="BlogLeft" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
@@ -1529,7 +1529,7 @@
           <show-application-mode>false</show-application-mode>
         </portlet-application>
       </container>
-      <container id="MailBottom" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
+      <container id="MailBottom" template="system:/groovy/portal/webui/container/UIResponsiveTableSmallBigColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
         <container id="MailBottomLeft" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
