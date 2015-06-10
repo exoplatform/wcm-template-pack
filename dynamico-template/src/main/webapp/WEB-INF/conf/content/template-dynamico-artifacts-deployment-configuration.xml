@@ -1444,6 +1444,15 @@
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/mailAddress</string></value>
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/mailContactUs</string></value>
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/servicesServices</string></value>
+								
+                <value><string>collaboration:/sites/{portalName}/css/flexslider.css</string></value>
+                <value><string>collaboration:/sites/{portalName}/js/jquery-migrate-1.1.1.js</string></value>
+                <value><string>collaboration:/sites/{portalName}/js/jquery.flexslider.js</string></value>
+                <value><string>collaboration:/sites/{portalName}/js/ajquery.js</string></value>
+                <value><string>collaboration:/sites/{portalName}/js/jquery.mobilemenu.js</string></value>
+                <value><string>collaboration:/sites/{portalName}/js/superfish.js</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/list_arrow.png</string></value>
+
               </collection>
             </field>
           </object>
