@@ -3,14 +3,6 @@
 		<supertypes>
   		<supertype>nt:file</supertype>
 		</supertypes>
-	<propertyDefinitions>
-		<propertyDefinition name="exo:subTitle" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false" >
-  		<valueConstraints/>
-		</propertyDefinition>
-		<propertyDefinition name="exo:title" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false" >
-	  	<valueConstraints/>
-		</propertyDefinition>
-	</propertyDefinitions>
 	</nodeType>
 	
 	<nodeType name="exo:news" isMixin="false" hasOrderableChildNodes="false" primaryItemName="" >

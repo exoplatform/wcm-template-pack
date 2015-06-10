@@ -9,8 +9,10 @@ def currentPageData = uicomponent.getCurrentPageData();
 			for (viewNode in currentPageData) {
 				if (viewNode != null && viewNode.hasProperty("jcr:content/jcr:mimeType") && viewNode.getProperty("jcr:content/jcr:mimeType").getString().startsWith("image/")) {
 					def imgUrl = WCMCoreUtils.generateImageURI(viewNode, null);
-					def imgTitle = viewNode.hasProperty("exo:title")? viewNode.getProperty("exo:title").getString() : "";
-					def imgSubtitle = viewNode.hasProperty("exo:subTitle")? viewNode.getProperty("exo:subTitle").getString() : "";
+					def imgTitle = viewNode.hasProperty("jcr:content/dc:title")? 
+                         viewNode.getProperty("jcr:content/dc:title").getValues()[0].getString() : "";
+					def imgSubtitle = viewNode.hasProperty("jcr:content/dc:description")? 
+					                  viewNode.getProperty("jcr:content/dc:description").getValues()[0].getString() : "";
 					%>
 
 					<li><img alt="" src="$imgUrl" />

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+  <dynamico>
+    <label>Sample Dynamico Website</label>
+  </dynamico>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>Name</Name>
+         <Email>Email</Email>
+         <Phone>Phone</Phone>
+         <Message>Message1</Message>
+       </label>
+     </dialog>.
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>Date</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>Submo` bit</Submit>
+     </action>
+   </UIFCCForm> 
+
+
+</bundle>
+

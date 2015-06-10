@@ -96,26 +96,6 @@
         <!--end of content-->
         
           <div class="control-group">
-            <label class="control-label" for="imgTitle"><%=_ctx.appRes("File.dialog.label.imgTitle")%></label>
-            <div class="controls">
-                <% 
-                  String[] fieldExoTitle = ["jcrPath=/node/exo:title"];
-                  uicomponent.addTextField("imgTitle", fieldExoTitle);
-                %>
-            </div>
-          </div> 
-          
-          <div class="control-group">
-            <label class="control-label" for="subTitle"><%=_ctx.appRes("File.dialog.label.imgSubTitle")%></label>
-            <div class="controls">
-                <% 
-                String[] fieldSubTitle = ["jcrPath=/node/exo:subTitle"];
-                uicomponent.addTextField("subTitle", fieldSubTitle);
-                %>
-            </div>
-          </div>            
-        
-          <div class="control-group">
             <label class="control-label" for="title"><%=_ctx.appRes("ElementSet.dialog.label.title")%></label>
             <div class="controls">
               <%
