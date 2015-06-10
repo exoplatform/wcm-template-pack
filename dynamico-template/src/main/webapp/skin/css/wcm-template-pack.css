@@ -1,1 +1,9 @@
 body{}
+
+.uiItemSelector.uiFormInputItemSelector .itemDetailList .dynamicoImage {
+background: url("/dynamico-template/skin/image/dynamico.png") no-repeat top;
+margin: 3px auto;
+width: 296px;
+height: 235px;
+background-size: 100%;
+}
