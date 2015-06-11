@@ -33,5 +33,6 @@
   <import>war:/conf/content/actions-configuration.xml</import>  
 
   <import>war:/conf/bundle/resource-bundle-configuration.xml</import>
+  <import>war:/conf/portlet/register-application-configuration.xml</import>
 
 </configuration>
