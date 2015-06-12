@@ -14,7 +14,11 @@
  def message = _ctx.appRes("Contact.dialog.label.Message");
 
 %>
-<div class="uiForm FormLayout FormScrollLayout">
+<div class="uiForm FormLayout FormScrollLayout box-module">
+ <h3 class="module-heading">
+   <%=_ctx.appRes("Contact.dialog.label.ContactForm")%>
+ </h3>
+
 <% uiform.begin() %>
   <%/* start render action*/%>
   <% if (uiform.isShowActionsOnTop()) {
@@ -22,7 +26,7 @@
           }
   %>
   <%/* end render action*/%>
-    <div class="form-inline dynamico-contact-form">
+    <div class="form-inline dynamico-contact-form box-module">
       <div class="control-group" style="display:none;">
         <label class="control-label"><%=_ctx.appRes("FormGenerator.dialog.label.Date")%></label>
         <div class="controls">
@@ -79,12 +83,12 @@
     </div>
 
   <% if (!uiform.isShowActionsOnTop()) { %>
-  <div class="uiAction">
+  <div class="center">
     <%
      for(action in uicomponent.getActions()) {
       String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action);
       String link = uicomponent.event(action);                  %>
-            <button type="button" href="javascript:void(0);" onclick="$link" class="btn btn-xlarge">$actionLabel</button>
+            <button type="button" href="javascript:void(0);" onclick="$link" class="btn btn-xlarge btn-primary">$actionLabel</button>
      <% }  %>
   </div>
   <% } %>

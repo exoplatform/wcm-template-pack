@@ -99,7 +99,7 @@
 	 			<div class="media-content">
 	 			<%
 	 			if(isShowImage) {
-	 				%><a class="image" rel="tooltip" data-placement="bottom" title="$itemName"><img alt="$itemName" rel="tooltip" data-placement="bottom" title="$itemName" src="$imgSrc" class="media-object" /></a><%
+	 				%><a href="$imgSrc" class="image" rel="tooltip" data-placement="bottom" title="$itemName"><img alt="$itemName" rel="tooltip" data-placement="bottom" title="$itemName" src="$imgSrc" class="media-object" /></a><%
 	 			}
 	 			%>
 	 			<div class="media-body">
@@ -187,3 +187,15 @@
 	 	%>
 	 	</div>
 	 	</div>
+<script>
+    jQuery(window).load(function() {
+	     // Initialize the gallery
+      jQuery('.media-content a.image').touchTouch();
+	  });
+	   
+    jQuery('.media-content a.image').hover(function(){
+      jQuery(this).stop().animate({opacity:0.5},350, "easeOutSine");    
+          }, function(){
+            jQuery(this).stop().animate({opacity:1},350, "easeOutSine");            
+    })
+	</script>
