@@ -7,9 +7,10 @@
          <Name>Name</Name>
          <Email>Email</Email>
          <Phone>Phone</Phone>
-         <Message>Message1</Message>
+         <Message>Message</Message>
+         <ContactForm>Contact Form</ContactForm>
        </label>
-     </dialog>.
+     </dialog>
    </Contact>
    
    <FormGenerator>
@@ -22,7 +23,7 @@
    
    <UIFCCForm>
      <action>
-       <Submit>Submo` bit</Submit>
+       <Submit>Submit</Submit>
      </action>
    </UIFCCForm> 
 
