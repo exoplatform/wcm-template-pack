@@ -1,7 +1,8 @@
 <nodeTypes xmlns:nt="http://www.jcp.org/jcr/nt/1.5" xmlns:mix="http://www.jcp.org/jcr/mix/1.5" xmlns:jcr="http://www.jcp.org/jcr/1.5" >
-
-
       <nodeType name="exo:globexvideo" isMixin="false" hasOrderableChildNodes="false" primaryItemName="" >
+          <supertypes>
+      <supertype>nt:base</supertype>
+    </supertypes>
         <propertyDefinitions>
       <propertyDefinition name="exo:title" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
         <valueConstraints/>
@@ -12,7 +13,7 @@
             <propertyDefinition name="exo:summary" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
         <valueConstraints/>
       </propertyDefinition>
-            <propertyDefinition name="exo:url" requiredType="String" autoCreated="false" mandatory="true" onParentVersion="COPY" protected="false" multiple="false">
+            <propertyDefinition name="exo:url" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
         <valueConstraints/>
       </propertyDefinition>
             <propertyDefinition name="exo:width" requiredType="String" autoCreated="false" mandatory="false" onParentVersion="COPY" protected="false" multiple="false">
