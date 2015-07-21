@@ -40,6 +40,16 @@
     <dependencySet>
       <outputDirectory>/</outputDirectory>
       <includes>
+      <include>org.exoplatform.addons.wcm-template:globex-template:war</include>
+      </includes>
+      <scope>provided</scope>
+      <outputFileNameMapping>globex-template.war</outputFileNameMapping>
+      <useProjectArtifact>false</useProjectArtifact>
+    </dependencySet>
+
+	<dependencySet>
+      <outputDirectory>/</outputDirectory>
+      <includes>
         <include>org.exoplatform.addons.wcm-template:template-pack-config:jar</include>
       </includes>
       <scope>provided</scope>

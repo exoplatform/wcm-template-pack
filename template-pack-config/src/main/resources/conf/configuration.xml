@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd http://www.exoplatform.org/xml/ns/kernel_1_2.xsd"
-        xmlns="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd">
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd http://www.exoplatform.org/xml/ns/kernel_1_2.xsd"
+  xmlns="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd">
   <external-component-plugins>
     <target-component>org.exoplatform.container.definition.PortalContainerConfig</target-component>
     <component-plugin>
@@ -18,13 +17,18 @@
         <object-param>
           <!-- The list of dependencies -->
           <name>addDependencies</name>
-          <object type="org.exoplatform.container.definition.PortalContainerDefinitionChange$AddDependencies">
+          <object
+            type="org.exoplatform.container.definition.PortalContainerDefinitionChange$AddDependencies">
             <field name="dependencies">
               <collection type="java.util.ArrayList">
                 <!-- the context name that is configured in web.xml -->
                 <value>
                   <string>agital-template</string>
                 </value>
+                <value>
+                  <string>globex-template</string>
+                </value>
+
               </collection>
             </field>
           </object>
