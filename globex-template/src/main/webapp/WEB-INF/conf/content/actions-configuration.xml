@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd http://www.exoplatform.org/xml/ns/kernel_1_2.xsd"
+   xmlns="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd">
+
+  <!-- external-component-plugins>
+    <target-component>org.exoplatform.services.cms.actions.ActionServiceContainer</target-component>      
+      <component-plugin>
+        <name>exo:scriptAction</name>   
+        <set-method>addPlugin</set-method>
+        <type>org.exoplatform.services.cms.actions.impl.ScriptActionPlugin</type>
+        <init-params>
+          <object-param>
+            <name>predefined.actions</name>
+            <description>description</description>
+            <object type="org.exoplatform.services.cms.actions.impl.ActionConfig">
+              <field  name="workspace"><string>collaboration</string></field>
+              <field  name="actions">
+                <collection type="java.util.ArrayList">
+                  <value>
+                    <object type="org.exoplatform.services.cms.actions.impl.ActionConfig$Action">
+                      <field  name="type"><string>exo:contactRequests</string></field>
+                      <field  name="name"><string>SendContactRequest</string></field>                  
+                      <field  name="description"><string>trigger actions for items in Contact Requests folder</string></field>
+                      <field  name="srcWorkspace"><string>collaboration</string></field>
+                      <field  name="srcPath"><string>/sites</string></field>
+                      <field  name="isDeep"><boolean>true</boolean></field>
+                      <field  name="lifecyclePhase">
+                        <collection type="java.util.ArrayList">
+                         <value><string>node_added</string></value>
+                        </collection>
+                      </field>
+                      <field  name="affectedNodeTypes">
+                        <collection type="java.util.ArrayList">
+                          <value><string>exo:contact</string></value>
+                        </collection>
+                      </field>
+                      <field  name="nodeTypeName">
+                        <collection type="java.util.ArrayList">
+                          <value><string>exo:contactFolder</string></value>
+                        </collection>
+                      </field>
+                    </object>  
+                  </value>
+
+                </collection>   
+              </field>  
+            </object>
+          </object-param>
+        </init-params>    
+      </component-plugin>      
+ </external-component-plugins -->
+
+</configuration>
