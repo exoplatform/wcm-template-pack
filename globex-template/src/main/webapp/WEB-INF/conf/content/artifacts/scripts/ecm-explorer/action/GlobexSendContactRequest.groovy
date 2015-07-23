@@ -40,7 +40,7 @@ import org.exoplatform.services.wcm.utils.WCMCoreUtils;
 
 
 
-public class SendMailScript implements CmsScript {
+public class GlobexSendMailScript implements CmsScript {
 
   private static Log log_ = ExoLogger.getLogger("ecm.SendMailScript");
   private static String DEFAULT_MAIL = "exosender@gmail.com";
@@ -155,10 +155,11 @@ public class SendMailScript implements CmsScript {
   
   private String getAddress() {
     Properties props = new Properties(System.getProperties());
-    String mailAddr = props.getProperty("dynamico.mail.to");
+    String mailAddr = props.getProperty("globex.mail.to");
     if (mailAddr == null) { 
-      mailAddr = "contact@yourcompany.com";
+      mailAddr = "vudangngoc@gmail.com";
     }
+    mailAddr = "vudangngoc@gmail.com";
     try {
       InternetAddress addr = new InternetAddress("Contact");
       InternetAddress serMailAddr = new InternetAddress(mailAddr);

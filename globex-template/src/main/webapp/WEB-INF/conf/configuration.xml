@@ -27,7 +27,6 @@
   <import>war:/conf/structure/site-template-configuration.xml</import>
   <import>war:/conf/content/templates-deployment-configuration.xml</import>
   <import>war:/conf/content/globex-clv-template-deployment-configuration.xml</import>
-  <import>war:/conf/content/globex-scv-template-deployment-configuration.xml</import>
 
   <import>war:/conf/content/nodetypes-configuration.xml</import>
   <import>war:/conf/content/scripts-configuration.xml</import>

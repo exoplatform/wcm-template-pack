@@ -99,6 +99,28 @@
             </field>
           </object>
         </object-param>
+                <object-param>
+          <name>Globex Subscribes Folder</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/globex/subscribesrequest.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
                         <object-param>
           <name>Globex Contact</name>
           <description>Deployment Descriptor</description>
@@ -115,6 +137,28 @@
             </field>
             <field name="sourcePath">
               <string>war:/conf/content/artifacts/site-resources/globex/contact.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+<object-param>
+          <name>Globex Contact Request</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                 <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/globex/Contact Requests.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -340,121 +384,31 @@
               <boolean>true</boolean>
             </field>
           </object>
-        </object-param>
-        
-        <object-param>
-          <name>Globex flexslider data</name>
-          <description>Deployment Descriptor</description>
-          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
-            <field name="target">
-              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
-                <field name="workspace">
-                  <string>collaboration</string>
-                </field>
-                <field name="nodePath">
-                  <string>/sites/{portalName}/css</string>
-                </field>
-              </object>
-            </field>
-            <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/flexslider.css.xml</string>
-            </field>
-            <field name="cleanupPublication">
-              <boolean>true</boolean>
-            </field>
-          </object>
-        </object-param>
-                <object-param>
-          <name>Globex Global Style sheet</name>
-          <description>Deployment Descriptor</description>
-          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
-            <field name="target">
-              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
-                <field name="workspace">
-                  <string>collaboration</string>
-                </field>
-                <field name="nodePath">
-                  <string>/sites/{portalName}/css</string>
-                </field>
-              </object>
-            </field>
-            <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/Stylesheet.xml</string>
-            </field>
-            <field name="cleanupPublication">
-              <boolean>true</boolean>
-            </field>
-          </object>
-        </object-param>
-        <object-param>
-          <name>globex jquery</name>
-          <description>Deployment Descriptor</description>
-          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
-            <field name="target">
-              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
-                <field name="workspace">
-                  <string>collaboration</string>
-                </field>
-                <field name="nodePath">
-                  <string>/sites/{portalName}/js</string>
-                </field>
-              </object>
-            </field>
-            <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/jquery.js.xml</string>
-            </field>
-            <field name="cleanupPublication">
-              <boolean>true</boolean>
-            </field>
-          </object>
-        </object-param>
-
-        <object-param>
-          <name>Globex jquery flexslider</name>
-          <description>Deployment Descriptor</description>
-          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
-            <field name="target">
-              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
-                <field name="workspace">
-                  <string>collaboration</string>
-                </field>
-                <field name="nodePath">
-                  <string>/sites/{portalName}/js</string>
-                </field>
-              </object>
-            </field>
-            <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/jquery.flexslider.js.xml</string>
-            </field>
-            <field name="cleanupPublication">
-              <boolean>true</boolean>
-            </field>
-          </object>
-        </object-param>
-                <object-param>
-          <name>globex jquery migrate</name>
-          <description>Deployment Descriptor</description>
-          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
-            <field name="target">
-              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
-                <field name="workspace">
-                  <string>collaboration</string>
-                </field>
-                <field name="nodePath">
-                  <string>/sites/{portalName}/js</string>
-                </field>
-              </object>
-            </field>
-            <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/jquery-migrate-1.1.1.js.xml</string>
-            </field>
-            <field name="cleanupPublication">
-              <boolean>true</boolean>
-            </field>
-          </object>
         </object-param>        
+                <object-param>
+          <name>Globex Style sheet</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/css</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/globex/globex.css.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
         <object-param>
-          <name>globex to top</name>
+          <name>globex js</name>
           <description>Deployment Descriptor</description>
           <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
             <field name="target">
@@ -468,14 +422,13 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/jquery.ui.totop.js.xml</string>
+              <string>war:/conf/content/artifacts/site-resources/globex/globex.js.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
             </field>
           </object>
         </object-param>
-
         
       </init-params>
     </component-plugin>
@@ -974,17 +927,17 @@
               <collection type="java.util.ArrayList">
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/title</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/askedquestions</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/askedquestions/askedquestions1</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/askedquestions/askedquestions2</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/subscribes</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/subscribesrequest</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/contact</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/contact-requests</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/features</string></value>
-                <value><string>collaboration:/sites/{portalName}/css/flexslider.css</string></value>
-                <value><string>collaboration:/sites/{portalName}/css/GlobalStylesheet</string></value>
+                <value><string>collaboration:/sites/{portalName}/css/globexcss</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/footer</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/introductions</string></value>
-                <value><string>collaboration:/sites/{portalName}/js/jquery-migrate-1.1.1.js</string></value>
-                <value><string>collaboration:/sites/{portalName}/js/jquery.flexslider.js</string></value>
-                <value><string>collaboration:/sites/{portalName}/js/ajquery.js</string></value>
-                <value><string>collaboration:/sites/{portalName}/js/jquery.ui.totop.js</string></value>
+                <value><string>collaboration:/sites/{portalName}/js/globexjs</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/pricingleft</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/pricingmid</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/pricingright</string></value>
@@ -992,6 +945,10 @@
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/services</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/video</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/whattheysay</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/whattheysay/whattheysay1</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/whattheysay/whattheysay2</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/whattheysay/whattheysay3</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/whattheysay/whattheysay4</string></value>
               </collection>
             </field>
           </object>
