@@ -1,0 +1,103 @@
+<%
+ import java.util.Calendar;
+ import java.text.SimpleDateFormat;
+ import org.exoplatform.ecm.utils.text.Text;
+ private String getTimestampName() {
+  Calendar now = Calendar.getInstance();
+  SimpleDateFormat formatter = new SimpleDateFormat("yyyy.MM.dd '-' hh'h'mm'm'ss");
+  return formatter.format(now.getTime());
+ }
+ String timestampName = Text.convertJcrChars(getTimestampName());
+ def name = _ctx.appRes("Contact.dialog.label.Name");
+ def email = _ctx.appRes("Contact.dialog.label.Email");
+ def phone = _ctx.appRes("Contact.dialog.label.Phone");
+ def message = _ctx.appRes("Contact.dialog.label.Message");
+
+%>
+<div class="uiForm FormLayout FormScrollLayout box-module">
+ <h3 class="module-heading">
+   <%=_ctx.appRes("Contact.dialog.label.ContactForm")%>
+ </h3>
+
+<% uiform.begin() %>
+  <%/* start render action*/%>
+  <% if (uiform.isShowActionsOnTop()) {
+            uiform.processRenderAction()
+          }
+  %>
+  <%/* end render action*/%>
+    <div class="form-inline dynamico-contact-form box-module">
+      <div class="control-group" style="display:none;">
+        <label class="control-label"><%=_ctx.appRes("FormGenerator.dialog.label.Date")%></label>
+        <div class="controls">
+          $timestampName
+          <div style="display:none;">
+            <%
+             String[] fieldName = ["jcrPath=/node", "mixintype=mix:i18n", "editable=if-null", "validate=empty,name", timestampName] ;
+             uicomponent.addTextField("name", fieldName) ;
+            %>
+          </div>
+        </div>
+      </div>
+      <div class="row-fluid">
+
+        <div class="span4">
+          <div class="control-group">
+             <div class="controls">
+               <%
+                String[] your_nameFieldName = ["jcrPath=/node/exo:name", "defaultValues=", ""];
+                uicomponent.addTextField("your_nameFieldName", your_nameFieldName);
+               %>
+             </div>
+          </div>
+        </div>
+        <div class="span4">
+          <div class="control-group">
+             <div class="controls">
+               <%
+                String[] your_email_addressFieldName = ["jcrPath=/node/exo:email", "defaultValues=", ""];
+                uicomponent.addTextField("your_email_addressFieldName", your_email_addressFieldName);
+               %>
+             </div>
+          </div>
+        </div>
+        <div class="span4">
+          <div class="control-group">
+             <div class="controls">
+               <%
+                String[] your_phone_numberFieldName = ["jcrPath=/node/exo:phone", "defaultValues=", ""];
+                uicomponent.addTextField("your_phone_numberFieldName", your_phone_numberFieldName);
+               %>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <%
+             String[] your_messageFieldName = ["jcrPath=/node/exo:message", "defaultValues=", ""];
+             uicomponent.addTextAreaField("your_messageFieldName", your_messageFieldName);
+          %>
+        </div>
+      </div>
+    </div>
+
+  <% if (!uiform.isShowActionsOnTop()) { %>
+  <div class="center">
+    <%
+     for(action in uicomponent.getActions()) {
+      String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action);
+      String link = uicomponent.event(action);                  %>
+            <button type="button" href="javascript:void(0);" onclick="$link" class="btn btn-xlarge btn-primary">$actionLabel</button>
+     <% }  %>
+  </div>
+  <% } %>
+<% uiform.end() %>
+</div>
+
+<script type="text/javascript">
+  document.getElementById("your_nameFieldName").setAttribute("placeholder", "$name");
+  document.getElementById("your_email_addressFieldName").setAttribute("placeholder", "email");
+  document.getElementById("your_phone_numberFieldName").setAttribute("placeholder", "$phone");
+  document.getElementById("your_messageFieldName").setAttribute("placeholder", "$message");
+</script>
