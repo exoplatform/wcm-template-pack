@@ -911,8 +911,6 @@
         </object-param>
       </init-params>
     </component-plugin>
-
-    
     <component-plugin>
       <name>template-Globex-publication</name>
       <set-method>addPlugin</set-method>
