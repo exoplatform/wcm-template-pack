@@ -157,9 +157,8 @@ public class GlobexSendMailScript implements CmsScript {
     Properties props = new Properties(System.getProperties());
     String mailAddr = props.getProperty("globex.mail.to");
     if (mailAddr == null) { 
-      mailAddr = "vudangngoc@gmail.com";
+      mailAddr = "contact@yourcompany.com";
     }
-    mailAddr = "vudangngoc@gmail.com";
     try {
       InternetAddress addr = new InternetAddress("Contact");
       InternetAddress serMailAddr = new InternetAddress(mailAddr);

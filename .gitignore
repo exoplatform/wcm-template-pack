@@ -6,8 +6,9 @@ pom.xml.next
 release.properties
 
 *.class
-.*
 *~
+.*
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
