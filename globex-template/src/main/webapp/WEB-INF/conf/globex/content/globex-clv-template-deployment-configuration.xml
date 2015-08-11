@@ -41,7 +41,7 @@
         </value-param>
         <value-param>
           <name>portlet.template.path</name>
-          <value>war:/conf/content/artifacts/application-templates/content-list-viewer</value>
+          <value>war:/conf/globex/content/artifacts/application-templates/content-list-viewer</value>
         </value-param>
         
         <object-param>

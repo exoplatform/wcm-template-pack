@@ -31,6 +31,6 @@
     <type>org.exoplatform.services.wcm.portal.artifacts.CreatePortalArtifactsServiceImpl</type>
   </component>
 
-  <import>war:/conf/content/template-globex-artifacts-deployment-configuration.xml</import>
+  <import>war:/conf/globex/content/template-globex-artifacts-deployment-configuration.xml</import>
 
 </configuration>

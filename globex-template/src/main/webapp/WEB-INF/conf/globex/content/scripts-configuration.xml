@@ -18,7 +18,7 @@
           </value-param>
           <value-param>
             <name>predefinedScriptsLocation</name>
-            <value>war:/conf/content/artifacts</value>
+            <value>war:/conf/globex/content/artifacts</value>
           </value-param>
           <object-param>
             <name>predefined.scripts</name>
@@ -54,7 +54,7 @@
           </value-param>
           <value-param>
             <name>predefinedScriptsLocation</name>
-            <value>war:/conf/content/artifacts</value>
+            <value>war:/conf/globex/content/artifacts</value>
           </value-param>
           <object-param>
             <name>predefined.scripts</name>

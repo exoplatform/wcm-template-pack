@@ -48,7 +48,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/Title.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/Title.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -70,7 +70,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/askedquestions.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/askedquestions.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -92,7 +92,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/subscribes.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/subscribes.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -114,7 +114,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/subscribesrequest.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/subscribesrequest.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -136,7 +136,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/contact.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/contact.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -158,7 +158,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/Contact Requests.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/Contact Requests.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -180,7 +180,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/features.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/features.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -202,7 +202,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/footer.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/footer.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -224,7 +224,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/introductions.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/introductions.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -246,7 +246,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/pricingleft.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/pricingleft.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -268,7 +268,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/pricingmid.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/pricingmid.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -290,7 +290,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/pricingright.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/pricingright.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -312,7 +312,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/quote.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/quote.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -334,7 +334,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/services.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/services.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -356,7 +356,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/whattheysay.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/whattheysay.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -378,7 +378,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/video.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/video.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -400,7 +400,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/globex.css.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/globex.css.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -422,7 +422,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/globex/globex.js.xml</string>
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/globex.js.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>

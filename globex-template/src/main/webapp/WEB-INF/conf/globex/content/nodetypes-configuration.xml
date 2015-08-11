@@ -16,7 +16,7 @@
         <values-param>
           <name>autoCreatedInNewRepository</name>
           <description>Node types configuration file</description>
-          <value>war:/conf/content/nodetypes/globex-nodetypes.xml</value>
+          <value>war:/conf/globex/content/nodetypes/globex-nodetypes.xml</value>
         </values-param>
       </init-params>
     </component-plugin>
@@ -35,7 +35,7 @@
         </value-param>
         <value-param>
           <name>storedLocation</name>
-          <value>war:/conf/content/nodetypes/templates</value>
+          <value>war:/conf/globex/content/nodetypes/templates</value>
         </value-param>
         <object-param>
           <name>template.configuration</name>
@@ -128,7 +128,7 @@
                     </field>
                   </object>
                 </value>
-<value>
+                <value>
                   <object type="org.exoplatform.services.cms.templates.impl.TemplateConfig$NodeType">
                     <field name="nodetypeName">
                       <string>exo:globexContactUs</string>

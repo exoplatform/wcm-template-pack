@@ -24,15 +24,15 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd http://www.exoplatform.org/xml/ns/kernel_1_2.xsd"
   xmlns="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd">
-  <import>war:/conf/structure/site-template-configuration.xml</import>
-  <import>war:/conf/content/templates-deployment-configuration.xml</import>
-  <import>war:/conf/content/globex-clv-template-deployment-configuration.xml</import>
+  <import>war:/conf/globex/structure/globex/portal-configuration.xml</import>
+  <import>war:/conf/globex/content/templates-deployment-configuration.xml</import>
+  <import>war:/conf/globex/content/globex-clv-template-deployment-configuration.xml</import>
 
-  <import>war:/conf/content/nodetypes-configuration.xml</import>
-  <import>war:/conf/content/scripts-configuration.xml</import>
-  <import>war:/conf/content/actions-configuration.xml</import>  
+  <import>war:/conf/globex/content/nodetypes-configuration.xml</import>
+  <import>war:/conf/globex/content/scripts-configuration.xml</import>
+  <import>war:/conf/globex/content/actions-configuration.xml</import>
 
-  <import>war:/conf/bundle/resource-bundle-configuration.xml</import>
-  <import>war:/conf/portlet/register-application-configuration.xml</import>
+  <import>war:/conf/globex/bundle/resource-bundle-configuration.xml</import>
+  <import>war:/conf/globex/portlet/register-application-configuration.xml</import>
 
 </configuration>
