@@ -48,7 +48,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/dynamico/Stylesheet.xml</string>
+              <string>war:/conf/content/artifacts/site-resources/dynamico/GlobalStyleSheet.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -355,6 +355,53 @@
             </field>
           </object>
         </object-param>
+
+  <object-param>
+    <name>Dynamico arrow Right </name>
+    <description>Deployment Descriptor</description>
+    <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+      <field name="target">
+        <object
+          type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+          <field name="workspace">
+            <string>collaboration</string>
+          </field>
+          <field name="nodePath">
+            <string>/sites/{portalName}/medias/images</string>
+          </field>
+        </object>
+      </field>
+      <field name="sourcePath">
+        <string>war:/conf/content/artifacts/site-resources/dynamico/arrowRight.png.xml</string>
+      </field>
+      <field name="cleanupPublication">
+        <boolean>true</boolean>
+      </field>
+    </object>
+  </object-param>
+    <object-param>
+    <name>Dynamico go Top icon </name>
+    <description>Deployment Descriptor</description>
+    <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+      <field name="target">
+        <object
+          type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+          <field name="workspace">
+            <string>collaboration</string>
+          </field>
+          <field name="nodePath">
+            <string>/sites/{portalName}/medias/images</string>
+          </field>
+        </object>
+      </field>
+      <field name="sourcePath">
+        <string>war:/conf/content/artifacts/site-resources/dynamico/goTopIcon.png.xml</string>
+      </field>
+      <field name="cleanupPublication">
+        <boolean>true</boolean>
+      </field>
+    </object>
+  </object-param>
         
         <object-param>
           <name>Dynamico next1</name>
@@ -1614,6 +1661,8 @@
                 <value><string>collaboration:/sites/{portalName}/js/jquery.mobilemenu.js</string></value>
                 <value><string>collaboration:/sites/{portalName}/js/superfish.js</string></value>
                 <value><string>collaboration:/sites/{portalName}/medias/images/list_arrow.png</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/arrowRight.png</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/goTopIcon.png</string></value>
 
               </collection>
             </field>

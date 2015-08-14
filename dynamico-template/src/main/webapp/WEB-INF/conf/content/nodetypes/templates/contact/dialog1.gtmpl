@@ -83,12 +83,13 @@
     </div>
 
   <% if (!uiform.isShowActionsOnTop()) { %>
-  <div class="center">
+  <div class="contact-btn-group">
+  <button type="button" href="javascript:void(0);" onclick="clearForm()" class="btn btn-primary">Clear</button>
     <%
      for(action in uicomponent.getActions()) {
       String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action);
       String link = uicomponent.event(action);                  %>
-            <button type="button" href="javascript:void(0);" onclick="$link" class="btn btn-xlarge btn-primary">$actionLabel</button>
+            <button type="button" href="javascript:void(0);" onclick="$link" class="btn">$actionLabel</button>
      <% }  %>
   </div>
   <% } %>
@@ -100,4 +101,10 @@
   document.getElementById("your_email_addressFieldName").setAttribute("placeholder", "email");
   document.getElementById("your_phone_numberFieldName").setAttribute("placeholder", "$phone");
   document.getElementById("your_messageFieldName").setAttribute("placeholder", "$message");
+  function clearForm(){
+    document.getElementById("your_nameFieldName").value='';
+    document.getElementById("your_email_addressFieldName").value='';
+    document.getElementById("your_phone_numberFieldName").value='';
+    document.getElementById("your_messageFieldName").value='';
+  }
 </script>
