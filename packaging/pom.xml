@@ -35,7 +35,7 @@
   <dependencies>
     <dependency>
       <groupId>org.exoplatform.addons.wcm-template</groupId>
-      <artifactId>agitaltemplate</artifactId>
+      <artifactId>agital-template</artifactId>
       <type>war</type>      
       <version>${project.version}</version>
       <scope>provided</scope>

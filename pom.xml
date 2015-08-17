@@ -41,7 +41,7 @@
   </scm-->
 
   <properties>
-    <exoplatform.version>4.2.x-SNAPSHOT</exoplatform.version>
+    <exoplatform.version>4.3.x-SNAPSHOT</exoplatform.version>
   </properties>
 
   <dependencyManagement>
