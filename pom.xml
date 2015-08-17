@@ -57,7 +57,7 @@
 </dependencyManagement>
 
   <modules>
-    <module>dynamico-template</module>
+    <module>agital-template</module>
     <module>packaging</module>
     <module>template-pack-config</module>
   </modules>

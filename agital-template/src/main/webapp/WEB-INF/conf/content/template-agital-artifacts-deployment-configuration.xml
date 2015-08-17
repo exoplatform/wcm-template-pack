@@ -1,0 +1,1676 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+
+    Copyright (C) 2009 eXo Platform SAS.
+    
+    This is free software; you can redistribute it and/or modify it
+    under the terms of the GNU Lesser General Public License as
+    published by the Free Software Foundation; either version 2.1 of
+    the License, or (at your option) any later version.
+    
+    This software is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+    Lesser General Public License for more details.
+    
+    You should have received a copy of the GNU Lesser General Public
+    License along with this software; if not, write to the Free
+    Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+    02110-1301 USA, or see the FSF site: http://www.fsf.org.
+
+-->
+
+<configuration
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd http://www.exoplatform.org/xml/ns/kernel_1_2.xsd"
+   xmlns="http://www.exoplatform.org/xml/ns/kernel_1_2.xsd">
+
+  <external-component-plugins>
+    <target-component>org.exoplatform.services.wcm.portal.artifacts.CreatePortalArtifactsService</target-component>
+    <component-plugin>
+      <name>template-Agital-webcontent</name>
+      <set-method>addPlugin</set-method>
+      <type>org.exoplatform.services.wcm.webcontent.InitialWebContentPlugin</type>
+      <description>This plugin deploy some initial webcontent as site artifact to site artifact folder of portal when a portal is created</description>
+      <init-params>
+        <object-param>
+          <name>Agital Stylesheet data</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/css</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/GlobalStyleSheet.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Agital flexslider data</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/css</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/flexslider.css.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Agital touch data</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/css</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/touchTouch.css.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+
+        <object-param>
+          <name>Agital jquery</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/js</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/jquery.js.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Agital jquery flexslider</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/js</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/jquery.flexslider.js.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <!--object-param>
+          <name>Agital bootstrap</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/js</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/bootstrap.js.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param-->
+        
+        <object-param>
+          <name>Agital jquery migrate</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/js</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/jquery-migrate-1.1.1.js.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>        
+        
+        <object-param>
+          <name>Agital mobile menu</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/js</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/jquery.mobilemenu.js.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+                
+        <object-param>
+          <name>Agital super fish</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/js</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/superfish.js.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Agital to top</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/js</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/jquery.ui.totop.js.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Agital touch js</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/js</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/touchTouch.jquery.js.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Agital quote</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/quote.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Agital blockquote triangle</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/blockquote_triangle.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Agital list arrow</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/list_arrow.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+  <object-param>
+    <name>Agital arrow Right </name>
+    <description>Deployment Descriptor</description>
+    <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+      <field name="target">
+        <object
+          type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+          <field name="workspace">
+            <string>collaboration</string>
+          </field>
+          <field name="nodePath">
+            <string>/sites/{portalName}/medias/images</string>
+          </field>
+        </object>
+      </field>
+      <field name="sourcePath">
+        <string>war:/conf/content/artifacts/site-resources/agital/arrowRight.png.xml</string>
+      </field>
+      <field name="cleanupPublication">
+        <boolean>true</boolean>
+      </field>
+    </object>
+  </object-param>
+    <object-param>
+    <name>Agital go Top icon </name>
+    <description>Deployment Descriptor</description>
+    <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+      <field name="target">
+        <object
+          type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+          <field name="workspace">
+            <string>collaboration</string>
+          </field>
+          <field name="nodePath">
+            <string>/sites/{portalName}/medias/images</string>
+          </field>
+        </object>
+      </field>
+      <field name="sourcePath">
+        <string>war:/conf/content/artifacts/site-resources/agital/goTopIcon.png.xml</string>
+      </field>
+      <field name="cleanupPublication">
+        <boolean>true</boolean>
+      </field>
+    </object>
+  </object-param>
+        
+        <object-param>
+          <name>Agital next1</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/next-1.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Agital prev1</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/prev-1.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Agital arrowss</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/arrows.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Agital pre loader</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/preloader.gif.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Agital Logo</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/AgitalLogo.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Agital Navigation</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/AgitalNavigation.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>Agital Footer</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/AgitalFooter.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>Agital Home Banner</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/homeBanner.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>        
+        <object-param>
+          <name>Home Solutions</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/homeSolutions.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>Home Projects</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/homeProjects.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>Home Results</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/homeResults.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Home Hello</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/homeHello.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Home News</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/homeNews.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Home Welcome</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/homeWelcome.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Home Articles</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/homeArticles.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Home Why us</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/homeWhyUs.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Home Services</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/homeServices.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>About Who we are</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/aboutWhoWeAre.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>About Testimonials</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/aboutTestimonials.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>About A few words about us</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/aboutAFewWords.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>About Our work team</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/aboutOurWorkTeam.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Services Services</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/servicesServices.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Blog blog</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/blogBlog.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Blog categories</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/blogCategories.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Mail contact us</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/mailContactUs.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+        <object-param>
+          <name>Mail address</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/mailAddress.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+
+        <object-param>
+          <name>Mail contact form</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/web contents/site artifacts</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/content/artifacts/site-resources/agital/mailContactRequests.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        
+      </init-params>
+    </component-plugin>
+
+    <component-plugin>
+      <name>template-Agital-taxonomy-tree</name>
+      <set-method>addPlugin</set-method>
+      <type>org.exoplatform.services.wcm.category.CreateTaxonomyPlugin</type>
+      <description>This plugin deploy taxonomy tree to categories folder of site when a site is created</description>
+      <init-params>
+        <value-param>
+          <name>autoCreateWithNewSite</name>
+          <value>true</value>
+        </value-param>
+        <value-param>
+          <name>workspace</name>
+          <value>collaboration</value>
+        </value-param>
+        <value-param>
+          <name>path</name>
+          <value>/sites/{portalName}/categories</value>
+        </value-param>
+        <value-param>
+          <name>treeName</name>
+          <value>{treeName}</value>
+        </value-param>
+        <object-param>
+          <name>permission.configuration</name>
+          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig">
+            <field name="taxonomies">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Taxonomy">
+                    <field name="permissions">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>any</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>false</string></field>
+                            <field name="setProperty"><string>false</string></field>
+                            <field name="remove"><string>false</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/administrators</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/web-contributors</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>predefined.actions</name>
+          <description>description</description>
+          <object type="org.exoplatform.services.cms.actions.impl.ActionConfig">
+            <field name="actions">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <object type="org.exoplatform.services.cms.actions.impl.ActionConfig$TaxonomyAction">
+                    <field name="type">
+                      <string>exo:taxonomyAction</string>
+                    </field>
+                    <field name="name">
+                      <string>taxonomyAction</string>
+                    </field>
+                    <field name="description">
+                      <string/>
+                    </field>
+                    <field name="homePath">
+                      <string>collaboration:/sites/{portalName}/categories/{treeName}</string>
+                    </field>
+                    <field name="targetWspace">
+                      <string>collaboration</string>
+                    </field>
+                    <field name="targetPath">
+                      <string>/sites/{portalName}/web contents</string>
+                    </field>
+                    <field name="lifecyclePhase">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <string>node_added</string>
+                        </value>
+                      </collection>
+                    </field>
+                    <field name="roles">
+                      <string>*:/platform/users</string>
+                    </field>
+                    <field name="mixins">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.actions.impl.ActionConfig$Mixin">
+                            <field name="name">
+                              <string>mix:affectedNodeTypes</string>
+                            </field>
+                            <field name="properties">
+                              <string>exo:affectedNodeTypeNames=nt:file,exo:cssFile,exo:htmlFile,exo:jsFile,exo:webContent,exo:pictureOnHeadWebcontent,wai:siteSearchBox,wai:siteNavigationWebContent,wai:siteBreadcrumb,exo:link</string>
+                            </field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>taxonomy.configuration</name>
+          <description>configuration predefined taxonomies to inject in jcr</description>
+          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig">
+            <field name="taxonomies">
+              <collection type="java.util.ArrayList">
+
+                <value>
+                  <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Taxonomy">
+                    <field name="name"><string>Etiam</string></field>
+                    <field name="path"><string>/Etiam</string></field>
+                    <field name="permissions">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>any</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>false</string></field>
+                            <field name="setProperty"><string>false</string></field>
+                            <field name="remove"><string>false</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/administrators</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/web-contributors</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+                
+                <value>
+                  <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Taxonomy">
+                    <field name="name"><string>Aenean</string></field>
+                    <field name="path"><string>/Aenean</string></field>
+                    <field name="permissions">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>any</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>false</string></field>
+                            <field name="setProperty"><string>false</string></field>
+                            <field name="remove"><string>false</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/administrators</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/web-contributors</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+
+                <value>
+                  <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Taxonomy">
+                    <field name="name"><string>Vestibulum</string></field>
+                    <field name="path"><string>/Vestibulum</string></field>
+                    <field name="permissions">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>any</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>false</string></field>
+                            <field name="setProperty"><string>false</string></field>
+                            <field name="remove"><string>false</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/administrators</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/web-contributors</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+
+                <value>
+                  <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Taxonomy">
+                    <field name="name"><string>Ultrices</string></field>
+                    <field name="path"><string>/Ultrices</string></field>
+                    <field name="permissions">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>any</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>false</string></field>
+                            <field name="setProperty"><string>false</string></field>
+                            <field name="remove"><string>false</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/administrators</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/web-contributors</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+
+                <value>
+                  <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Taxonomy">
+                    <field name="name"><string>Suspendisse</string></field>
+                    <field name="path"><string>/Suspendisse</string></field>
+                    <field name="permissions">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>any</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>false</string></field>
+                            <field name="setProperty"><string>false</string></field>
+                            <field name="remove"><string>false</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/administrators</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/web-contributors</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+
+                <value>
+                  <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Taxonomy">
+                    <field name="name"><string>Ut</string></field>
+                    <field name="path"><string>/Ut</string></field>
+                    <field name="permissions">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>any</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>false</string></field>
+                            <field name="setProperty"><string>false</string></field>
+                            <field name="remove"><string>false</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/administrators</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/web-contributors</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+
+                <value>
+                  <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Taxonomy">
+                    <field name="name"><string>Nam</string></field>
+                    <field name="path"><string>/Nam</string></field>
+                    <field name="permissions">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>any</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>false</string></field>
+                            <field name="setProperty"><string>false</string></field>
+                            <field name="remove"><string>false</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/administrators</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/web-contributors</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+
+                <value>
+                  <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Taxonomy">
+                    <field name="name"><string>Tincidunt</string></field>
+                    <field name="path"><string>/Tincidunt</string></field>
+                    <field name="permissions">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>any</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>false</string></field>
+                            <field name="setProperty"><string>false</string></field>
+                            <field name="remove"><string>false</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/administrators</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/web-contributors</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+
+                <value>
+                  <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Taxonomy">
+                    <field name="name"><string>Donec</string></field>
+                    <field name="path"><string>/Donec</string></field>
+                    <field name="permissions">
+                      <collection type="java.util.ArrayList">
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>any</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>false</string></field>
+                            <field name="setProperty"><string>false</string></field>
+                            <field name="remove"><string>false</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/administrators</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                        <value>
+                          <object type="org.exoplatform.services.cms.taxonomy.impl.TaxonomyConfig$Permission">
+                            <field name="identity"><string>*:/platform/web-contributors</string></field>
+                            <field name="read"><string>true</string></field>
+                            <field name="addNode"><string>true</string></field>
+                            <field name="setProperty"><string>true</string></field>
+                            <field name="remove"><string>true</string></field>
+                          </object>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
+
+                
+              </collection>
+            </field>
+          </object>
+        </object-param>
+      </init-params>
+    </component-plugin>
+
+    <component-plugin>
+      <name>template-Agital-link</name>
+      <set-method>addPlugin</set-method>
+      <type>org.exoplatform.services.wcm.link.CreatePortalLinkPlugin</type>
+      <description>This plugin deploy some initial webcontent as site artifact to site artifact folder of portal when a portal is created</description>
+      <init-params>
+        <object-param>
+          <name>link01</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
+            <field name="sourcePath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutAFewWords</string>
+            </field>
+            <field name="targetPath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Etiam</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>link02</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
+            <field name="sourcePath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/john-franklin</string>
+            </field>
+            <field name="targetPath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Aenean</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>link03</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
+            <field name="sourcePath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/julie-herzigova</string>
+            </field>
+            <field name="targetPath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Vestibulum</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>link04</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
+            <field name="sourcePath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/laura-stegner</string>
+            </field>
+            <field name="targetPath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Ultrices</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>link05</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
+            <field name="sourcePath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/marta-healy</string>
+            </field>
+            <field name="targetPath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Suspendisse</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>link06</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
+            <field name="sourcePath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/sam-kromstain</string>
+            </field>
+            <field name="targetPath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Ut</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>link07</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
+            <field name="sourcePath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog/adipisicing-elit-sed-do-eiusmod-tempor-incididunt-ut-labore</string>
+            </field>
+            <field name="targetPath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Nam</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>link08</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
+            <field name="sourcePath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog/consectetur-adipisicing-elit-sed-do-eiusmod-tempor</string>
+            </field>
+            <field name="targetPath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Tincidunt</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>link09</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
+            <field name="sourcePath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog/fusce-euismod-consequat-ante-orem-ipsum-dolor-sit-am</string>
+            </field>
+            <field name="targetPath">
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Donec</string>
+            </field>
+          </object>
+        </object-param>
+      </init-params>
+    </component-plugin>
+
+    
+    <component-plugin>
+      <name>template-Agital-publication</name>
+      <set-method>addPlugin</set-method>
+      <type>org.exoplatform.services.wcm.extensions.deployment.CreatePortalPublicationPlugin</type>
+      <description>Publication Deployment Plugin</description>
+      <init-params>
+        <object-param>
+          <name>pub01</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.wcm.extensions.deployment.PublicationDeploymentDescriptor">
+            <field name="contents">
+              <collection type="java.util.ArrayList">
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/aboutAFewWords</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/aboutTestimonials</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/aboutWhoWeAre</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/blogCategories</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/AgitalFooter</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/AgitalLogo</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/AgitalNavigation</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeArticles</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeBanner</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeHello</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeNews</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeProjects</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeResults</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeServices</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeSolutions</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeWelcome</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeWhyUs</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/mailAddress</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/mailContactUs</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/servicesServices</string></value>
+								
+                <value><string>collaboration:/sites/{portalName}/css/flexslider.css</string></value>
+                <value><string>collaboration:/sites/{portalName}/js/jquery-migrate-1.1.1.js</string></value>
+                <value><string>collaboration:/sites/{portalName}/js/jquery.flexslider.js</string></value>
+                <value><string>collaboration:/sites/{portalName}/js/ajquery.js</string></value>
+                <value><string>collaboration:/sites/{portalName}/js/jquery.mobilemenu.js</string></value>
+                <value><string>collaboration:/sites/{portalName}/js/superfish.js</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/list_arrow.png</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/arrowRight.png</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/goTopIcon.png</string></value>
+
+              </collection>
+            </field>
+          </object>
+        </object-param>
+      </init-params>
+    </component-plugin>
+
+  </external-component-plugins>
+
+</configuration>

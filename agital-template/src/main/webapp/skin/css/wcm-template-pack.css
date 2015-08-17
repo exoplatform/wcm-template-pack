@@ -1,0 +1,91 @@
+.uiItemSelector.uiFormInputItemSelector .itemDetailList .agitalImage {
+background: url("../image/agital.png") no-repeat top;
+margin: 3px auto;
+width: 296px;
+height: 235px;
+background-size: 100%;
+}
+
+.UIEditInlineWS .uiContainerList .OneRowResponsiveContainerLayout {
+  background-position: 5px top;
+  height: 41px;
+}
+
+.UIEditInlineWS .uiContainerList .TwoColumnResponsiveContainerLayout {
+  background-position: 5px -154px;
+  height: 31px;
+}
+
+.UIEditInlineWS .uiContainerList .ThreeColumnResponsiveContainerLayout {
+  background-position: 5px -185px;
+  height: 31px;
+}
+
+
+
+.UIEditInlineWS .uiContainerList .FourColumnResponsiveContainerLayout, 
+.UIEditInlineWS .uiContainerList .SmallBigColumnResponsiveContainerLayout, 
+.UIEditInlineWS .uiContainerList .BigSmallColumnResponsiveContainerLayout {
+  background: url("../image/Container.png") no-repeat top;
+  height: 31px;
+}
+
+.UIEditInlineWS .uiContainerList .FourColumnResponsiveContainerLayout {
+  background-position: 5px -442px;
+}
+
+.UIEditInlineWS .uiContainerList .SmallBigColumnResponsiveContainerLayout {
+  background-position: 5px -474px;
+
+}
+
+.UIEditInlineWS .uiContainerList .BigSmallColumnResponsiveContainerLayout {
+  background-position: 5px -506px;
+}
+
+.agital-contact-form textarea,
+.agital-contact-form input[type="text"],
+.agital-contact-form input[type="password"],
+.agital-contact-form input[type="datetime"],
+.agital-contact-form input[type="datetime-local"],
+.agital-contact-form input[type="date"],
+.agital-contact-form input[type="month"],
+.agital-contact-form input[type="time"],
+.agital-contact-form input[type="week"],
+.agital-contact-form input[type="number"],
+.agital-contact-form input[type="email"],
+.agital-contact-form input[type="url"],
+.agital-contact-form input[type="search"],
+.agital-contact-form input[type="tel"],
+.agital-contact-form input[type="color"],
+.agital-contact-form .uneditable-input {
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 0;
+	padding: 8px 15px 10px;
+}
+
+.agital-contact-form input[type="text"],
+.agital-contact-form input[type="password"],
+.agital-contact-form input[type="datetime"],
+.agital-contact-form input[type="datetime-local"],
+.agital-contact-form input[type="date"],
+.agital-contact-form input[type="month"],
+.agital-contact-form input[type="time"],
+.agital-contact-form input[type="week"],
+.agital-contact-form input[type="number"],
+.agital-contact-form input[type="email"],
+.agital-contact-form input[type="url"],
+.agital-contact-form input[type="search"],
+.agital-contact-form input[type="tel"],
+.agital-contact-form input[type="color"],
+.agital-contact-form .uneditable-input {
+	height: 42px;
+}
+
+.agital-contact-form .control-group {
+	margin-bottom: 30px;
+}

@@ -31,10 +31,10 @@
     <dependencySet>
       <outputDirectory>/</outputDirectory>
       <includes>
-        <include>org.exoplatform.addons.wcm-template:dynamico-template:war</include>
+        <include>org.exoplatform.addons.wcm-template:agital-template:war</include>
       </includes>
       <scope>provided</scope>
-      <outputFileNameMapping>dynamico-template.war</outputFileNameMapping>
+      <outputFileNameMapping>agital-template.war</outputFileNameMapping>
       <useProjectArtifact>false</useProjectArtifact>
     </dependencySet>  
     <dependencySet>

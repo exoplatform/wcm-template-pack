@@ -23,7 +23,7 @@
               <collection type="java.util.ArrayList">
                 <!-- the context name that is configured in web.xml -->
                 <value>
-                  <string>dynamico-template</string>
+                  <string>agital-template</string>
                 </value>
               </collection>
             </field>
