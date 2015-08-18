@@ -48,11 +48,15 @@
   currentNode = org.exoplatform.wcm.webui.Utils.getRealNode(currentNode);
   def currentNodePath = org.exoplatform.wcm.webui.Utils.getRealNodePath(currentNode);
   def contentNode = currentNode.getNode("jcr:content") ;
-  def title = contentNode.hasProperty("dc:title") ?
-              contentNode.getProperty("dc:title").getValues()[0].getString() : "";
+  def title = "";
+  if(contentNode.hasProperty("dc:title"))
+    if(contentNode.getProperty("dc:title").getValues().length > 0)
+      title = contentNode.getProperty("dc:title").getValues()[0].getString();
   
-  def subTitle = contentNode.hasProperty("dc:description") ? 
-                 contentNode.getProperty("dc:description").getValues()[0].getString() : "";
+  def subTitle = "";
+  if(contentNode.hasProperty("dc:description"))
+    if(contentNode.getProperty("dc:description").getValues().length > 0)
+      subTitle = contentNode.getProperty("dc:description").getValues()[0].getString();
   def mimeType = contentNode.getProperty("jcr:mimeType").getString() ;
   List<String> unsupportMimeTypeText = new ArrayList<String>();
   unsupportMimeTypeText.add("text/rtf");
