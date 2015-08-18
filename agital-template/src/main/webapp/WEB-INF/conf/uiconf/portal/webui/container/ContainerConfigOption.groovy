@@ -48,6 +48,7 @@ import org.exoplatform.webui.core.model.SelectItemOption ;
         "PluginContainerLayout"));
   templates.add(row);
   
+  
   SelectItemCategory column = new SelectItemCategory("column") ;
     column.addSelectItemOption(new SelectItemOption("oneColumns","" +
         "<container template=\"system:/groovy/portal/webui/container/UITableColumnContainer.gtmpl\">" +
@@ -70,21 +71,28 @@ import org.exoplatform.webui.core.model.SelectItemOption ;
         "  <container template=\"system:/groovy/portal/webui/container/UIColumnContainer.gtmpl\"><factory-id>ColumnContainer</factory-id></container>" +
         "</container>",
         "ThreeColumnContainerLayout"));
+            column.addSelectItemOption(new SelectItemOption("pluginColumnContainer",
+       "<container template=\"system:/groovy/portal/webui/container/UIAddOnColumnContainer.gtmpl\">" +
+       "<name>Dynamic Column Container</name><factory-id>addonContainer</factory-id>" +
+       "</container>",
+       "PluginColumnContainerLayout"));
+  templates.add(column); 
     //responsive container
-    column.addSelectItemOption(new SelectItemOption("oneColumnsResponsive","" +
+    SelectItemCategory responsive = new SelectItemCategory("Responsive Layout") ;
+    responsive.addSelectItemOption(new SelectItemOption("oneColumnsResponsive","" +
         "<container template=\"system:/groovy/portal/webui/container/UIResponsiveTableColumnContainer.gtmpl\">" +
         "  <factory-id>TableColumnContainer</factory-id>" +
         "  <container template=\"system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl\"><factory-id>ColumnContainer</factory-id></container>" +
         "</container>", 
         "OneRowResponsiveContainerLayout"));
-    column.addSelectItemOption(new SelectItemOption("twoColumnsResponsive",
+    responsive.addSelectItemOption(new SelectItemOption("twoColumnsResponsive",
         "<container template=\"system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl\">" +
         "  <factory-id>TableColumnContainer</factory-id>" +
         "  <container template=\"system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl\"><factory-id>ColumnContainer</factory-id></container>" +
         "  <container template=\"system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl\"><factory-id>ColumnContainer</factory-id></container>" +
         "</container>",
         "TwoColumnResponsiveContainerLayout"));
-    column.addSelectItemOption(new SelectItemOption("threeColumnsResponsive",
+    responsive.addSelectItemOption(new SelectItemOption("threeColumnsResponsive",
         "<container template=\"system:/groovy/portal/webui/container/UIResponsiveTableThreeColumnContainer.gtmpl\">" +
         "  <factory-id>TableColumnContainer</factory-id>" +
         "  <container template=\"system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl\"><factory-id>ColumnContainer</factory-id></container>" +
@@ -93,7 +101,7 @@ import org.exoplatform.webui.core.model.SelectItemOption ;
         "</container>",
         "ThreeColumnResponsiveContainerLayout"));
 
-    column.addSelectItemOption(new SelectItemOption("fourColumnsResponsive",
+    responsive.addSelectItemOption(new SelectItemOption("fourColumnsResponsive",
         "<container template=\"system:/groovy/portal/webui/container/UIResponsiveTableFourColumnContainer.gtmpl\">" +
         "  <factory-id>TableColumnContainer</factory-id>" +
         "  <container template=\"system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl\"><factory-id>ColumnContainer</factory-id></container>" +
@@ -103,7 +111,7 @@ import org.exoplatform.webui.core.model.SelectItemOption ;
         "</container>",
         "FourColumnResponsiveContainerLayout"));
     
-    column.addSelectItemOption(new SelectItemOption("bigSmallResponsive",
+    responsive.addSelectItemOption(new SelectItemOption("bigSmallResponsive",
         "<container template=\"system:/groovy/portal/webui/container/UIResponsiveTableBigSmallColumnContainer.gtmpl\">" +
         "  <factory-id>TableColumnContainer</factory-id>" +
         "  <container template=\"system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl\"><factory-id>ColumnContainer</factory-id></container>" +
@@ -111,20 +119,15 @@ import org.exoplatform.webui.core.model.SelectItemOption ;
         "</container>",
         "BigSmallColumnResponsiveContainerLayout"));
     
-    column.addSelectItemOption(new SelectItemOption("smallBigResponsive",
+    responsive.addSelectItemOption(new SelectItemOption("smallBigResponsive",
         "<container template=\"system:/groovy/portal/webui/container/UIResponsiveTableSmallBigColumnContainer.gtmpl\">" +
         "  <factory-id>TableColumnContainer</factory-id>" +
         "  <container template=\"system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl\"><factory-id>ColumnContainer</factory-id></container>" +
         "  <container template=\"system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl\"><factory-id>ColumnContainer</factory-id></container>" +        
         "</container>",
         "SmallBigColumnResponsiveContainerLayout"));    
-
-    column.addSelectItemOption(new SelectItemOption("pluginColumnContainer",
-       "<container template=\"system:/groovy/portal/webui/container/UIAddOnColumnContainer.gtmpl\">" +
-       "<name>Dynamic Column Container</name><factory-id>addonContainer</factory-id>" +
-       "</container>",
-       "PluginColumnContainerLayout"));
-  templates.add(column);  
+	templates.add(responsive); 
+ 
 
   SelectItemCategory autofitColumn = new SelectItemCategory("autofitColumn") ;
     autofitColumn.addSelectItemOption(new SelectItemOption("autofitOneColumns","" +
