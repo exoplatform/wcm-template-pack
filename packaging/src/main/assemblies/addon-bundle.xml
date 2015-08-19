@@ -46,7 +46,15 @@
       <outputFileNameMapping>globex-template.war</outputFileNameMapping>
       <useProjectArtifact>false</useProjectArtifact>
     </dependencySet>
-
+    <dependencySet>
+	      <outputDirectory>/</outputDirectory>
+		  <includes>
+		      <include>org.exoplatform.addons.wcm-template:responsive-template:war</include>
+		  </includes>
+		  <scope>provided</scope>
+		  <outputFileNameMapping>responsive-template.war</outputFileNameMapping>
+		  <useProjectArtifact>false</useProjectArtifact>
+	</dependencySet>
 	<dependencySet>
       <outputDirectory>/</outputDirectory>
       <includes>
