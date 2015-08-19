@@ -98,7 +98,7 @@
 
 <script type="text/javascript">
   document.getElementById("your_nameFieldName").setAttribute("placeholder", "$name");
-  document.getElementById("your_email_addressFieldName").setAttribute("placeholder", "email");
+  document.getElementById("your_email_addressFieldName").setAttribute("placeholder", "Email");
   document.getElementById("your_phone_numberFieldName").setAttribute("placeholder", "$phone");
   document.getElementById("your_messageFieldName").setAttribute("placeholder", "$message");
   function clearForm(){
