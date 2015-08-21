@@ -407,6 +407,28 @@
             </field>
           </object>
         </object-param>
+                <object-param>
+          <name>Grid Style sheet</name>
+          <description>Deployment Descriptor</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/css</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/grid.css.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
         <object-param>
           <name>globex js</name>
           <description>Deployment Descriptor</description>
@@ -423,6 +445,380 @@
             </field>
             <field name="sourcePath">
               <string>war:/conf/globex/content/artifacts/site-resources/globex/globex.js.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>avatar-1.jpg</name>
+          <description>avatar-1.jpg</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/avatar-1.jpg.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>avatar-2.jpg</name>
+          <description>avatar-2.jpg</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/avatar-2.jpg.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>avatar-3.jpg</name>
+          <description>avatar-3.jpg</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/avatar-3.jpg.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>avatar-4.jpg</name>
+          <description>avatar-4.jpg</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/avatar-4.jpg.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>banner-pic1.jpg</name>
+          <description>banner-pic1.jpg</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/banner-pic1.jpg.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>checkedOrangeIcon.png</name>
+          <description>checkedOrangeIcon.png</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/checkedOrangeIcon.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>iconCloud.png</name>
+          <description>iconCloud.png</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/iconCloud.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>iconMail.png</name>
+          <description>iconMail.png</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/iconMail.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>iconPhone.png</name>
+          <description>iconPhone.png</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/iconPhone.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>iconWifi.png</name>
+          <description>iconWifi.png</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/iconWifi.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>private-info-icon.jpg</name>
+          <description>private-info-icon.jpg</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/private-info-icon.jpg.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>services-pic1.jpg</name>
+          <description>services-pic1.jpg</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/services-pic1.jpg.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>services-pic2.jpg</name>
+          <description>services-pic2.jpg</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/services-pic2.jpg.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>services-pic3.jpg</name>
+          <description>services-pic3.jpg</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/services-pic3.jpg.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>social-icon.png</name>
+          <description>social-icon.png</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/social-icon.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>star-icon.png</name>
+          <description>star-icon.png</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/medias/images</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/star-icon.png.xml</string>
+            </field>
+            <field name="cleanupPublication">
+              <boolean>true</boolean>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>Font folder</name>
+          <description>Font folder</description>
+          <object type="org.exoplatform.services.deployment.DeploymentDescriptor">
+            <field name="target">
+              <object type="org.exoplatform.services.deployment.DeploymentDescriptor$Target">
+                <field name="workspace">
+                  <string>collaboration</string>
+                </field>
+                <field name="nodePath">
+                  <string>/sites/{portalName}/</string>
+                </field>
+              </object>
+            </field>
+            <field name="sourcePath">
+              <string>war:/conf/globex/content/artifacts/site-resources/globex/font.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -933,6 +1329,7 @@
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/contact-requests</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/features</string></value>
                 <value><string>collaboration:/sites/{portalName}/css/globexcss</string></value>
+                <value><string>collaboration:/sites/{portalName}/css/grid.css</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/footer</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/introductions</string></value>
                 <value><string>collaboration:/sites/{portalName}/js/globexjs</string></value>
@@ -947,6 +1344,23 @@
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/whattheysay/whattheysay2</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/whattheysay/whattheysay3</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/whattheysay/whattheysay4</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/avatar-1.jpg</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/avatar-2.jpg</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/avatar-3.jpg</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/avatar-4.jpg</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/banner-pic1.jpg</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/checkedOrangeIcon.png</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/iconCloud.png</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/iconMail.png</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/iconPhone.png</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/iconWifi.png</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/private-info-icon.jpg</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/services-pic1.jpg</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/services-pic2.jpg</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/services-pic3.jpg</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/social-icon.png</string></value>
+                <value><string>collaboration:/sites/{portalName}/medias/images/star-icon.png</string></value>
+                <value><string>collaboration:/sites/{portalName}/font</string></value>
               </collection>
             </field>
           </object>

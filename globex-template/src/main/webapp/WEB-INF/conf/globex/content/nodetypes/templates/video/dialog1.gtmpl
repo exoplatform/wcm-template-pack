@@ -31,11 +31,7 @@
 <div class="UITabPane uiTabNormal uiTabInPage">
 <%uiform.begin()%>
 
-<%
-  /* start render action*/
-  if (uiform.isShowActionsOnTop()) uiform.processRenderAction();
-  /* end render action*/
-%> 
+
  <div class="HorizontalLayout">
 
    <table class="UIFormGrid">

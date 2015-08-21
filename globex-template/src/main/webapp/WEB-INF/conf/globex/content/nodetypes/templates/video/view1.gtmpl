@@ -1,1 +1,26 @@
-This is Embedded Video
+<%
+  import javax.jcr.Node;
+  def currentNode = uicomponent.getNode();
+  def url = currentNode.hasProperty("exo:url") ? currentNode.getProperty("exo:url").getString() : "";
+  def title = currentNode.hasProperty("exo:title") ?currentNode.getProperty("exo:title").getString(): "";
+  def subtitle = currentNode.hasProperty("exo:subtitle") ?currentNode.getProperty("exo:subtitle").getString(): "";
+  def summary = currentNode.hasProperty("exo:summary") ?currentNode.getProperty("exo:summary").getString(): "";
+  def width = currentNode.hasProperty("exo:width") ?currentNode.getProperty("exo:width").getString(): "570";
+  def height = currentNode.hasProperty("exo:height") ?currentNode.getProperty("exo:height").getString(): "320";
+%>
+<section class="well-5 bg2">
+  <div class="container">
+    <div class="row">
+      <div class="grid_6">
+        <iframe class="video" src="<%=url%>" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0" height="<%=height%>" width="<%=width%>"></iframe>
+      </div>
+      <div class="grid_6">
+        <div class="cnt2">
+          <h3>Description</h3>
+          <h4>with video</h4>
+          <p><%=summary%></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

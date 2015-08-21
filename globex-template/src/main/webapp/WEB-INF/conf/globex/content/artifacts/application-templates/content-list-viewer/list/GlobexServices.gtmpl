@@ -28,28 +28,21 @@
 	 	def publishedMsg = _ctx.appRes("PublicationStates.published");
 	 	%>
 
-	 	<div id="$uicomponent.id" class="threeColumnsCLVTemplate">
-	 	<div class="clv uiBox dynamicoAboutOurTeamWorkBox">
+	 	<div id="$uicomponent.id">
+<section class="well-3">
+				<div class="container">
+					<div class="block-title center">
+						<h3>Services Overview</h3>
+						<h4>Find out our different services</h4>
+					</div>
+					<div class="row">
 	 	<%
 	 	def header = uicomponent.getHeader();
 	 	def rssLink = uicomponent.getRssLink();
 	 	def isShowRssLink = uicomponent.isShowRssLink();
 	 	def isShowHeader = uicomponent.isShowField(UICLVPortlet.PREFERENCE_SHOW_HEADER) && header != null && header.trim().length() != 0;
 	 	%>
-	 	<h5 class="title">
-	 	<%
-	 	if (isShowHeader || isShowRssLink) {
-	 		%>
-	 		<%if (isShowRssLink) {
-	 			%><a class="rssIcon pull-right" onclick="javascript:window.open('$rssLink');" style="cursor:pointer" rel="tooltip" data-placement="bottom" title="<%= _ctx.appRes("UICLVPresentation.label.rssFeed") %>"><i class="uiIconRss uiIconLightGray"></i></a><%
-	 		}
-	 		if(isShowHeader) {%><span>$header</span><%}%>
 
-	 			<%
-	 	}
-	 	%>
-
-	 	</h5>
 	 	<%
 
 	 	if (uicomponent.getUIPageIterator().getAvailable() == 0) {
@@ -60,12 +53,13 @@
 	 		<%
 	 	} else {
 	 		%>
-	 		<div class="uiContentBox">
-	 		 <div class="smallContentList clearfix">
+	 		<div >
+	 		 <div >
 	 		<%
 	 		def currentPageData = uicomponent.getCurrentPageData();
-	 		for (def i = 0; i < currentPageData.size(); i++) {
-
+	 		for (def i = 0; i < currentPageData.size(); i++) {%>
+<div class="grid_4">
+							<div class="box"><%
 	 			def viewNode = currentPageData.get(i);
 	 			if(!Utils.isViewable(viewNode)) continue;
 	 			def isShowTitle = uicomponent.isShowField(UICLVPortlet.PREFERENCE_SHOW_TITLE);
@@ -96,13 +90,13 @@
 	 			%>
 
 	 			<%=uicomponent.addQuickEditDiv("Column3", viewNode)%>
-	 			<div class="media-content">
+	 			
 	 			<%
 	 			if(isShowImage) {
-	 				%><a class="image" rel="tooltip" data-placement="bottom" title="$itemName"><img alt="$itemName" rel="tooltip" data-placement="bottom" title="$itemName" src="$imgSrc" class="media-object" /></a><%
+	 				%><div class="box_aside"><img alt="$itemName" rel="tooltip" title="$itemName" src="$imgSrc" /></div><%
 	 			}
 	 			%>
-	 			<div class="media-body">
+	 			
 	 			<%
 	 			if (uicomponent.isViewMode()){
 	 				if (isShowTitle) {
@@ -132,14 +126,14 @@
 	 			}
 
 	 			if (isShowDate) {
-	 				%><div class="dateAndMail">$itemDateCreated by $itemOwner</div><%
+	 				
 	 			}
 	 			if (isShowSummary) {
-	 				%><div class="summary"> <%
+	 				
 	 				if (itemSummaryField!=null) {
 	 					print uicomponent.getInlineEditingField(viewNode, itemSummaryField, itemSummary, "TEXTAREA", "Text_"+String.valueOf(i), "CLV2ColSummary", true, "height=80px","fast_publish=" + uicomponent.getFastPublicLink(viewNode));
 	 				}
-	 				%> </div><%
+	 				
 	 			}
 	 			%>
 	 			<%
@@ -181,9 +175,13 @@
 	 			<%
 	 		}
 	 		%>
-
-	 		</div> <%
+	 		</div> 
+</div> 
+	 		</div> 
+			
+			<%
 	 	}
 	 	%>
 	 	</div>
-	 	</div>
+</section>
+</div>

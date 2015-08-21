@@ -29,27 +29,17 @@
 	 	%>
 
 	 	<div id="$uicomponent.id" class="threeColumnsCLVTemplate">
-	 	<div class="clv uiBox dynamicoAboutOurTeamWorkBox">
+	 	<section class="well-4 bg">
+				<div class="container">
+					<h3 class="center">Features</h3>
+					<div class="row">
 	 	<%
 	 	def header = uicomponent.getHeader();
 	 	def rssLink = uicomponent.getRssLink();
 	 	def isShowRssLink = uicomponent.isShowRssLink();
 	 	def isShowHeader = uicomponent.isShowField(UICLVPortlet.PREFERENCE_SHOW_HEADER) && header != null && header.trim().length() != 0;
 	 	%>
-	 	<h5 class="title">
-	 	<%
-	 	if (isShowHeader || isShowRssLink) {
-	 		%>
-	 		<%if (isShowRssLink) {
-	 			%><a class="rssIcon pull-right" onclick="javascript:window.open('$rssLink');" style="cursor:pointer" rel="tooltip" data-placement="bottom" title="<%= _ctx.appRes("UICLVPresentation.label.rssFeed") %>"><i class="uiIconRss uiIconLightGray"></i></a><%
-	 		}
-	 		if(isShowHeader) {%><span>$header</span><%}%>
 
-	 			<%
-	 	}
-	 	%>
-
-	 	</h5>
 	 	<%
 
 	 	if (uicomponent.getUIPageIterator().getAvailable() == 0) {
@@ -60,8 +50,8 @@
 	 		<%
 	 	} else {
 	 		%>
-	 		<div class="uiContentBox">
-	 		 <div class="smallContentList clearfix">
+	 		<div >
+	 		 <div >
 	 		<%
 	 		def currentPageData = uicomponent.getCurrentPageData();
 	 		for (def i = 0; i < currentPageData.size(); i++) {
@@ -96,13 +86,13 @@
 	 			%>
 
 	 			<%=uicomponent.addQuickEditDiv("Column3", viewNode)%>
-	 			<div class="media-content">
+	 			<div >
 	 			<%
 	 			if(isShowImage) {
 	 				%><a class="image" rel="tooltip" data-placement="bottom" title="$itemName"><img alt="$itemName" rel="tooltip" data-placement="bottom" title="$itemName" src="$imgSrc" class="media-object" /></a><%
 	 			}
 	 			%>
-	 			<div class="media-body">
+	 			<div >
 	 			<%
 	 			if (uicomponent.isViewMode()){
 	 				if (isShowTitle) {
@@ -132,7 +122,7 @@
 	 			}
 
 	 			if (isShowDate) {
-	 				%><div class="dateAndMail">$itemDateCreated by $itemOwner</div><%
+	 				
 	 			}
 	 			if (isShowSummary) {
 	 				%><div class="summary"> <%
@@ -187,3 +177,4 @@
 	 	%>
 	 	</div>
 	 	</div>
+	 	</section>
