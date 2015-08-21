@@ -103,7 +103,7 @@
    </table>
  </div>
 <% /* start render action*/
-  if (!uiform.isShowActionsOnTop()) uiform.processRenderAction();
+   uiform.processRenderAction();
   /* end render action*/
 
 %>

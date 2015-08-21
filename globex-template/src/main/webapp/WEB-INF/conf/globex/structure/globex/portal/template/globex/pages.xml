@@ -479,7 +479,10 @@
       </portlet-application>
     </container>
   <container id="Pricing"
-    template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
+    template="system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl">
+    <access-permissions>Everyone</access-permissions>
+  <container id="PricingColumns"
+    template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
     <access-permissions>Everyone</access-permissions>
     <container id="PricingLeft"
       template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
@@ -554,7 +557,7 @@
       </portlet-application>
     </container>
     <container id="PricingRight"
-      template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
+      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <container id="PricingRight1"
         template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
@@ -702,6 +705,7 @@
       </container>
     </container>
       
+    </container>
     </container>
     <container id="WhatTheySay"
       template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
@@ -877,8 +881,11 @@
         <show-application-mode>false</show-application-mode>
       </portlet-application>
     </container>
-  <container id="Subscribes"
-    template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
+      <container id="Subscribes"
+    template="system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl">
+    <access-permissions>Everyone</access-permissions>
+  <container id="SubscribesColumn"
+    template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
     <access-permissions>Everyone</access-permissions>
     <container id="SubscribesLeft"
       template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
@@ -1004,8 +1011,12 @@
       </portlet-application>
     </container>
   </container>
-  <container id="Contact"
-    template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
+  </container>
+        <container id="Contact"
+    template="system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl">
+    <access-permissions>Everyone</access-permissions>
+  <container id="ContactColumn"
+    template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
     <access-permissions>Everyone</access-permissions>
           <container id="CongtactLeft"
         template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
@@ -1128,6 +1139,7 @@
       <show-application-mode>false</show-application-mode>
     </portlet-application>
       </container>
+  </container>
   </container>
         <container id="Footer"
       template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">

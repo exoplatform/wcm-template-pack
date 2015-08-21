@@ -1,5 +1,5 @@
-.uiItemSelector.uiFormInputItemSelector .itemDetailList .dynamicoImage {
-background: url("../image/dynamico.png") no-repeat top;
+.uiItemSelector.uiFormInputItemSelector .itemDetailList .globexImage {
+background: url("../image/globex.png") no-repeat top;
 margin: 3px auto;
 width: 296px;
 height: 235px;
@@ -43,22 +43,22 @@ background-size: 100%;
   background-position: 5px -506px;
 }
 
-.dynamico-contact-form textarea,
-.dynamico-contact-form input[type="text"],
-.dynamico-contact-form input[type="password"],
-.dynamico-contact-form input[type="datetime"],
-.dynamico-contact-form input[type="datetime-local"],
-.dynamico-contact-form input[type="date"],
-.dynamico-contact-form input[type="month"],
-.dynamico-contact-form input[type="time"],
-.dynamico-contact-form input[type="week"],
-.dynamico-contact-form input[type="number"],
-.dynamico-contact-form input[type="email"],
-.dynamico-contact-form input[type="url"],
-.dynamico-contact-form input[type="search"],
-.dynamico-contact-form input[type="tel"],
-.dynamico-contact-form input[type="color"],
-.dynamico-contact-form .uneditable-input {
+.globex-contact-form textarea,
+.globex-contact-form input[type="text"],
+.globex-contact-form input[type="password"],
+.globex-contact-form input[type="datetime"],
+.globex-contact-form input[type="datetime-local"],
+.globex-contact-form input[type="date"],
+.globex-contact-form input[type="month"],
+.globex-contact-form input[type="time"],
+.globex-contact-form input[type="week"],
+.globex-contact-form input[type="number"],
+.globex-contact-form input[type="email"],
+.globex-contact-form input[type="url"],
+.globex-contact-form input[type="search"],
+.globex-contact-form input[type="tel"],
+.globex-contact-form input[type="color"],
+.globex-contact-form .uneditable-input {
 	width: 100%;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -68,24 +68,24 @@ background-size: 100%;
 	padding: 8px 15px 10px;
 }
 
-.dynamico-contact-form input[type="text"],
-.dynamico-contact-form input[type="password"],
-.dynamico-contact-form input[type="datetime"],
-.dynamico-contact-form input[type="datetime-local"],
-.dynamico-contact-form input[type="date"],
-.dynamico-contact-form input[type="month"],
-.dynamico-contact-form input[type="time"],
-.dynamico-contact-form input[type="week"],
-.dynamico-contact-form input[type="number"],
-.dynamico-contact-form input[type="email"],
-.dynamico-contact-form input[type="url"],
-.dynamico-contact-form input[type="search"],
-.dynamico-contact-form input[type="tel"],
-.dynamico-contact-form input[type="color"],
-.dynamico-contact-form .uneditable-input {
+.globex-contact-form input[type="text"],
+.globex-contact-form input[type="password"],
+.globex-contact-form input[type="datetime"],
+.globex-contact-form input[type="datetime-local"],
+.globex-contact-form input[type="date"],
+.globex-contact-form input[type="month"],
+.globex-contact-form input[type="time"],
+.globex-contact-form input[type="week"],
+.globex-contact-form input[type="number"],
+.globex-contact-form input[type="email"],
+.globex-contact-form input[type="url"],
+.globex-contact-form input[type="search"],
+.globex-contact-form input[type="tel"],
+.globex-contact-form input[type="color"],
+.globex-contact-form .uneditable-input {
 	height: 42px;
 }
 
-.dynamico-contact-form .control-group {
+.globex-contact-form .control-group {
 	margin-bottom: 30px;
 }

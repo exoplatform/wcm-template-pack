@@ -11,10 +11,8 @@
  def email = "ENTER YOUR E-MAIL";
 
 %>
-<div class="uiForm FormLayout FormScrollLayout box-module">
- <h3 class="module-heading">
-   Subscribe
- </h3>
+<div class="grid_6">
+
 
 <% uiform.begin() %>
   <%/* start render action*/%>
@@ -23,7 +21,7 @@
           }
   %>
   <%/* end render action*/%>
-    <div class="form-inline dynamico-contact-form box-module">
+    <div class="form-inline box-module">
       <div class="control-group" style="display:none;">
         <label class="control-label"><%=_ctx.appRes("FormGenerator.dialog.label.Date")%></label>
         <div class="controls">
