@@ -15,11 +15,11 @@
 
 %>
 <div class="grid_6">
-<div class="contact-form">
+<div id="contact-form" class="contact-form">
 
 <% uiform.begin() %>
 
-    <div >
+    <div class="form-inline box-module">
       <div class="control-group" style="display:none;">
         <label class="control-label"><%=_ctx.appRes("FormGenerator.dialog.label.Date")%></label>
         <div class="controls">
@@ -42,8 +42,8 @@
     </label>
     <label class="email">
     <%
-    String[] your_email_addressFieldName = ["jcrPath=/node/exo:email", "defaultValues=", "validate=empty,email", ""];
-    uicomponent.addTextField("your_email_addressFieldName", your_email_addressFieldName);
+    String[] your_email_addressFieldNameContact = ["jcrPath=/node/exo:email", "defaultValues=", "validate=empty,email", ""];
+    uicomponent.addTextField("your_email_addressFieldNameContact", your_email_addressFieldNameContact);
    %>
     <span class="empty-message">*This field is required.</span>
     <span class="error-message">*This is not a valid email.</span>
@@ -66,7 +66,7 @@ uicomponent.addTextAreaField("your_messageFieldName", your_messageFieldName);
 </label>
 
   <% if (!uiform.isShowActionsOnTop()) { %>
-  <div class="center">
+  <div >
     <%
      for(action in uicomponent.getActions()) {
       String actionLabel = "SEND";
@@ -78,9 +78,10 @@ uicomponent.addTextAreaField("your_messageFieldName", your_messageFieldName);
 <% uiform.end() %>
 </div>
 </div>
+</div>
 <script type="text/javascript">
   document.getElementById("your_nameFieldName").setAttribute("placeholder", "$name");
-  document.getElementById("your_email_addressFieldName").setAttribute("placeholder", "email");
+  document.getElementById("your_email_addressFieldNameContact").setAttribute("placeholder", "$email");
   document.getElementById("your_phone_numberFieldName").setAttribute("placeholder", "$phone");
   document.getElementById("your_messageFieldName").setAttribute("placeholder", "$message");
 </script>

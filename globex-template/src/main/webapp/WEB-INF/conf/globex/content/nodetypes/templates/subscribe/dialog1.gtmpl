@@ -13,7 +13,7 @@
 %>
 <div class="grid_6">
 
-
+<div id="subscribe-form" class="subscribe-form">
 <% uiform.begin() %>
   <%/* start render action*/%>
   <% if (uiform.isShowActionsOnTop()) {
@@ -21,7 +21,7 @@
           }
   %>
   <%/* end render action*/%>
-    <div class="form-inline box-module">
+    <div class="form-inline box-module"">
       <div class="control-group" style="display:none;">
         <label class="control-label"><%=_ctx.appRes("FormGenerator.dialog.label.Date")%></label>
         <div class="controls">
@@ -45,18 +45,19 @@
 
 
   <% if (!uiform.isShowActionsOnTop()) { %>
-  <div class="center">
+
     <%
      for(action in uicomponent.getActions()) {
       String actionLabel = "Subscribe";
       String link = uicomponent.event(action);                  %>
             <button type="button" href="javascript:void(0);" onclick="$link" class="btn">$actionLabel</button>
      <% }  %>
-  </div>
+
   <% } %>
 <% uiform.end() %>
 </div>
+</div>
 
 <script type="text/javascript">
-  document.getElementById("your_email_addressFieldName").setAttribute("placeholder", "email");
+  document.getElementById("your_email_addressFieldName").setAttribute("placeholder", "$email");
 </script>
