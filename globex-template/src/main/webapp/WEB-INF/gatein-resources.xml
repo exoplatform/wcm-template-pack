@@ -8,7 +8,7 @@
 
   <portal-skin>
     <skin-name>Default</skin-name>
-    <skin-module>wcmTemplateResources</skin-module>
+    <skin-module>globexTemplateResources</skin-module>
     <css-path>/skin/css/globex-template-pack.css</css-path>
   </portal-skin>
 

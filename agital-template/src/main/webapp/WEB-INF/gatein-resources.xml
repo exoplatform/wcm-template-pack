@@ -14,8 +14,8 @@
 
   <portal-skin>
     <skin-name>Default</skin-name>
-    <skin-module>wcmTemplateResources</skin-module>
-    <css-path>/skin/css/wcm-template-pack.css</css-path>
+    <skin-module>agitalTemplateResources</skin-module>
+    <css-path>/skin/css/agital-template-pack.css</css-path>
   </portal-skin>
 
 </gatein-resources>
