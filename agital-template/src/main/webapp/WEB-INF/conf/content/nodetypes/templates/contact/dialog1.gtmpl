@@ -45,7 +45,7 @@
           <div class="control-group">
              <div class="controls">
                <%
-                String[] your_nameFieldName = ["jcrPath=/node/exo:userName", "defaultValues=", ""];
+                String[] your_nameFieldName = ["jcrPath=/node/exo:userName", "defaultValues=", "validate=empty,name",""];
                 uicomponent.addTextField("your_nameFieldName", your_nameFieldName);
                %>
              </div>
@@ -55,7 +55,7 @@
           <div class="control-group">
              <div class="controls">
                <%
-                String[] your_email_addressFieldName = ["jcrPath=/node/exo:userEmail", "defaultValues=", ""];
+                String[] your_email_addressFieldName = ["jcrPath=/node/exo:userEmail", "defaultValues=", "validate=empty,email",""];
                 uicomponent.addTextField("your_email_addressFieldName", your_email_addressFieldName);
                %>
              </div>
@@ -65,7 +65,7 @@
           <div class="control-group">
              <div class="controls">
                <%
-                String[] your_phone_numberFieldName = ["jcrPath=/node/exo:userPhone", "defaultValues=", ""];
+                String[] your_phone_numberFieldName = ["jcrPath=/node/exo:userPhone", "defaultValues=", "validate=empty,number",""];
                 uicomponent.addTextField("your_phone_numberFieldName", your_phone_numberFieldName);
                %>
              </div>
@@ -75,7 +75,7 @@
       <div class="control-group">
         <div class="controls">
           <%
-             String[] your_messageFieldName = ["jcrPath=/node/exo:userMessage", "defaultValues=", ""];
+             String[] your_messageFieldName = ["jcrPath=/node/exo:userMessage", "defaultValues=", "validate=empty",""];
              uicomponent.addTextAreaField("your_messageFieldName", your_messageFieldName);
           %>
         </div>
