@@ -9,7 +9,7 @@
  }
  String timestampName = Text.convertJcrChars(getTimestampName());
  def email = "ENTER YOUR E-MAIL";
-
+ uiform.setId("FCC_Subscribe");
 %>
 <div class="grid_6">
 
@@ -21,7 +21,7 @@
           }
   %>
   <%/* end render action*/%>
-    <div class="form-inline box-module"">
+    <div class="form-inline box-module">
       <div class="control-group" style="display:none;">
         <label class="control-label"><%=_ctx.appRes("FormGenerator.dialog.label.Date")%></label>
         <div class="controls">
@@ -54,6 +54,7 @@
      <% }  %>
 
   <% } %>
+ </div> 
 <% uiform.end() %>
 </div>
 </div>
