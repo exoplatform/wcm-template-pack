@@ -46,7 +46,7 @@ public class GlobexSendSubscribeScript implements CmsScript {
   private static String DEFAULT_MAIL = "exosender@gmail.com";
   private static String DEFAULT_DESCRIPTION = "You have received a message from ";
   
-  public SendMailScript() throws Exception {
+  public GlobexSendSubscribeScript() throws Exception {
   }
   
   public void execute(Object context) {               
@@ -114,7 +114,7 @@ public class GlobexSendSubscribeScript implements CmsScript {
   
   private String getSubject(Node contactNode) {
     try {
-      String subject = "Contact of " + contactNode.getProperty("exo:userName").getString();
+      String subject = "Subscribe of " + contactNode.getProperty("exo:email").getString();
       return subject;
     } catch (RepositoryException e) {
       if (log_.isDebugEnabled()) { 
@@ -127,20 +127,14 @@ public class GlobexSendSubscribeScript implements CmsScript {
   private String getMessage(Node contactNode) {
     try {
       StringBuilder sbt = new StringBuilder();
-      String userName = contactNode.getProperty("exo:userName").getString();
-      String userEmail = contactNode.getProperty("exo:userEmail").getString();
-      String userPhone = contactNode.getProperty("exo:userPhone").getString();
-      String userMessage = contactNode.getProperty("exo:userMessage").getString();
+      String userName = contactNode.getProperty("exo:email").getString();
       
       sbt.append("<html>")
          .append("  <head>")
          .append("  </head>")
          .append("  <body>")
          .append("    <table>")
-         .append("      <tr><td>Name: </td><td>").append(userName).append("</td></tr>")
-         .append("      <tr><td>Email: </td><td>").append(userEmail).append("</td></tr>")
-         .append("      <tr><td>Phone: </td><td>").append(userPhone).append("</td></tr>")
-         .append("      <tr><td>Message: </td><td>").append(userMessage).append("</td></tr>")
+         .append("      <tr><td>Subscribed Email</td><td>").append(userName).append("</td></tr>")
          .append("    </table>")
          .append("  </body>")
          .append("</html>");
@@ -157,9 +151,8 @@ public class GlobexSendSubscribeScript implements CmsScript {
     Properties props = new Properties(System.getProperties());
     String mailAddr = props.getProperty("globex.mail.to");
     if (mailAddr == null) { 
-      mailAddr = "vudangngoc@gmail.com";
+      mailAddr = "contact@yourcompany.com";
     }
-    mailAddr = "vudangngoc@gmail.com";
     try {
       InternetAddress addr = new InternetAddress("Contact");
       InternetAddress serMailAddr = new InternetAddress(mailAddr);

@@ -19,7 +19,7 @@
 
 <% uiform.begin() %>
 
-    <div class="form-inline box-module">
+    <div class="box-module">
       <div class="control-group" style="display:none;">
         <label class="control-label"><%=_ctx.appRes("FormGenerator.dialog.label.Date")%></label>
         <div class="controls">
@@ -37,44 +37,38 @@
       String[] your_nameFieldName = ["jcrPath=/node/exo:name", "defaultValues=", "validate=empty,name", ""];
       uicomponent.addTextField("your_nameFieldName", your_nameFieldName);
      %>
-      <span class="empty-message">*This field is required.</span>
-      <span class="error-message">*This is not a valid name.</span>
+
     </label>
     <label class="email">
     <%
     String[] your_email_addressFieldNameContact = ["jcrPath=/node/exo:email", "defaultValues=", "validate=empty,email", ""];
     uicomponent.addTextField("your_email_addressFieldNameContact", your_email_addressFieldNameContact);
    %>
-    <span class="empty-message">*This field is required.</span>
-    <span class="error-message">*This is not a valid email.</span>
   </label>
   <label class="phone">
   <%
-  String[] your_phone_numberFieldName = ["jcrPath=/node/exo:phone", "defaultValues=", "validate=number", ""];
+  String[] your_phone_numberFieldName = ["jcrPath=/node/exo:phone", "defaultValues=", "validate=number,empty", ""];
   uicomponent.addTextField("your_phone_numberFieldName", your_phone_numberFieldName);
  %>
-  <span class="empty-message">*This field is required.</span>
-  <span class="error-message">*This is not a valid phone.</span>
 </label>
 <label class="message">
 <%
 String[] your_messageFieldName = ["jcrPath=/node/exo:message", "defaultValues=", "validate=empty",""];
 uicomponent.addTextAreaField("your_messageFieldName", your_messageFieldName);
 %>
-<span class="empty-message">*This field is required.</span>
-<span class="error-message">*The message is too short.</span>
 </label>
 
-  <% if (!uiform.isShowActionsOnTop()) { %>
+
   <div >
     <%
      for(action in uicomponent.getActions()) {
-      String actionLabel = "SEND";
+      String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action);
+      if(actionLabel.equals("Submit")) actionLabel = "SEND";
       String link = uicomponent.event(action);                  %>
             <button type="button" href="javascript:void(0);" onclick="$link" class="btn">$actionLabel</button>
-     <% }  %>
-  </div>
   <% } %>
+  </div>
+
 <% uiform.end() %>
 </div>
 </div>

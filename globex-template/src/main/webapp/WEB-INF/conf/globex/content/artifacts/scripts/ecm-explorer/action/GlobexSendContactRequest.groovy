@@ -46,7 +46,7 @@ public class GlobexSendMailScript implements CmsScript {
   private static String DEFAULT_MAIL = "exosender@gmail.com";
   private static String DEFAULT_DESCRIPTION = "You have received a message from ";
   
-  public SendMailScript() throws Exception {
+  public GlobexSendMailScript() throws Exception {
   }
   
   public void execute(Object context) {               
@@ -114,7 +114,7 @@ public class GlobexSendMailScript implements CmsScript {
   
   private String getSubject(Node contactNode) {
     try {
-      String subject = "Contact of " + contactNode.getProperty("exo:userName").getString();
+      String subject = "Contact of " + contactNode.getProperty("exo:name").getString();
       return subject;
     } catch (RepositoryException e) {
       if (log_.isDebugEnabled()) { 
@@ -127,10 +127,10 @@ public class GlobexSendMailScript implements CmsScript {
   private String getMessage(Node contactNode) {
     try {
       StringBuilder sbt = new StringBuilder();
-      String userName = contactNode.getProperty("exo:userName").getString();
-      String userEmail = contactNode.getProperty("exo:userEmail").getString();
-      String userPhone = contactNode.getProperty("exo:userPhone").getString();
-      String userMessage = contactNode.getProperty("exo:userMessage").getString();
+      String userName = contactNode.getProperty("exo:name").getString();
+      String userEmail = contactNode.getProperty("exo:email").getString();
+      String userPhone = contactNode.getProperty("exo:phone").getString();
+      String userMessage = contactNode.getProperty("exo:message").getString();
       
       sbt.append("<html>")
          .append("  <head>")

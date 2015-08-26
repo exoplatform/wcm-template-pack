@@ -16,7 +16,7 @@
         <%
         if (currentNode.hasProperty(userEmailProp)) {
           %>
-          <td><%= _ctx.appRes("contact.view.label.YourEmail") %></td>
+          <td>Subscribed Email</td>
           <td><%= currentNode.getProperty(userEmailProp).getString() %></td>
         <%
         }
