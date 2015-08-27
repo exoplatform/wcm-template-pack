@@ -76,6 +76,36 @@
           </object>
         </object-param>
         <object-param>
+          <name>AgitalWelcome</name>
+          <description>Agital Home Welcome</description>
+          <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
+            <field name="title">
+               <string>Agital Home Welcome</string>
+            </field>
+            <field name="templateName">
+              <string>AgitalWelcome.gtmpl</string>
+            </field>
+            <field name="category">
+              <string>list</string>
+            </field>
+          </object>
+        </object-param>
+                <object-param>
+          <name>AgitalWhyUs</name>
+          <description>Agital Home Why Us</description>
+          <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
+            <field name="title">
+               <string>Agital Home Why Us</string>
+            </field>
+            <field name="templateName">
+              <string>AgitalWhyUs.gtmpl</string>
+            </field>
+            <field name="category">
+              <string>list</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
           <name>Agital Home Articles</name>
           <description>Agital Home Articles</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
