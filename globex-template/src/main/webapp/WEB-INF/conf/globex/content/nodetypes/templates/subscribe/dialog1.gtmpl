@@ -36,7 +36,7 @@
       </div>
       <label class="email">
       <%
-      String[] your_email_addressFieldName = ["jcrPath=/node/exo:email", "defaultValues=", "validate=email", ""];
+      String[] your_email_addressFieldName = ["jcrPath=/node/exo:email", "defaultValues=", "validate=email,empty", ""];
       uicomponent.addTextField("your_email_addressFieldName", your_email_addressFieldName);
      %>
       <span class="error">*Invalid email.</span>
