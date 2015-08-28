@@ -104,6 +104,32 @@
                     </field>
                   </object>
                 </value>
+                <value>
+                  <object type="org.exoplatform.application.registry.Application">
+                    <field name="categoryName">
+                      <string>Components</string>
+                    </field>
+                    <field name="applicationName">
+                      <string>ContactFormPortlet</string>
+                    </field>
+                    <field name="displayName">
+                      <string>Contact Form Portlet</string>
+                    </field>
+                    <field name="type">
+                      <string>portlet</string>
+                    </field>
+                    <field name="contentId">
+                      <string>agital-template/ContactFormPortlet</string>
+                    </field>
+                    <field name="accessPermissions">
+                      <collection type="java.util.ArrayList" item-type="java.lang.String">
+                        <value>
+                          <string>*:/platform/users</string>
+                        </value>
+                      </collection>
+                    </field>
+                  </object>
+                </value>
               </collection>
             </field>
           </object>
