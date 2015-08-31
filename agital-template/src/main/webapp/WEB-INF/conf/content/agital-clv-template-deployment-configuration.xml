@@ -121,6 +121,21 @@
           </object>
         </object-param>
         <object-param>
+          <name>AgitalHomeServices</name>
+          <description>Agital Home Services</description>
+          <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
+            <field name="title">
+               <string>Agital Home Services</string>
+            </field>
+            <field name="templateName">
+              <string>AgitalHomeServices.gtmpl</string>
+            </field>
+            <field name="category">
+              <string>list</string>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
           <name>Agital Home Articles</name>
           <description>Agital Home Articles</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">

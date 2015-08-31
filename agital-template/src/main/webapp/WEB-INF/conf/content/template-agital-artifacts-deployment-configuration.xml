@@ -781,7 +781,7 @@
               </object>
             </field>
             <field name="sourcePath">
-              <string>war:/conf/content/artifacts/site-resources/agital/homeServices.xml</string>
+              <string>war:/conf/content/artifacts/site-resources/agital/homeservicesfolder.xml</string>
             </field>
             <field name="cleanupPublication">
               <boolean>true</boolean>
@@ -1646,7 +1646,7 @@
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeNews</string></value>
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeProjects</string></value>
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeResults</string></value>
-								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeServices</string></value>
+								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeservicesfolder</string></value>
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeSolutions</string></value>
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homewelcomefolder</string></value>
 								<value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homewhyusfolder</string></value>
