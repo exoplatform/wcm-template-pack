@@ -977,63 +977,74 @@
           <portlet-application>
             <portlet>
               <application-ref>presentation</application-ref>
-              <portlet-ref>SingleContentViewer</portlet-ref>
+              <portlet-ref>ContentListViewerPortlet</portlet-ref>
               <preferences>
+                <preference>
+                  <name>folderPath</name>
+                  <value>repository:collaboration:/sites/@owner@/web contents/site artifacts/aboutafewwordsfolder</value>
+                  <read-only>false</read-only>
+                </preference>
                 <preference>
                   <name>nodeDrive</name>
                   <value>Managed Sites</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
-                  <name>workspace</name>
-                  <value>collaboration</value>
+                  <name>orderType</name>
+                  <value>ASC</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
-                  <name>nodeIdentifier</name>
-                  <value>/sites/@owner@/web contents/site artifacts/aboutAFewWords</value>
+                  <name>formViewTemplatePath</name>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalAFewWord.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
-                  <name>ShowQuickEdit</name>
+                  <name>basePath</name>
+                  <value>detail</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>itemsPerPage</name>
+                  <value>5</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>showTitle</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>showDateCreated</name>
                   <value>true</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
-                  <name>ShowPrintAction</name>
+              <name>sharedCache</name>
+              <value>false</value>
+              <read-only>false</read-only>
+              </preference>
+                <preference>
+                  <name>showHeader</name>
                   <value>false</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
-                  <name>ShowTOC</name>
+                  <name>showLink</name>
                   <value>false</value>
                   <read-only>false</read-only>
                 </preference>
-                <preference>
-                  <name>ShowCategories</name>
-                  <value>false</value>
-                  <read-only>false</read-only>
-                </preference>
-                <preference>
-                  <name>ShowTags</name>
-                  <value>false</value>
-                  <read-only>false</read-only>
-                </preference>
-                <preference>
-                  <name>ContextEnable</name>
-                  <value>true</value>
-                  <read-only>false</read-only>
-                </preference>
-                <preference>
-                  <name>ParameterName</name>
-                  <value>content-id</value>
-                  <read-only>false</read-only>
-                </preference>
-                <preference>
-                  <name>ShowTitle</name>
-                  <value>false</value>
-                  <read-only>false</read-only>
-                </preference>
+             <preference>
+               <name>showRssLink</name>
+               <value>false</value>
+               <read-only>false</read-only>
+             </preference>
+             <preference>
+               <name>showReadmore</name>
+               <value>false</value>
+               <read-only>false</read-only>
+             </preference>
+                
               </preferences>
             </portlet>
             <title>A Few Words About Us</title>
@@ -1866,7 +1877,7 @@
             </preference>
             <preference>
               <name>nodeIdentifier</name>
-              <value>/sites/@owner@/web contents/site artifacts/aboutAFewWords</value>
+              <value>/sites/@owner@/web contents/site artifacts/aboutafewwordsfolder/aboutAFewWords</value>
               <read-only>false</read-only>
             </preference>
             <preference>
