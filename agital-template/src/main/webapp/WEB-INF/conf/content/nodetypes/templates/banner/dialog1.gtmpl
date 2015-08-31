@@ -91,6 +91,9 @@
                   uicomponent.addUploadField("data", fieldData) ;
                 }
               %>
+              <div style="display:inline-block;" onmouseover="(function(elm) {eXo.ecm.WCMUtils.showPopover(elm);})(this)" onmouseout="(function(elm) {eXo.ecm.WCMUtils.hidePopover(elm);})(this)" data-toggle="popover" data-placement="left" data-content="For best results we recommend an image with a minimum size of 320x107" data-original-title="" title="">
+              <i class="uiIconQuestion uiIconLightGray"> </i>              
+            </div>
           </div>
         </div>     
         <!--end of content-->
