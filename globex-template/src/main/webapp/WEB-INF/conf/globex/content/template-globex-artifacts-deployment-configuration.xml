@@ -1328,6 +1328,10 @@
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/contact</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/contact-requests</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/features</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/features/feature-1</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/features/feature2</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/features/feature3</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/features/feature4</string></value>
                 <value><string>collaboration:/sites/{portalName}/css/globexcss</string></value>
                 <value><string>collaboration:/sites/{portalName}/css/grid.css</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/footer</string></value>
