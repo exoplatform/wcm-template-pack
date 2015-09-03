@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<portlet-app version="1.0" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd">
+<portlet-app version="1.0"
+  xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd">
 
   <portlet>
     <description xml:lang="EN">Image Slider</description>
@@ -30,7 +33,9 @@
       </preference>
       <preference>
         <name>folderPath</name>
-        <value>repository:collaboration:/sites/{siteName}/web contents/site artifacts/homeBanner</value>
+        <value>repository:collaboration:/sites/{siteName}/web
+          contents/site artifacts/homeBanner
+        </value>
         <read-only>false</read-only>
       </preference>
       <preference>
@@ -52,7 +57,7 @@
         <name>automaticDetection</name>
         <value>true</value>
         <read-only>false</read-only>
-      </preference>      
+      </preference>
       <preference>
         <name>formViewTemplatePath</name>
         <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalBanner.gtmpl</value>
@@ -122,12 +127,12 @@
         <name>contextualFolder</name>
         <value>contextualDisable</value>
         <read-only>false</read-only>
-      </preference>      
+      </preference>
       <preference>
         <name>showScvWith</name>
         <value>content-id</value>
         <read-only>false</read-only>
-      </preference>      
+      </preference>
       <preference>
         <name>showClvBy</name>
         <value>folder-id</value>
@@ -178,7 +183,9 @@
       </preference>
       <preference>
         <name>folderPath</name>
-        <value>repository:collaboration:/sites/{siteName}/web contents/site artifacts/blogBlog</value>
+        <value>repository:collaboration:/sites/{siteName}/web
+          contents/site artifacts/blogBlog
+        </value>
         <read-only>false</read-only>
       </preference>
       <preference>
@@ -200,7 +207,7 @@
         <name>automaticDetection</name>
         <value>true</value>
         <read-only>false</read-only>
-      </preference>      
+      </preference>
       <preference>
         <name>formViewTemplatePath</name>
         <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalBlogBlog.gtmpl</value>
@@ -270,12 +277,12 @@
         <name>contextualFolder</name>
         <value>contextualDisable</value>
         <read-only>false</read-only>
-      </preference>      
+      </preference>
       <preference>
         <name>showScvWith</name>
         <value>content-id</value>
         <read-only>false</read-only>
-      </preference>      
+      </preference>
       <preference>
         <name>showClvBy</name>
         <value>folder-id</value>
@@ -297,7 +304,7 @@
       <role-link>admin</role-link>
     </security-role-ref>
   </portlet>
-    <portlet>
+  <portlet>
     <description xml:lang="EN">Contact Form</description>
     <portlet-name>ContactFormPortlet</portlet-name>
     <display-name>Contact Form</display-name>
@@ -312,16 +319,19 @@
       <portlet-mode>edit</portlet-mode>
     </supports>
     <supported-locale>en</supported-locale>
-
+<resource-bundle>locale.portlet.FastContentCreatorPortlet.FastContentCreatorPortlet</resource-bundle>
     <portlet-info>
       <title>Contact Form</title>
       <short-title>Contact Form</short-title>
       <keywords>Components</keywords>
     </portlet-info>
     <portlet-preferences>
+      <!-- Specify the destination path which will be use to store saved 
+        documents -->
       <preference>
-        <name>folderPath</name>
-        <value>repository:collaboration:/sites/{siteName}/web contents/site artifacts/ContactRequests</value>
+        <name>path</name>
+        <value>/sites/@owner@/web contents/site artifacts/ContactRequests
+        </value>
         <read-only>false</read-only>
       </preference>
       <preference>
@@ -329,8 +339,23 @@
         <value>exo:contact</value>
         <read-only>false</read-only>
       </preference>
-
-
+      <preference>
+        <name>workspace</name>
+        <value>collaboration</value>
+        <read-only>false</read-only>
+      </preference>
+      <!-- The custom button Save -->
+      <preference>
+        <name>saveButton</name>
+        <value>Submit</value>
+        <read-only>false</read-only>
+      </preference>
+      <!-- The custom message when click Save button -->
+      <preference>
+        <name>saveMessage</name>
+        <value>Your infomation has been saved successfully</value>
+        <read-only>false</read-only>
+      </preference>
 
     </portlet-preferences>
     <security-role-ref>
