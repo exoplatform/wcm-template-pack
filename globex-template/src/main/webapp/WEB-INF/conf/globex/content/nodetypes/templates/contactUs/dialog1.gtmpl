@@ -14,7 +14,7 @@
  def message = _ctx.appRes("Contact.dialog.label.Message");
  uiform.setId("FCC_Contact");
 %>
-<div class="grid_6">
+<div class="grid_6"> 
 <div id="contact-form" class="contact-form">
 
 <% uiform.begin() %>
@@ -70,7 +70,6 @@ uicomponent.addTextAreaField("your_messageFieldName", your_messageFieldName);
   </div>
 
 <% uiform.end() %>
-</div>
 </div>
 </div>
 <script type="text/javascript">
