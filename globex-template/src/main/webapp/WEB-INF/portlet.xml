@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app version="1.0"
+  xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd">
+
+  <portlet>
+    <description xml:lang="EN">Subscribe Form</description>
+    <portlet-name>globex.SubscribeFormPortlet</portlet-name>
+    <display-name>Subscribe Form</display-name>
+    <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+    <init-param>
+      <name>webui.configuration</name>
+      <value>/WEB-INF/conf/globex/portlet/SubscribeForm/configuration.xml</value>
+    </init-param>
+    <expiration-cache>0</expiration-cache>
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+    </supports>
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.FastContentCreatorPortlet.FastContentCreatorPortlet</resource-bundle>
+    <portlet-info>
+      <title>Subscribe Form</title>
+      <short-title>Subscribe Form</short-title>
+      <keywords>Components</keywords>
+    </portlet-info>
+    <portlet-preferences>
+      <!-- Specify the destination path which will be use to store saved 
+        documents -->
+      <preference>
+        <name>path</name>
+        <value>/sites/@owner@/web contents/site artifacts/SubscribesRequest</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>type</name>
+        <value>exo:globexSubscribe</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>workspace</name>
+        <value>collaboration</value>
+        <read-only>false</read-only>
+      </preference>
+      <!-- The custom button Save -->
+      <preference>
+        <name>saveButton</name>
+        <value>Submit</value>
+        <read-only>false</read-only>
+      </preference>
+      <!-- The custom message when click Save button -->
+      <preference>
+        <name>saveMessage</name>
+        <value>Your infomation has been saved successfully</value>
+        <read-only>false</read-only>
+      </preference>
+
+    </portlet-preferences>
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>admin</role-link>
+    </security-role-ref>
+  </portlet>
+</portlet-app>
