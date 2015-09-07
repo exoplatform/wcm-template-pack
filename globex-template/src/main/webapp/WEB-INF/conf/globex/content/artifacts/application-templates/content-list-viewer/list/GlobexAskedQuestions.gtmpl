@@ -85,11 +85,24 @@
 	 			workspace = viewNode.getSession().getWorkspace().getName();
 	 			uuid = viewNode.getUUID();
 
-	 			
+	 			%><%=uicomponent.addQuickEditDiv("Column3 grid_6", viewNode)%><%
+       
+        if (uicomponent.isViewMode()){
 
-	 			
-	 			
-
+        }
+        else {
+          if (isShowTitle) {
+            if (isShowLink) {
+              %><div class="heading WCMInlineEditable" contenteditable="true" propertyName="<%=propertyName%>" repo="<%=repo%>" workspace="<%=workspace%>" uuid="<%=uuid%>" siteName="<%=siteName%>" language="<%=language%>" publishedmsg="<%=publishedMsg%>" draftmsg="<%=draftMsg%>" fastpublishlink="<%=uicomponent.getFastPublicLink(viewNode)%>"><a href="$itemLink" rel="tooltip" data-placement="bottom" title="$itemName">$itemName</a></div><%
+            } else {
+              %>
+              <div class="heading WCMInlineEditable" contenteditable="true" propertyName="<%=propertyName%>" repo="<%=repo%>" workspace="<%=workspace%>" uuid="<%=uuid%>" siteName="<%=siteName%>" language="<%=language%>" publishedmsg="<%=publishedMsg%>" draftmsg="<%=draftMsg%>" fastpublishlink="<%=uicomponent.getFastPublicLink(viewNode)%>">
+              <% print uicomponent.getInlineEditingField(viewNode, "exo:title", itemName, "TEXT", "CLVTitle_"+String.valueOf(i), "GroovyCLVTitle", true, "button_direction=left-to-right","fast_publish=" + uicomponent.getFastPublicLink(viewNode)); %>
+              </div>
+              <%
+            }
+          }
+        }
 	 			if (isShowSummary) {
 	 				
 	 				if (itemSummaryField!=null) {
@@ -97,10 +110,12 @@
 	 				}
 	 				
 	 			}
-
-	 			
+	 			%></div><%
 	 		}
 	 		%>
+	 		
+	 		
+	 		
 </div>
 	 		</ul>
 	 		<%if (uicomponent.showPaginator()) { %>

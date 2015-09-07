@@ -85,7 +85,7 @@
 
 	 			%>
 
-	 			<%=uicomponent.addQuickEditDiv("Column3", viewNode)%>
+	 			<%=uicomponent.addQuickEditDiv("Column3 grid_6", viewNode)%>
 	 			<div >
 	 			<%
 	 			if(isShowImage) {
@@ -126,13 +126,12 @@
 	 			}
 	 			if (isShowSummary) {
 	 				%><div class="summary"> 
-	 				<div class="grid_6">
 					<div class="box-2">
 	 				<%
 	 				if (itemSummaryField!=null) {
 	 					print uicomponent.getInlineEditingField(viewNode, itemSummaryField, itemSummary, "TEXTAREA", "Text_"+String.valueOf(i), "CLV2ColSummary", true, "height=80px","fast_publish=" + uicomponent.getFastPublicLink(viewNode));
 	 				}
-	 				%> </div></div></div><%
+	 				%> </div></div><%
 	 			}
 	 			%>
 	 			<%

@@ -30,7 +30,10 @@
 %>
 <div class="UITabPane uiTabNormal uiTabInPage">
 <%uiform.begin()%>
-
+  <% if (uiform.isShowActionsOnTop()) {
+            uiform.processRenderAction()
+          }
+  %>
 
  <div class="HorizontalLayout">
 
@@ -47,15 +50,7 @@
        %>
        </td>
      </tr>
-     <tr>
-       <td class="FieldLabel"><%=_ctx.appRes("exo_globexfeature.dialog.label.exo_summary")%></td>
-       <td class="FieldComponent">
-     <%
-         fieldProperty = ["jcrPath=/node/exo:summary"];
-         uicomponent.addTextField("/node/exo_summary", fieldProperty);
-     %>
-       </td>
-     </tr>
+
      <tr>
      <td class="FieldLabel">Video URL</td>
      <td class="FieldComponent">
@@ -83,6 +78,15 @@
    %>
      </td>
    </tr>
+        <tr>
+       <td class="FieldLabel">Description</td>
+       <td class="FieldComponent">
+     <%
+         fieldProperty = ["jcrPath=/node/exo:summary"];
+         uicomponent.addTextField("/node/exo_summary", fieldProperty);
+     %>
+       </td>
+     </tr>
      <tr>
      <td class="FieldLabel">Width</td>
      <td class="FieldComponent">
@@ -102,11 +106,16 @@
    </tr>
    </table>
  </div>
-<% /* start render action*/
-   uiform.processRenderAction();
-  /* end render action*/
+  <% if (!uiform.isShowActionsOnTop()) { %>
 
-%>
+    <%
+     for(action in uicomponent.getActions()) {
+      String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action) ;
+      String link = uicomponent.event(action);                  %>
+            <button type="button" href="javascript:void(0);" onclick="$link" class="btn">$actionLabel</button>
+     <% }  %>
+
+  <% } %>
 </div>
 
 	<%uiform.end()%>						 

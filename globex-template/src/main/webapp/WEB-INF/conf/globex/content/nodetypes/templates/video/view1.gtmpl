@@ -1,5 +1,8 @@
 <%
   import javax.jcr.Node;
+  import java.net.URL;
+  import java.lang.Exception;
+
   def currentNode = uicomponent.getNode();
   def url = currentNode.hasProperty("exo:url") ? currentNode.getProperty("exo:url").getString() : "";
   def title = currentNode.hasProperty("exo:title") ?currentNode.getProperty("exo:title").getString(): "";
@@ -7,12 +10,29 @@
   def summary = currentNode.hasProperty("exo:summary") ?currentNode.getProperty("exo:summary").getString(): "";
   def width = currentNode.hasProperty("exo:width") ?currentNode.getProperty("exo:width").getString(): "570";
   def height = currentNode.hasProperty("exo:height") ?currentNode.getProperty("exo:height").getString(): "320";
+
+  public boolean checkExistURL(String url){
+    try {
+      URL u = new URL(url);
+      u.openConnection().connect();
+      return true;
+    }catch (Exception ioe){
+      return false;
+    }
+    return false;
+  }
+
+ def isExits = checkExistURL(url);
 %>
 <section class="well-5 bg2">
   <div class="container">
     <div class="row">
       <div class="grid_6">
+        <%if(isExits){%>
         <iframe class="video" src="<%=url%>" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0" height="<%=height%>" width="<%=width%>"></iframe>
+        <%}else{%>
+        <div class="not-support" ><%=_ctx.appRes("GlobexVideo.msg.NotSupport")%></div>
+        <%}%>
       </div>
       <div class="grid_6">
         <div class="cnt2">

@@ -81,7 +81,7 @@
             </preference>
           </preferences>
         </portlet>
-                <title></title>
+                <title>Title</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
@@ -153,7 +153,7 @@
             </preference>
           </preferences>
         </portlet>
-                        <title></title>
+                        <title>Introduction</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
@@ -240,7 +240,7 @@
             </preference>
           </preferences>
         </portlet>
-                        <title></title>
+                        <title>Services</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
@@ -327,7 +327,7 @@
             </preference>
           </preferences>
         </portlet>
-                        <title></title>
+                        <title>Feature</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
@@ -399,7 +399,7 @@
             </preference>
           </preferences>
         </portlet>
-                        <title></title>
+                        <title>Video</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
@@ -471,7 +471,7 @@
             </preference>
           </preferences>
         </portlet>
-        <title></title>
+        <title>Quote</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
@@ -481,9 +481,8 @@
   <container id="Pricing"
     template="system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl">
     <access-permissions>Everyone</access-permissions>
-  <container id="PricingColumns"
-    template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
-    <access-permissions>Everyone</access-permissions>
+<container id="PricingColumn" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
+<access-permissions>Everyone</access-permissions>
     <container id="PricingLeft"
       template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
@@ -549,16 +548,15 @@
             </preference>
           </preferences>
         </portlet>
-        <title></title>
+        <title>PricingLeft</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
         <show-application-mode>false</show-application-mode>
       </portlet-application>
     </container>
-    <container id="PricingRight"
-      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
-      <access-permissions>Everyone</access-permissions>
+<container id="PricingRight" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
+<access-permissions>Everyone</access-permissions>
       <container id="PricingRight1"
         template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
@@ -624,7 +622,7 @@
             </preference>
           </preferences>
         </portlet>
-          <title></title>
+          <title>PricingRight1</title>
           <access-permissions>Everyone</access-permissions>
           <show-info-bar>false</show-info-bar>
           <show-application-state>false</show-application-state>
@@ -696,16 +694,16 @@
             </preference>
           </preferences>
         </portlet>
-          <title></title>
+          <title>PricingRight2</title>
           <access-permissions>Everyone</access-permissions>
           <show-info-bar>false</show-info-bar>
           <show-application-state>false</show-application-state>
           <show-application-mode>false</show-application-mode>
         </portlet-application>
       </container>
-    </container>
+</container>
       
-    </container>
+</container>
     </container>
     <container id="WhatTheySay"
       template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
@@ -787,7 +785,7 @@
             </preference>
           </preferences>
         </portlet>
-                        <title></title>
+                        <title>WhatTheySay</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
@@ -874,7 +872,7 @@
             </preference>
           </preferences>
         </portlet>
-                        <title></title>
+                        <title>AskedQuestions</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
@@ -885,7 +883,7 @@
     template="system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl">
     <access-permissions>Everyone</access-permissions>
   <container id="SubscribesColumn"
-    template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+    template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
     <access-permissions>Everyone</access-permissions>
     <container id="SubscribesLeft"
       template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
@@ -954,7 +952,7 @@
             </preference>
           </preferences>
         </portlet>
-        <title></title>
+        <title>SubscribesLeft</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
@@ -1003,7 +1001,7 @@
             </preference>
           </preferences>
         </portlet>
-        <title></title>
+        <title>SubscribeRight</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
@@ -1016,7 +1014,7 @@
     template="system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl">
     <access-permissions>Everyone</access-permissions>
   <container id="ContactColumn"
-    template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+    template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
     <access-permissions>Everyone</access-permissions>
           <container id="CongtactLeft"
         template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
@@ -1083,7 +1081,7 @@
             </preference>
           </preferences>
         </portlet>
-          <title></title>
+          <title>CongtactLeft</title>
           <access-permissions>Everyone</access-permissions>
           <show-info-bar>false</show-info-bar>
           <show-application-state>false</show-application-state>
@@ -1132,7 +1130,7 @@
           </preference>
         </preferences>
       </portlet>
-      <title></title>
+      <title>ContactRigh</title>
       <access-permissions>Everyone</access-permissions>
       <show-info-bar>false</show-info-bar>
       <show-application-state>false</show-application-state>
@@ -1206,7 +1204,7 @@
             </preference>
           </preferences>
         </portlet>
-        <title></title>
+        <title>Footer</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
