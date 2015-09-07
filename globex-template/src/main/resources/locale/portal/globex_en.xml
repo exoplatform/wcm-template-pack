@@ -27,6 +27,11 @@
      </action>
    </UIFCCForm> 
 
+  <GlobexVideo>
+    <msg>
+      <NotSupport>The format is not supported</NotSupport>
+    </msg>
+  </GlobexVideo>
 
 </bundle>
 
