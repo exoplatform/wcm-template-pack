@@ -32,29 +32,30 @@
           </div>
         </div>
       </div>
+    </div>
       <label class="name">
       <%
-      String[] your_nameFieldName = ["jcrPath=/node/exo:name", "defaultValues=", "validate=empty,name", ""];
-      uicomponent.addTextField("your_nameFieldName", your_nameFieldName);
+      String[] fullName = ["jcrPath=/node/exo:name", "defaultValues=", "validate=empty,name", ""];
+      uicomponent.addTextField("fullName", fullName);
      %>
 
     </label>
     <label class="email">
     <%
-    String[] your_email_addressFieldNameContact = ["jcrPath=/node/exo:email", "defaultValues=", "validate=empty,email", ""];
-    uicomponent.addTextField("your_email_addressFieldNameContact", your_email_addressFieldNameContact);
+    String[] emailAddr = ["jcrPath=/node/exo:email", "defaultValues=", "validate=empty,email", ""];
+    uicomponent.addTextField("email", emailAddr);
    %>
   </label>
   <label class="phone">
   <%
-  String[] your_phone_numberFieldName = ["jcrPath=/node/exo:phone", "defaultValues=", "validate=number,empty", ""];
-  uicomponent.addTextField("your_phone_numberFieldName", your_phone_numberFieldName);
+  String[] phoneNumber = ["jcrPath=/node/exo:phone", "defaultValues=", "validate=phone", ""];
+  uicomponent.addTextField("phoneNumber", phoneNumber);
  %>
 </label>
 <label class="message">
 <%
-String[] your_messageFieldName = ["jcrPath=/node/exo:message", "defaultValues=", "validate=empty",""];
-uicomponent.addTextAreaField("your_messageFieldName", your_messageFieldName);
+String[] messages = ["jcrPath=/node/exo:message", "defaultValues=", "validate=empty",""];
+uicomponent.addTextAreaField("messages", messages);
 %>
 </label>
 
@@ -73,8 +74,8 @@ uicomponent.addTextAreaField("your_messageFieldName", your_messageFieldName);
 </div>
 </div>
 <script type="text/javascript">
-  document.getElementById("your_nameFieldName").setAttribute("placeholder", "$name");
-  document.getElementById("your_email_addressFieldNameContact").setAttribute("placeholder", "$email");
-  document.getElementById("your_phone_numberFieldName").setAttribute("placeholder", "$phone");
-  document.getElementById("your_messageFieldName").setAttribute("placeholder", "$message");
+  document.getElementById("fullName").setAttribute("placeholder", "$name");
+  document.getElementById("email").setAttribute("placeholder", "$email");
+  document.getElementById("phoneNumber").setAttribute("placeholder", "$phone");
+  document.getElementById("messages").setAttribute("placeholder", "$message");
 </script>
