@@ -10,9 +10,6 @@
   def summary = currentNode.hasProperty("exo:summary") ?currentNode.getProperty("exo:summary").getString(): "";
   def width = currentNode.hasProperty("exo:width") ?currentNode.getProperty("exo:width").getString(): "570";
   def height = currentNode.hasProperty("exo:height") ?currentNode.getProperty("exo:height").getString(): "320";
-  def rcontext = _ctx.getRequestContext();
-  rcontext.getJavascriptManager().require("SHARED/GlobexTemplate", "gl").
-  addScripts("eXo.ecm.GlobexTemplate.test();");
 
   public boolean checkExistURL(String url){
     try {
