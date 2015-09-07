@@ -33,9 +33,7 @@
       </preference>
       <preference>
         <name>folderPath</name>
-        <value>repository:collaboration:/sites/{siteName}/web
-          contents/site artifacts/homeBanner
-        </value>
+        <value>repository:collaboration:/sites/{siteName}/web contents/site artifacts/homeBanner</value>
         <read-only>false</read-only>
       </preference>
       <preference>

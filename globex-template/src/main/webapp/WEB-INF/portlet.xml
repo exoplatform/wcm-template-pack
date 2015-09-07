@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app version="1.0"
+  xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd">
+
+  <portlet>
+    <description xml:lang="EN">Subscribe Form</description>
+    <portlet-name>globex.SubscribeFormPortlet</portlet-name>
+    <display-name>Subscribe Form</display-name>
+    <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+    <init-param>
+      <name>webui.configuration</name>
+      <value>/WEB-INF/conf/globex/portlet/SubscribeForm/configuration.xml</value>
+    </init-param>
+    <expiration-cache>0</expiration-cache>
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+    </supports>
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.FastContentCreatorPortlet.FastContentCreatorPortlet</resource-bundle>
+    <portlet-info>
+      <title>Subscribe Form</title>
+      <short-title>Subscribe Form</short-title>
+      <keywords>Components</keywords>
+    </portlet-info>
+    <portlet-preferences>
+      <!-- Specify the destination path which will be use to store saved 
+        documents -->
+      <preference>
+        <name>path</name>
+        <value>/sites/@owner@/web contents/site artifacts/SubscribesRequest</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>type</name>
+        <value>exo:globexSubscribe</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>workspace</name>
+        <value>collaboration</value>
+        <read-only>false</read-only>
+      </preference>
+      <!-- The custom button Save -->
+      <preference>
+        <name>saveButton</name>
+        <value>Submit</value>
+        <read-only>false</read-only>
+      </preference>
+      <!-- The custom message when click Save button -->
+      <preference>
+        <name>saveMessage</name>
+        <value>Your infomation has been saved successfully</value>
+        <read-only>false</read-only>
+      </preference>
+    </portlet-preferences>
+    <security-role-ref>
+      <role-name>admin</role-name>
+      <role-link>admin</role-link>
+    </security-role-ref>
+  </portlet>
+  <portlet>
+    <description xml:lang="EN">Embedded Video</description>
+    <portlet-name>EmbeddedVideoPortlet</portlet-name>
+    <display-name>Embedded Video</display-name>
+    <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
+
+    <init-param>
+      <name>webui.configuration</name>
+      <value>/WEB-INF/conf/globex/portlet/EmbeddedVideo/configuration.xml</value>
+    </init-param>
+
+    <expiration-cache>0</expiration-cache>
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>edit</portlet-mode>
+    </supports>
+    <supported-locale>en</supported-locale>
+    <resource-bundle>locale.portlet.SingleContentViewer.SingleContentViewer</resource-bundle>
+
+    <portlet-info>
+      <title>Embedded Video</title>
+      <short-title>Embedded Video</short-title>
+      <keywords>Components</keywords>
+    </portlet-info>
+
+    <portlet-preferences>
+      <preference>
+        <name>workspace</name>
+        <value>collaboration</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowTOC</name>
+        <value>true</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowTags</name>
+        <value>true</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowCategories</name>
+        <value>true</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowTitle</name>
+        <value>true</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowDate</name>
+        <value>false</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowOptionBar</name>
+        <value>false</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowPrintAction</name>
+        <value>true</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowVote</name>
+        <value>false</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowComments</name>
+        <value>false</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>isQuickCreate</name>
+        <value>false</value>
+        <read-only>true</read-only>
+      </preference>
+      <preference>
+        <name>ContextEnable</name>
+        <value>false</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ParameterName</name>
+        <value>content-id</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>PrintParameterName</name>
+        <value>content-id</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>PrintPage</name>
+        <value>printviewer</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>basePath</name>
+        <value>detail</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>showScvWith</name>
+        <value>content-id</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>sharedCache</name>
+        <value>true</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>nodeDrive</name>
+        <value>Managed Sites</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>nodeIdentifier</name>
+        <value>collaboration:/sites/{portalName}/web contents/site artifacts/video</value>
+        <read-only>false</read-only>
+      </preference>
+      <preference>
+        <name>ShowQuickEdit</name>
+        <value>true</value>
+        <read-only>false</read-only>
+      </preference>
+    </portlet-preferences>
+  </portlet>
+</portlet-app>
