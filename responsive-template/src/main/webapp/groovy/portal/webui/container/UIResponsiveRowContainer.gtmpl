@@ -113,9 +113,7 @@
 
         </div>  
       <%} %>
-
-  </div> 
-</div>
+  </div>
 </div>
   <%if (!uiPortalApp.isEditing()){
   %></div></div><%
