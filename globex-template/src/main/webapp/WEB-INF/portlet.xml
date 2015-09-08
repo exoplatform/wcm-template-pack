@@ -6,7 +6,7 @@
 
   <portlet>
     <description xml:lang="EN">Subscribe Form</description>
-    <portlet-name>globex.SubscribeFormPortlet</portlet-name>
+    <portlet-name>SubscribeFormPortlet</portlet-name>
     <display-name>Subscribe Form</display-name>
     <portlet-class>org.exoplatform.webui.application.portlet.PortletApplicationController</portlet-class>
     <init-param>
