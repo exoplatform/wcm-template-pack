@@ -6,43 +6,6 @@ height: 235px;
 background-size: 100%;
 }
 
-.UIEditInlineWS .uiContainerList .OneRowResponsiveContainerLayout {
-  background-position: 5px top;
-  height: 41px;
-}
-
-.UIEditInlineWS .uiContainerList .TwoColumnResponsiveContainerLayout {
-  background-position: 5px -154px;
-  height: 31px;
-}
-
-.UIEditInlineWS .uiContainerList .ThreeColumnResponsiveContainerLayout {
-  background-position: 5px -185px;
-  height: 31px;
-}
-
-
-
-.UIEditInlineWS .uiContainerList .FourColumnResponsiveContainerLayout, 
-.UIEditInlineWS .uiContainerList .SmallBigColumnResponsiveContainerLayout, 
-.UIEditInlineWS .uiContainerList .BigSmallColumnResponsiveContainerLayout {
-  background: url("../image/Container.png") no-repeat top;
-  height: 31px;
-}
-
-.UIEditInlineWS .uiContainerList .FourColumnResponsiveContainerLayout {
-  background-position: 5px -442px;
-}
-
-.UIEditInlineWS .uiContainerList .SmallBigColumnResponsiveContainerLayout {
-  background-position: 5px -474px;
-
-}
-
-.UIEditInlineWS .uiContainerList .BigSmallColumnResponsiveContainerLayout {
-  background-position: 5px -506px;
-}
-
 .agital-contact-form textarea,
 .agital-contact-form input[type="text"],
 .agital-contact-form input[type="password"],

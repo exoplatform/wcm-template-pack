@@ -7,7 +7,6 @@
     <version>1.0.x-SNAPSHOT</version>
   </parent>
   <artifactId>responsive-template</artifactId>
-  <packaging>war</packaging>
   <name>WCM Template Pack - Responsive</name>
   <description>WCM Template Pack - Responsive</description>
   <dependencies>
@@ -45,4 +44,5 @@
   <build>
     <finalName>responsive-template</finalName>
   </build>
+  <packaging>war</packaging>
 </project>

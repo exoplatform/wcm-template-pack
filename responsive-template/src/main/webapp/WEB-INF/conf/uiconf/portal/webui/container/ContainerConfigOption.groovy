@@ -85,13 +85,6 @@ import org.exoplatform.webui.core.model.SelectItemOption ;
         "  <container template=\"system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl\"><factory-id>ColumnContainer</factory-id></container>" +
         "</container>", 
         "OneRowResponsiveContainerLayout"));
-    responsive.addSelectItemOption(new SelectItemOption("RowResponsive",
-        "<container template=\"system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl\">" +
-        "  <factory-id>TableColumnContainer</factory-id>" +
-        "  <container template=\"system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl\"><factory-id>ColumnContainer</factory-id></container>" +
-        
-        "</container>",
-        "RowResponsiveContainerLayout"));
     responsive.addSelectItemOption(new SelectItemOption("twoColumnsResponsive",
         "<container template=\"system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl\">" +
         "  <factory-id>TableColumnContainer</factory-id>" +
