@@ -41,7 +41,7 @@
   </scm-->
 
   <properties>
-    <exoplatform.version>4.3.x-SNAPSHOT</exoplatform.version>
+    <exoplatform.version>4.3.x-plf-wcm-template-pack-addon-SNAPSHOT</exoplatform.version>
   </properties>
 
   <dependencyManagement>
@@ -58,8 +58,8 @@
 
   <modules>
     <module>agital-template</module>
-	<module>globex-template</module>
-	<module>responsive-template</module>
+	  <module>globex-template</module>
+	  <module>responsive-template</module>
     <module>packaging</module>
     <module>template-pack-config</module>
   </modules>

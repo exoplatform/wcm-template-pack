@@ -27,6 +27,11 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
+      <groupId>org.exoplatform.ecms</groupId>
+      <artifactId>ecms-core-webui-fcc</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>org.exoplatform.kernel</groupId>
       <artifactId>exo.kernel.container</artifactId>
       <scope>provided</scope>
