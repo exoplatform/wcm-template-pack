@@ -1594,7 +1594,7 @@
                 </preference>
                 <preference>
                   <name>nodeIdentifier</name>
-                  <value>/sites/@owner@/web contents/site artifacts/mailAddress</value>
+                  <value>/sites/@owner@/web contents/site artifacts/Contact</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
