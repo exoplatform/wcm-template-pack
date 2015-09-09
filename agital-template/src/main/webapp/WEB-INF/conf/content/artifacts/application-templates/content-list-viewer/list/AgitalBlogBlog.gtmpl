@@ -74,7 +74,7 @@
 
 	 			def itemLink = uicomponent.getURL(viewNode);
 	 			def itemWebdavLink = uicomponent.getWebdavURL(viewNode);
-	 			uicomponent.setDateTimeFormat("dd/MMMMM/yyyy");
+	 			uicomponent.setDateTimeFormat("dd/MMM/yyyy");
 	 			def itemDateCreated = uicomponent.getCreatedDate(viewNode);
 	 			int slashIndex1 = itemDateCreated.indexOf('/');
 	 			int slashIndex2 = itemDateCreated.lastIndexOf('/');
