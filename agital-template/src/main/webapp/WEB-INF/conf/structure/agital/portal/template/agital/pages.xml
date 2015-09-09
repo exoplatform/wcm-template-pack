@@ -340,7 +340,7 @@
                 </preference>
                 <preference>
                   <name>nodeIdentifier</name>
-                  <value>/sites/@owner@/web contents/site artifacts/homeHello</value>
+                  <value>/sites/@owner@/web contents/site artifacts/Home</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -842,7 +842,7 @@
                 </preference>
                 <preference>
                   <name>nodeIdentifier</name>
-                  <value>/sites/@owner@/web contents/site artifacts/aboutWhoWeAre</value>
+                  <value>/sites/@owner@/web contents/site artifacts/About</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>

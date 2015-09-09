@@ -1641,7 +1641,7 @@
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/aboutTestimonials</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/aboutTestimonials/marc-mendelson</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/aboutTestimonials/peter-reinemann</string></value>
-                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/aboutWhoWeAre</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/About</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog/fusce-euismod-consequat-ante-orem-ipsum-dolor-sit-am</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog/fusce-euismod-consequat-ante-orem-ipsum-dolor-sit-am[2]</string></value>
@@ -1655,7 +1655,7 @@
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeArticles/et-elentu-vel-cursus-eleifend-elit</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeArticles/mauris-fermentum-tum-magnaed-laoreet-aliquam-leo</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeBanner</string></value>
-                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeHello</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/Home</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeNews</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeNews/aenean-nec-erostibulum-ane-ipsum</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeNews/sed-ue-perspiciatis-unde-omnis</string></value>
