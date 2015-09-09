@@ -181,9 +181,7 @@
       </preference>
       <preference>
         <name>folderPath</name>
-        <value>repository:collaboration:/sites/{siteName}/web
-          contents/site artifacts/blogBlog
-        </value>
+        <value>repository:collaboration:/sites/{siteName}/web contents/site artifacts/blogBlog</value>
         <read-only>false</read-only>
       </preference>
       <preference>
@@ -317,7 +315,7 @@
       <portlet-mode>edit</portlet-mode>
     </supports>
     <supported-locale>en</supported-locale>
-<resource-bundle>locale.portlet.FastContentCreatorPortlet.FastContentCreatorPortlet</resource-bundle>
+    <resource-bundle>locale.portlet.FastContentCreatorPortlet.FastContentCreatorPortlet</resource-bundle>
     <portlet-info>
       <title>Contact Form</title>
       <short-title>Contact Form</short-title>

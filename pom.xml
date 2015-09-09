@@ -20,77 +20,48 @@
 
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.exoplatform.addons</groupId>
-    <artifactId>addons-parent-pom</artifactId>
-    <version>4</version>
-  </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.exoplatform.addons</groupId>
+        <artifactId>addons-parent-pom</artifactId>
+        <version>4</version>
+    </parent>
 
-  <groupId>org.exoplatform.addons.wcm-template</groupId>
-  <artifactId>wcm-template-pack</artifactId>
-  <version>1.0.x-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <name>WCM Template Pack</name>
-  <description>WCM Template Pack</description>
+    <groupId>org.exoplatform.addons.wcm-template</groupId>
+    <artifactId>wcm-template-pack</artifactId>
+    <version>1.0.x-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>WCM Template Pack</name>
+    <description>WCM Template Pack</description>
 
-  <!--scm>
-    <connection>https://github.com/exo-addons/wcm-template-pack/</connection>
-    <developerConnection>https://github.com/exo-addons/wcm-template-pack/</developerConnection>
-    <url>https://github.com/exo-addons/wcm-template-pack/</url>
-  </scm-->
+    <scm>
+        <connection>https://github.com/exo-addons/wcm-template-pack/</connection>
+        <developerConnection>https://github.com/exo-addons/wcm-template-pack/</developerConnection>
+        <url>https://github.com/exo-addons/wcm-template-pack/</url>
+    </scm>
 
-  <properties>
-    <exoplatform.version>4.3.x-plf-wcm-template-pack-addon-SNAPSHOT</exoplatform.version>
-  </properties>
+    <properties>
+        <exoplatform.version>4.3.x-plf-wcm-template-pack-addon-SNAPSHOT</exoplatform.version>
+    </properties>
 
-  <dependencyManagement>
-  <dependencies>
-      <dependency>
-        <groupId>org.exoplatform.platform</groupId>
-        <artifactId>platform</artifactId>
-        <version>${exoplatform.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-  </dependencies>
-</dependencyManagement>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.exoplatform.platform</groupId>
+                <artifactId>platform</artifactId>
+                <version>${exoplatform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
-  <modules>
-    <module>agital-template</module>
-	  <module>globex-template</module>
-	  <module>responsive-template</module>
-    <module>packaging</module>
-    <module>template-pack-config</module>
-  </modules>
-  
-  <profiles>
-    <profile>
-      <id>project-repositories</id>
-      <activation>
-        <property>
-          <name>!skip-project-repositories</name>
-        </property>
-      </activation>
-      <repositories>
-        <repository>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-          <id>repository.exoplatform.org</id>
-          <url>https://repository.exoplatform.org/public</url>
-        </repository>
-      </repositories>
-      <pluginRepositories>
-        <pluginRepository>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
-          <id>repository.exoplatform.org</id>
-          <url>https://repository.exoplatform.org/public</url>
-        </pluginRepository>
-      </pluginRepositories>
-    </profile>
-  </profiles>
-  
+    <modules>
+        <module>agital-template</module>
+        <module>globex-template</module>
+        <module>responsive-template</module>
+        <module>packaging</module>
+        <module>template-pack-config</module>
+    </modules>
+
 </project>
