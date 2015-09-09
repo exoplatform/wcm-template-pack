@@ -12,12 +12,20 @@
  def email = _ctx.appRes("Contact.dialog.label.Email");
  def phone = _ctx.appRes("Contact.dialog.label.Phone");
  def message = _ctx.appRes("Contact.dialog.label.Message");
+ def isFCCPortlet = false;
+ def box_style = "";
+ if(uiform.getParent().getId().equals("UIFCCPortlet")) {
+ 	isFCCPortlet = true;
+ 	box_style = "box-module";
+ }
 
 %>
-<div class="uiForm FormLayout FormScrollLayout box-module">
- <h3 class="module-heading">
-   <%=_ctx.appRes("Contact.dialog.label.ContactForm")%>
- </h3>
+<div class="uiForm FormLayout FormScrollLayout $box_style">
+ <% if(isFCCPortlet) { %>
+    <h3 class="module-heading">
+      <%=_ctx.appRes("Contact.dialog.label.ContactForm")%>
+    </h3>
+ <% } %>
 
 <% uiform.begin() %>
   <%/* start render action*/%>
@@ -26,7 +34,7 @@
           }
   %>
   <%/* end render action*/%>
-    <div class="form-inline agital-contact-form box-module">
+    <div class="form-inline agital-contact-form $box_style">
       <div class="control-group" style="display:none;">
         <label class="control-label"><%=_ctx.appRes("FormGenerator.dialog.label.Date")%></label>
         <div class="controls">
@@ -46,7 +54,7 @@
              <div class="controls">
                <%
                 String[] your_nameFieldName = ["jcrPath=/node/exo:userName", "defaultValues=", "validate=empty,name",""];
-                uicomponent.addTextField("your_nameFieldName", your_nameFieldName);
+                uicomponent.addTextField("fullName", your_nameFieldName);
                %>
              </div>
           </div>
@@ -56,7 +64,7 @@
              <div class="controls">
                <%
                 String[] your_email_addressFieldName = ["jcrPath=/node/exo:userEmail", "defaultValues=", "validate=empty,email",""];
-                uicomponent.addTextField("your_email_addressFieldName", your_email_addressFieldName);
+                uicomponent.addTextField("email", your_email_addressFieldName);
                %>
              </div>
           </div>
@@ -65,8 +73,8 @@
           <div class="control-group">
              <div class="controls">
                <%
-                String[] your_phone_numberFieldName = ["jcrPath=/node/exo:userPhone", "defaultValues=", "validate=empty,number",""];
-                uicomponent.addTextField("your_phone_numberFieldName", your_phone_numberFieldName);
+                String[] your_phone_numberFieldName = ["jcrPath=/node/exo:userPhone", "defaultValues=",""];
+                uicomponent.addTextField("phone", your_phone_numberFieldName);
                %>
              </div>
           </div>
@@ -76,7 +84,7 @@
         <div class="controls">
           <%
              String[] your_messageFieldName = ["jcrPath=/node/exo:userMessage", "defaultValues=", "validate=empty",""];
-             uicomponent.addTextAreaField("your_messageFieldName", your_messageFieldName);
+             uicomponent.addTextAreaField("messages", your_messageFieldName);
           %>
         </div>
       </div>
@@ -97,14 +105,14 @@
 </div>
 
 <script type="text/javascript">
-  document.getElementById("your_nameFieldName").setAttribute("placeholder", "$name");
-  document.getElementById("your_email_addressFieldName").setAttribute("placeholder", "Email");
-  document.getElementById("your_phone_numberFieldName").setAttribute("placeholder", "$phone");
-  document.getElementById("your_messageFieldName").setAttribute("placeholder", "$message");
+  document.getElementById("fullName").setAttribute("placeholder", "$name");
+  document.getElementById("email").setAttribute("placeholder", "Email");
+  document.getElementById("phone").setAttribute("placeholder", "$phone");
+  document.getElementById("messages").setAttribute("placeholder", "$message");
   function clearForm(){
-    document.getElementById("your_nameFieldName").value='';
-    document.getElementById("your_email_addressFieldName").value='';
-    document.getElementById("your_phone_numberFieldName").value='';
-    document.getElementById("your_messageFieldName").value='';
+    document.getElementById("fullName").value='';
+    document.getElementById("email").value='';
+    document.getElementById("phone").value='';
+    document.getElementById("messages").value='';
   }
 </script>
