@@ -12,12 +12,22 @@
  def email = "Email";
  def phone = _ctx.appRes("Contact.dialog.label.Phone");
  def message = _ctx.appRes("Contact.dialog.label.Message");
+ def isFCCPortlet = false;
+ if(uiform.getParent().getId().equals("UIFCCPortlet")) isFCCPortlet = true;
  uiform.setId("FCC_Contact");
 %>
-<div class="grid_6"> 
-<div id="contact-form" class="contact-form">
+
+<div class="grid_6">
+  <div id="contact-form" class="contact-form">
 
 <% uiform.begin() %>
+<%/* start render action*/%>
+		<% if (!isFCCPortlet) {
+			 uiform.processRenderAction()
+		   }
+		%>
+
+		<%/* end render action*/%>
 
     <div class="box-module">
       <div class="control-group" style="display:none;">
@@ -48,7 +58,7 @@
   </label>
   <label class="phone">
   <%
-  String[] phoneNumber = ["jcrPath=/node/exo:phone", "defaultValues=", "validate=phone", ""];
+  String[] phoneNumber = ["jcrPath=/node/exo:phone", "defaultValues=", ""];
   uicomponent.addTextField("phoneNumber", phoneNumber);
  %>
 </label>
@@ -62,16 +72,20 @@ uicomponent.addTextAreaField("messages", messages);
 
   <div >
     <%
-     for(action in uicomponent.getActions()) {
-      String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action);
-      if(actionLabel.equals("Submit")) actionLabel = "SEND";
-      String link = uicomponent.event(action);                  %>
+     if(isFCCPortlet) {
+       for(action in uicomponent.getActions()) {
+         String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action);
+         if(actionLabel.equals("Submit")) actionLabel = "SEND";
+         String link = uicomponent.event(action);                  %>
             <button type="button" href="javascript:void(0);" onclick="$link" class="btn">$actionLabel</button>
-  <% } %>
+    <%
+       }
+     }
+    %>
   </div>
 
 <% uiform.end() %>
-</div>
+  </div>
 </div>
 <script type="text/javascript">
   document.getElementById("fullName").setAttribute("placeholder", "$name");
