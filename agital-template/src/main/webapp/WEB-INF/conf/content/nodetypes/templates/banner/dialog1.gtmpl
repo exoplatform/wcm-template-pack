@@ -10,6 +10,13 @@
   uicomponent.addCalendarField("hiddenInput4", hiddenField4) ;
   uicomponent.addCalendarField("hiddenInput5", hiddenField5) ;
 %>
+<style>
+  .uiDocumentFormController .form-horizontal .controls .uiUploadInput {
+    margin-right: 13px;
+    min-width: 270px;
+    width: auto;
+  }
+</style>
 <div class="UIForm FormLayout FormScrollLayout">
   <% uiform.begin() %>
 
