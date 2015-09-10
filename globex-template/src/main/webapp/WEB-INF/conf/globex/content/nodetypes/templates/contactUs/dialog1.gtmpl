@@ -13,8 +13,10 @@
  def phone = _ctx.appRes("Contact.dialog.label.Phone");
  def message = _ctx.appRes("Contact.dialog.label.Message");
  def isFCCPortlet = false;
- if(uiform.getParent().getId().equals("UIFCCPortlet")) isFCCPortlet = true;
- uiform.setId("FCC_Contact");
+ if(uiform.getParent().getId().equals("UIFCCPortlet")) {
+   isFCCPortlet = true;
+   uiform.setId("FCC_Contact");
+ }
 %>
 
 <div class="grid_6">
@@ -68,11 +70,11 @@ String[] messages = ["jcrPath=/node/exo:message", "defaultValues=", "validate=em
 uicomponent.addTextAreaField("messages", messages);
 %>
 </label>
-
-
-  <div >
     <%
      if(isFCCPortlet) {
+     %>
+     <div >
+     <%
        for(action in uicomponent.getActions()) {
          String actionLabel = _ctx.appRes(uicomponent.getName() + ".action." + action);
          if(actionLabel.equals("Submit")) actionLabel = "SEND";
@@ -80,6 +82,9 @@ uicomponent.addTextAreaField("messages", messages);
             <button type="button" href="javascript:void(0);" onclick="$link" class="btn">$actionLabel</button>
     <%
        }
+       %>
+         </div>
+       <%
      }
     %>
   </div>
