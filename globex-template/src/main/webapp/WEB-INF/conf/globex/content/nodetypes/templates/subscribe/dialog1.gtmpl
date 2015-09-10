@@ -9,7 +9,10 @@
  }
  String timestampName = Text.convertJcrChars(getTimestampName());
  def email = "ENTER YOUR E-MAIL";
- uiform.setId("FCC_Subscribe");
+  if(uiform.getParent().getId().equals("UIFCCPortlet")) {
+   isFCCPortlet = true;
+   uiform.setId("FCC_Subscribe");
+   }
 %>
 <div class="grid_6">
 
@@ -38,8 +41,8 @@
       String[] your_email_addressFieldName = ["jcrPath=/node/exo:email", "defaultValues=", "validate=email,empty", ""];
       uicomponent.addTextField("your_email_addressFieldName", your_email_addressFieldName);
      %>
-      <span class="error">*Invalid email.</span>
-      <span class="success">Subscription request sent!</span>
+      <!--span class="error">*Invalid email.</span>
+      <span class="success">Subscription request sent!</span-->
   </label>
   <% if (!uiform.isShowActionsOnTop()) { %>
     <%
