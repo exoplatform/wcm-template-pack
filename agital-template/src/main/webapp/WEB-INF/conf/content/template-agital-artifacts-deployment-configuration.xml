@@ -1666,7 +1666,7 @@
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homeSolutions</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homewelcomefolder</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/homewhyusfolder</string></value>
-                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/mailAddress</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/Contact</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/mailContactUs</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/servicesServices</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/servicesServices/in-pede-mi-aliquet-sit-amet-euismod-inauctor-ut</string></value>
