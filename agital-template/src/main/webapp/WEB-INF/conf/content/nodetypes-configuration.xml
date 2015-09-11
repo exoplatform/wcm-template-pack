@@ -397,7 +397,7 @@
                       <boolean>true</boolean>
                     </field>
                     <field name="label">
-                      <string>Contact</string>
+                      <string>Contact Request</string>
                     </field>
                     <field name="referencedView">
                       <collection type="java.util.ArrayList">
