@@ -102,5 +102,40 @@
       <supertype>nt:base</supertype>
     </supertypes>
   </nodeType>
-  
+
+  <nodeType name="exo:bannerSlideImageFolder" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+    <supertypes>
+      <supertype>nt:unstructured</supertype>
+    </supertypes>
+  </nodeType>
+
+  <nodeType name="exo:newsFolder" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+    <supertypes>
+      <supertype>nt:unstructured</supertype>
+    </supertypes>
+  </nodeType>
+
+  <nodeType name="exo:articleFolder" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+    <supertypes>
+      <supertype>nt:unstructured</supertype>
+    </supertypes>
+  </nodeType>
+
+  <nodeType name="exo:dnblogFolder" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+    <supertypes>
+      <supertype>nt:unstructured</supertype>
+    </supertypes>
+  </nodeType>
+
+  <nodeType name="exo:teamMemberFolder" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+    <supertypes>
+      <supertype>nt:unstructured</supertype>
+    </supertypes>
+  </nodeType>
+
+  <nodeType name="exo:testimonialFolder" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+    <supertypes>
+      <supertype>nt:unstructured</supertype>
+    </supertypes>
+  </nodeType>
 </nodeTypes>

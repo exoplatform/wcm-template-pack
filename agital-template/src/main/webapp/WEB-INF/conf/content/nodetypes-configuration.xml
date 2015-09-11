@@ -437,6 +437,110 @@
         </object-param>
       </init-params>
     </component-plugin>
+    <component-plugin>
+      <name>FilterContentTypeForAgital</name>
+      <set-method>addContentTypeFilterPlugin</set-method>
+      <type>org.exoplatform.services.cms.templates.ContentTypeFilterPlugin</type>
+      <description>this plugin is used to filter wcm nodetype</description>
+      <init-params>
+        <object-param>
+          <name>bannerSlideImageFolderFilter</name>
+          <description>only exo:bannerSlideImage can be created in exo:bannerSlideImageFolder</description>
+          <object type="org.exoplatform.services.cms.templates.ContentTypeFilterPlugin$FolderFilterConfig">
+            <field name="folderType">
+              <string>exo:bannerSlideImageFolder</string>
+            </field>
+            <field name="contentTypes">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <string>exo:bannerSlideImage</string>
+                </value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>newsFolderFilter</name>
+          <description>only exo:news can be created in exo:newsFolder</description>
+          <object type="org.exoplatform.services.cms.templates.ContentTypeFilterPlugin$FolderFilterConfig">
+            <field name="folderType">
+              <string>exo:newsFolder</string>
+            </field>
+            <field name="contentTypes">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <string>exo:news</string>
+                </value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>articleFolderFilter</name>
+          <description>only exo:article can be created in exo:articleFolder</description>
+          <object type="org.exoplatform.services.cms.templates.ContentTypeFilterPlugin$FolderFilterConfig">
+            <field name="folderType">
+              <string>exo:articleFolder</string>
+            </field>
+            <field name="contentTypes">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <string>exo:article</string>
+                </value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>dnblogFolderFilter</name>
+          <description>only exo:dnblog can be created in exo:dnblogFolder</description>
+          <object type="org.exoplatform.services.cms.templates.ContentTypeFilterPlugin$FolderFilterConfig">
+            <field name="folderType">
+              <string>exo:dnblogFolder</string>
+            </field>
+            <field name="contentTypes">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <string>exo:dnblog</string>
+                </value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>teamMemberFolderFilter</name>
+          <description>only exo:teamMember can be created in exo:teamMemberFolder</description>
+          <object type="org.exoplatform.services.cms.templates.ContentTypeFilterPlugin$FolderFilterConfig">
+            <field name="folderType">
+              <string>exo:teamMemberFolder</string>
+            </field>
+            <field name="contentTypes">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <string>exo:teamMember</string>
+                </value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>testimonialFolderFilter</name>
+          <description>only exo:testimonial can be created in exo:testimonialFolder</description>
+          <object type="org.exoplatform.services.cms.templates.ContentTypeFilterPlugin$FolderFilterConfig">
+            <field name="folderType">
+              <string>exo:testimonialFolder</string>
+            </field>
+            <field name="contentTypes">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <string>exo:testimonial</string>
+                </value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+      </init-params>
+    </component-plugin>
   </external-component-plugins>
   
 </configuration>
