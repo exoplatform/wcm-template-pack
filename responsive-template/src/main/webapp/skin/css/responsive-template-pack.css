@@ -1,35 +1,40 @@
 
-.UIEditInlineWS .uiContainerList .OneRowResponsiveContainerLayout {
-  background-position: 5px top;
-  height: 41px;
-}
 
-.UIEditInlineWS .uiContainerList .TwoColumnResponsiveContainerLayout {
-  background-position: 5px -154px;
-  height: 31px;
-}
 
-.UIEditInlineWS .uiContainerList .ThreeColumnResponsiveContainerLayout {
-  background-position: 5px -185px;
-  height: 31px;
-}
-
+.UIEditInlineWS .uiContainerList .RowResponsiveContainerLayout, 
+.UIEditInlineWS .uiContainerList .OneRowResponsiveContainerLayout,
+.UIEditInlineWS .uiContainerList .TwoColumnResponsiveContainerLayout,
+.UIEditInlineWS .uiContainerList .ThreeColumnResponsiveContainerLayout,
 .UIEditInlineWS .uiContainerList .FourColumnResponsiveContainerLayout, 
 .UIEditInlineWS .uiContainerList .SmallBigColumnResponsiveContainerLayout, 
 .UIEditInlineWS .uiContainerList .BigSmallColumnResponsiveContainerLayout {
-  background: url("../image/Container.png") no-repeat top;
-  height: 31px;
+  background: url("../image/Container.png") no-repeat;
+  height: 34px;
+}
+.UIEditInlineWS .uiContainerList .OneRowResponsiveContainerLayout {
+  background-position: 5px -824px;
 }
 
+.UIEditInlineWS .uiContainerList .TwoColumnResponsiveContainerLayout {
+  background-position: 5px -574px;
+}
+
+.UIEditInlineWS .uiContainerList .ThreeColumnResponsiveContainerLayout {
+  background-position: 5px -616px;
+}
 .UIEditInlineWS .uiContainerList .FourColumnResponsiveContainerLayout {
-  background-position: 5px -442px;
+  background-position: 5px -657px;
 }
 
 .UIEditInlineWS .uiContainerList .SmallBigColumnResponsiveContainerLayout {
-  background-position: 5px -474px;
+  background-position: 5px -741px;
 
 }
 
 .UIEditInlineWS .uiContainerList .BigSmallColumnResponsiveContainerLayout {
-  background-position: 5px -506px;
+  background-position: 5px -699px;
+}
+
+.UIEditInlineWS .uiContainerList .RowResponsiveContainerLayout{
+  background-position: 5px -781px;
 }
