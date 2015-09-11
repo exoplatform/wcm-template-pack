@@ -55,8 +55,8 @@
                   <object type="org.exoplatform.application.registry.Application">
                     <field name="applicationName"><string>ContactFormPortlet</string></field>
                     <field name="categoryName"><string>Web</string></field>
-                    <field name="displayName"><string>Contact Form Portlet</string></field>
-                    <field name="description"><string>Contact form portlet.</string></field>
+                    <field name="displayName"><string>Contact Form</string></field>
+                    <field name="description"><string></string></field>
                     <field name="type"><string>portlet</string></field>
                     <field name="contentId"><string>agital-template/ContactFormPortlet</string></field>
                     <field name="accessPermissions">
@@ -70,8 +70,8 @@
                   <object type="org.exoplatform.application.registry.Application">
                     <field name="applicationName"><string>GoogleMapPortlet</string></field>
                     <field name="categoryName"><string>Web</string></field>
-                    <field name="displayName"><string>Google Map Porlet</string></field>
-                    <field name="description"><string>Google Map Portlet.</string></field>
+                    <field name="displayName"><string>Google Map</string></field>
+                    <field name="description"><string></string></field>
                     <field name="type"><string>portlet</string></field>
                     <field name="contentId"><string>agital-template/GoogleMapPortlet</string></field>
                     <field name="accessPermissions">
