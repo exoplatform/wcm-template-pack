@@ -87,8 +87,6 @@ uicomponent.addTextAreaField("messages", messages);
        <%
      }
     %>
-  </div>
-
 <% uiform.end() %>
   </div>
 </div>
