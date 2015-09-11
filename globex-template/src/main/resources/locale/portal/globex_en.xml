@@ -31,6 +31,15 @@
     <msg>
       <NotSupport>The format is not supported</NotSupport>
     </msg>
+    <label>
+      <Name>Name</Name>
+      <URL>Video URL</URL>
+      <Title>Title</Title>
+      <Subtitle>Subtitle</Subtitle>
+      <Description>Description</Description>
+      <Width>Width</Width>
+      <Height>Height</Height>
+    </label>
   </GlobexVideo>
 
 </bundle>

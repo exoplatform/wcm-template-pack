@@ -42,7 +42,7 @@
        <%
          String[] fieldProperty; 
        %>
-       <td class="FieldLabel"><%=_ctx.appRes("exo_globexfeature.dialog.label.name")%></td>
+       <td class="FieldLabel"><%=_ctx.appRes("GlobexVideo.label.Name")%></td>
        <td class="FieldComponent">
        <%
          String[] fieldName = ["jcrPath=/node", "editable=if-null", "validate=empty,name"];
@@ -52,7 +52,7 @@
      </tr>
 
      <tr>
-     <td class="FieldLabel">Video URL</td>
+     <td class="FieldLabel"><%=_ctx.appRes("GlobexVideo.label.URL")%></td>
      <td class="FieldComponent">
    <%
        fieldProperty = ["jcrPath=/node/exo:url", "validate=empty"];
@@ -61,7 +61,7 @@
      </td>
    </tr>
      <tr>
-       <td class="FieldLabel">Title</td>
+       <td class="FieldLabel"><%=_ctx.appRes("GlobexVideo.label.Title")%></td>
        <td class="FieldComponent">
      <%
          fieldProperty = ["jcrPath=/node/exo:title"];
@@ -70,7 +70,7 @@
        </td>
      </tr>
      <tr>
-     <td class="FieldLabel">Subitle</td>
+     <td class="FieldLabel"><%=_ctx.appRes("GlobexVideo.label.Subtitle")%></td>
      <td class="FieldComponent">
    <%
        fieldProperty = ["jcrPath=/node/exo:subtitle"];
@@ -79,7 +79,7 @@
      </td>
    </tr>
         <tr>
-       <td class="FieldLabel">Description</td>
+       <td class="FieldLabel"><%=_ctx.appRes("GlobexVideo.label.Description")%></td>
        <td class="FieldComponent">
      <%
          fieldProperty = ["jcrPath=/node/exo:summary"];
@@ -88,7 +88,7 @@
        </td>
      </tr>
      <tr>
-     <td class="FieldLabel">Width</td>
+     <td class="FieldLabel"><%=_ctx.appRes("GlobexVideo.label.Width")%></td>
      <td class="FieldComponent">
    <%
        fieldProperty = ["jcrPath=/node/exo:width" ];
@@ -96,7 +96,7 @@
    %>
      </td>
      <tr>
-     <td class="FieldLabel">Height</td>
+     <td class="FieldLabel"><%=_ctx.appRes("GlobexVideo.label.Height")%></td>
      <td class="FieldComponent">
    <%
        fieldProperty = ["jcrPath=/node/exo:height" ];
