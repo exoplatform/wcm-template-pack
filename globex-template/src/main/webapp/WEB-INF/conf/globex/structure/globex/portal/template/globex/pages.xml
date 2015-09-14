@@ -17,7 +17,7 @@
     <access-permissions>Everyone</access-permissions>
     <edit-permission>editor:/platform/web-contributors</edit-permission>
     <container id="Title"
-      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+               template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>
@@ -81,15 +81,15 @@
             </preference>
           </preferences>
         </portlet>
-                <title>Title</title>
+        <title>Title</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
         <show-application-mode>false</show-application-mode>
       </portlet-application>
     </container>
-        <container id="Introduction"
-      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+    <container id="Introduction"
+               template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>
@@ -153,15 +153,15 @@
             </preference>
           </preferences>
         </portlet>
-                        <title>Introduction</title>
+        <title>Introduction</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
         <show-application-mode>false</show-application-mode>
       </portlet-application>
     </container>
-        <container id="Services"
-      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+    <container id="Services"
+               template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>
@@ -240,15 +240,15 @@
             </preference>
           </preferences>
         </portlet>
-                        <title>Services</title>
+        <title>Services</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
         <show-application-mode>false</show-application-mode>
       </portlet-application>
     </container>
-        <container id="Feature"
-      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+    <container id="Feature"
+               template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>
@@ -327,15 +327,15 @@
             </preference>
           </preferences>
         </portlet>
-                        <title>Feature</title>
+        <title>Feature</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
         <show-application-mode>false</show-application-mode>
       </portlet-application>
     </container>
-        <container id="Video"
-      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+    <container id="Video"
+               template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>
@@ -399,15 +399,15 @@
             </preference>
           </preferences>
         </portlet>
-                        <title>Video</title>
+        <title>Video</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
         <show-application-mode>false</show-application-mode>
       </portlet-application>
     </container>
-        <container id="Quote"
-      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+    <container id="Quote"
+               template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>
@@ -478,235 +478,235 @@
         <show-application-mode>false</show-application-mode>
       </portlet-application>
     </container>
-  <container id="Pricing"
-    template="system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl">
-    <access-permissions>Everyone</access-permissions>
-<container id="PricingColumn" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
-<access-permissions>Everyone</access-permissions>
-    <container id="PricingLeft"
-      template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
+    <container id="Pricing"
+               template="system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
-      <portlet-application>
-        <portlet>
-          <application-ref>presentation</application-ref>
-          <portlet-ref>SingleContentViewer</portlet-ref>
-          <preferences>
-            <preference>
-              <name>nodeDrive</name>
-              <value>Managed Sites</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>workspace</name>
-              <value>collaboration</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>nodeIdentifier</name>
-              <value>/sites/@owner@/web contents/site artifacts/pricingleft</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowQuickEdit</name>
-              <value>true</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowPrintAction</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTOC</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowCategories</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTags</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ContextEnable</name>
-              <value>true</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ParameterName</name>
-              <value>content-id</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTitle</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-          </preferences>
-        </portlet>
-        <title>PricingLeft</title>
+      <container id="PricingColumn" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
-        <show-info-bar>false</show-info-bar>
-        <show-application-state>false</show-application-state>
-        <show-application-mode>false</show-application-mode>
-      </portlet-application>
-    </container>
-<container id="PricingRight" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
-<access-permissions>Everyone</access-permissions>
-      <container id="PricingRight1"
-        template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
-        <access-permissions>Everyone</access-permissions>
-        <portlet-application>
-          <portlet>
-            <application-ref>presentation</application-ref>
-            <portlet-ref>SingleContentViewer</portlet-ref>
-            <preferences>
-              <preference>
-                <name>nodeDrive</name>
-                <value>Managed Sites</value>
-                <read-only>false</read-only>
-              </preference>
-              <preference>
-                <name>workspace</name>
-                <value>collaboration</value>
-                <read-only>false</read-only>
-              </preference>
-              <preference>
-                <name>nodeIdentifier</name>
-                <value>/sites/@owner@/web contents/site artifacts/pricingmid</value>
-                <read-only>false</read-only>
-              </preference>
-            <preference>
-              <name>ShowQuickEdit</name>
-              <value>true</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowPrintAction</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTOC</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowCategories</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTags</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ContextEnable</name>
-              <value>true</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ParameterName</name>
-              <value>content-id</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTitle</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-          </preferences>
-        </portlet>
-          <title>PricingRight1</title>
+        <container id="PricingLeft"
+                   template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
-          <show-info-bar>false</show-info-bar>
-          <show-application-state>false</show-application-state>
-          <show-application-mode>false</show-application-mode>
-        </portlet-application>
-      </container>
-      <container id="PricingRight2"
-        template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
-        <access-permissions>Everyone</access-permissions>
-        <portlet-application>
-          <portlet>
-            <application-ref>presentation</application-ref>
-            <portlet-ref>SingleContentViewer</portlet-ref>
-            <preferences>
-              <preference>
-                <name>nodeDrive</name>
-                <value>Managed Sites</value>
-                <read-only>false</read-only>
-              </preference>
-              <preference>
-                <name>workspace</name>
-                <value>collaboration</value>
-                <read-only>false</read-only>
-              </preference>
-              <preference>
-                <name>nodeIdentifier</name>
-                <value>/sites/@owner@/web contents/site artifacts/pricingright</value>
-                <read-only>false</read-only>
-              </preference>
-            <preference>
-              <name>ShowQuickEdit</name>
-              <value>true</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowPrintAction</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTOC</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowCategories</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTags</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ContextEnable</name>
-              <value>true</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ParameterName</name>
-              <value>content-id</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTitle</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-          </preferences>
-        </portlet>
-          <title>PricingRight2</title>
+          <portlet-application>
+            <portlet>
+              <application-ref>presentation</application-ref>
+              <portlet-ref>SingleContentViewer</portlet-ref>
+              <preferences>
+                <preference>
+                  <name>nodeDrive</name>
+                  <value>Managed Sites</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>workspace</name>
+                  <value>collaboration</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>nodeIdentifier</name>
+                  <value>/sites/@owner@/web contents/site artifacts/pricingleft</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowQuickEdit</name>
+                  <value>true</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowPrintAction</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowTOC</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowCategories</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowTags</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ContextEnable</name>
+                  <value>true</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ParameterName</name>
+                  <value>content-id</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowTitle</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+              </preferences>
+            </portlet>
+            <title>PricingLeft</title>
+            <access-permissions>Everyone</access-permissions>
+            <show-info-bar>false</show-info-bar>
+            <show-application-state>false</show-application-state>
+            <show-application-mode>false</show-application-mode>
+          </portlet-application>
+        </container>
+        <container id="PricingRight" template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
-          <show-info-bar>false</show-info-bar>
-          <show-application-state>false</show-application-state>
-          <show-application-mode>false</show-application-mode>
-        </portlet-application>
-      </container>
-</container>
+          <container id="PricingRight1"
+                     template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+            <access-permissions>Everyone</access-permissions>
+            <portlet-application>
+              <portlet>
+                <application-ref>presentation</application-ref>
+                <portlet-ref>SingleContentViewer</portlet-ref>
+                <preferences>
+                  <preference>
+                    <name>nodeDrive</name>
+                    <value>Managed Sites</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>workspace</name>
+                    <value>collaboration</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>nodeIdentifier</name>
+                    <value>/sites/@owner@/web contents/site artifacts/pricingmid</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ShowQuickEdit</name>
+                    <value>true</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ShowPrintAction</name>
+                    <value>false</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ShowTOC</name>
+                    <value>false</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ShowCategories</name>
+                    <value>false</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ShowTags</name>
+                    <value>false</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ContextEnable</name>
+                    <value>true</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ParameterName</name>
+                    <value>content-id</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ShowTitle</name>
+                    <value>false</value>
+                    <read-only>false</read-only>
+                  </preference>
+                </preferences>
+              </portlet>
+              <title>PricingRight1</title>
+              <access-permissions>Everyone</access-permissions>
+              <show-info-bar>false</show-info-bar>
+              <show-application-state>false</show-application-state>
+              <show-application-mode>false</show-application-mode>
+            </portlet-application>
+          </container>
+          <container id="PricingRight2"
+                     template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+            <access-permissions>Everyone</access-permissions>
+            <portlet-application>
+              <portlet>
+                <application-ref>presentation</application-ref>
+                <portlet-ref>SingleContentViewer</portlet-ref>
+                <preferences>
+                  <preference>
+                    <name>nodeDrive</name>
+                    <value>Managed Sites</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>workspace</name>
+                    <value>collaboration</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>nodeIdentifier</name>
+                    <value>/sites/@owner@/web contents/site artifacts/pricingright</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ShowQuickEdit</name>
+                    <value>true</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ShowPrintAction</name>
+                    <value>false</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ShowTOC</name>
+                    <value>false</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ShowCategories</name>
+                    <value>false</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ShowTags</name>
+                    <value>false</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ContextEnable</name>
+                    <value>true</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ParameterName</name>
+                    <value>content-id</value>
+                    <read-only>false</read-only>
+                  </preference>
+                  <preference>
+                    <name>ShowTitle</name>
+                    <value>false</value>
+                    <read-only>false</read-only>
+                  </preference>
+                </preferences>
+              </portlet>
+              <title>PricingRight2</title>
+              <access-permissions>Everyone</access-permissions>
+              <show-info-bar>false</show-info-bar>
+              <show-application-state>false</show-application-state>
+              <show-application-mode>false</show-application-mode>
+            </portlet-application>
+          </container>
+        </container>
       
-</container>
+      </container>
     </container>
     <container id="WhatTheySay"
-      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+               template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>
@@ -785,15 +785,15 @@
             </preference>
           </preferences>
         </portlet>
-                        <title>WhatTheySay</title>
+        <title>WhatTheySay</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
         <show-application-mode>false</show-application-mode>
       </portlet-application>
     </container>
-        <container id="AskedQuestions"
-      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+    <container id="AskedQuestions"
+               template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>
@@ -872,275 +872,275 @@
             </preference>
           </preferences>
         </portlet>
-                        <title>AskedQuestions</title>
+        <title>AskedQuestions</title>
         <access-permissions>Everyone</access-permissions>
         <show-info-bar>false</show-info-bar>
         <show-application-state>false</show-application-state>
         <show-application-mode>false</show-application-mode>
       </portlet-application>
     </container>
-      <container id="Subscribes"
-    template="system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl">
-    <access-permissions>Everyone</access-permissions>
-  <container id="SubscribesColumn"
-    template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
-    <access-permissions>Everyone</access-permissions>
-    <container id="SubscribesLeft"
-      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+    <container id="Subscribes"
+               template="system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
-      <portlet-application>
-        <portlet>
-          <application-ref>presentation</application-ref>
-          <portlet-ref>SingleContentViewer</portlet-ref>
-          <preferences>
-            <preference>
-              <name>workspace</name>
-              <value>collaboration</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>nodeDrive</name>
-              <value>Managed Sites</value>
-              <read-only>false</read-only>
-            </preference>
-            <!-- Specify the destination path which will be use to store 
-              saved documents -->
-            <preference>
-              <name>nodeIdentifier</name>
-              <value>/sites/@owner@/web contents/site artifacts/subscribes</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowQuickEdit</name>
-              <value>true</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowPrintAction</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTOC</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowCategories</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTags</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ContextEnable</name>
-              <value>true</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ParameterName</name>
-              <value>content-id</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTitle</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-          </preferences>
-        </portlet>
-        <title>SubscribesLeft</title>
+      <container id="SubscribesColumn"
+                 template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
-        <show-info-bar>false</show-info-bar>
-        <show-application-state>false</show-application-state>
-        <show-application-mode>false</show-application-mode>
-      </portlet-application>
-    </container>
-    <container id="SubscribeRight"
-      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
-      <access-permissions>Everyone</access-permissions>
-
-      <portlet-application>
-        <portlet>
-          <application-ref>fastcontentcreator</application-ref>
-          <portlet-ref>FastContentCreatorBasicPortlet</portlet-ref>
-          <preferences>
-            <preference>
-              <name>workspace</name>
-              <value>collaboration</value>
-              <read-only>false</read-only>
-            </preference>
-            <!-- Specify the destination path which will be use to store 
-              saved documents -->
-            <preference>
-              <name>path</name>
-              <value>/sites/@owner@/web contents/site artifacts/subscribesrequest</value>
-              <read-only>false</read-only>
-            </preference>
-            <!-- Specify the node type of document which will be show on 
-              the dialog form -->
-            <preference>
-              <name>type</name>
-              <value>exo:subscribe</value>
-              <read-only>false</read-only>
-            </preference>
-            <!-- The custom button Save -->
-            <preference>
-              <name>saveButton</name>
-              <value>Submit</value>
-              <read-only>false</read-only>
-            </preference>
-            <!-- The custom message when click Save button -->
-            <preference>
-              <name>saveMessage</name>
-              <value>Your infomation has been saved successfully</value>
-              <read-only>false</read-only>
-            </preference>
-          </preferences>
-        </portlet>
-        <title>SubscribeRight</title>
-        <access-permissions>Everyone</access-permissions>
-        <show-info-bar>false</show-info-bar>
-        <show-application-state>false</show-application-state>
-        <show-application-mode>false</show-application-mode>
-      </portlet-application>
-    </container>
-  </container>
-  </container>
-        <container id="Contact"
-    template="system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl">
-    <access-permissions>Everyone</access-permissions>
-  <container id="ContactColumn"
-    template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
-    <access-permissions>Everyone</access-permissions>
-          <container id="CongtactLeft"
-        template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
-        <access-permissions>Everyone</access-permissions>
-        <portlet-application>
-          <portlet>
-            <application-ref>presentation</application-ref>
-            <portlet-ref>SingleContentViewer</portlet-ref>
-            <preferences>
-              <preference>
-                <name>nodeDrive</name>
-                <value>Managed Sites</value>
-                <read-only>false</read-only>
-              </preference>
-              <preference>
-                <name>workspace</name>
-                <value>collaboration</value>
-                <read-only>false</read-only>
-              </preference>
-              <preference>
-                <name>nodeIdentifier</name>
-                <value>/sites/@owner@/web contents/site artifacts/contact</value>
-                <read-only>false</read-only>
-              </preference>
-            <preference>
-              <name>ShowQuickEdit</name>
-              <value>true</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowPrintAction</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTOC</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowCategories</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTags</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ContextEnable</name>
-              <value>true</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ParameterName</name>
-              <value>content-id</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
-              <name>ShowTitle</name>
-              <value>false</value>
-              <read-only>false</read-only>
-            </preference>
-          </preferences>
-        </portlet>
-          <title>CongtactLeft</title>
+        <container id="SubscribesLeft"
+                   template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
           <access-permissions>Everyone</access-permissions>
-          <show-info-bar>false</show-info-bar>
-          <show-application-state>false</show-application-state>
-          <show-application-mode>false</show-application-mode>
-        </portlet-application>
-      </container>
-            <container id="ContactRigh"
-        template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
-        <access-permissions>Everyone</access-permissions>
+          <portlet-application>
+            <portlet>
+              <application-ref>presentation</application-ref>
+              <portlet-ref>SingleContentViewer</portlet-ref>
+              <preferences>
+                <preference>
+                  <name>workspace</name>
+                  <value>collaboration</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>nodeDrive</name>
+                  <value>Managed Sites</value>
+                  <read-only>false</read-only>
+                </preference>
+                <!-- Specify the destination path which will be use to store
+                  saved documents -->
+                <preference>
+                  <name>nodeIdentifier</name>
+                  <value>/sites/@owner@/web contents/site artifacts/subscribes</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowQuickEdit</name>
+                  <value>true</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowPrintAction</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowTOC</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowCategories</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowTags</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ContextEnable</name>
+                  <value>true</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ParameterName</name>
+                  <value>content-id</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowTitle</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+              </preferences>
+            </portlet>
+            <title>SubscribesLeft</title>
+            <access-permissions>Everyone</access-permissions>
+            <show-info-bar>false</show-info-bar>
+            <show-application-state>false</show-application-state>
+            <show-application-mode>false</show-application-mode>
+          </portlet-application>
+        </container>
+        <container id="SubscribeRight"
+                   template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+          <access-permissions>Everyone</access-permissions>
 
-    <portlet-application>
-      <portlet>
-        <application-ref>fastcontentcreator</application-ref>
-        <portlet-ref>FastContentCreatorBasicPortlet</portlet-ref>
-        <preferences>
-          <preference>
-            <name>workspace</name>
-            <value>collaboration</value>
-            <read-only>false</read-only>
-          </preference>
-          <!-- Specify the destination path which will be use to store saved 
-            documents -->
-          <preference>
-            <name>path</name>
-            <value>/sites/@owner@/web contents/site artifacts/contact-requests</value>
-            <read-only>false</read-only>
-          </preference>
-          <!-- Specify the node type of document which will be show on the 
-            dialog form -->
-          <preference>
-            <name>type</name>
-            <value>exo:contactUs2Horizontal</value>
-            <read-only>false</read-only>
-          </preference>
-          <!-- The custom button Save -->
-          <preference>
-            <name>saveButton</name>
-            <value>Submit</value>
-            <read-only>false</read-only>
-          </preference>
-          <!-- The custom message when click Save button -->
-          <preference>
-            <name>saveMessage</name>
-            <value>Your infomation has been saved successfully</value>
-            <read-only>false</read-only>
-          </preference>
-        </preferences>
-      </portlet>
-      <title>ContactRigh</title>
-      <access-permissions>Everyone</access-permissions>
-      <show-info-bar>false</show-info-bar>
-      <show-application-state>false</show-application-state>
-      <show-application-mode>false</show-application-mode>
-    </portlet-application>
+          <portlet-application>
+            <portlet>
+              <application-ref>fastcontentcreator</application-ref>
+              <portlet-ref>FastContentCreatorBasicPortlet</portlet-ref>
+              <preferences>
+                <preference>
+                  <name>workspace</name>
+                  <value>collaboration</value>
+                  <read-only>false</read-only>
+                </preference>
+                <!-- Specify the destination path which will be use to store
+                  saved documents -->
+                <preference>
+                  <name>path</name>
+                  <value>/sites/@owner@/web contents/site artifacts/subscribesrequest</value>
+                  <read-only>false</read-only>
+                </preference>
+                <!-- Specify the node type of document which will be show on
+                  the dialog form -->
+                <preference>
+                  <name>type</name>
+                  <value>exo:subscribe</value>
+                  <read-only>false</read-only>
+                </preference>
+                <!-- The custom button Save -->
+                <preference>
+                  <name>saveButton</name>
+                  <value>Submit</value>
+                  <read-only>false</read-only>
+                </preference>
+                <!-- The custom message when click Save button -->
+                <preference>
+                  <name>saveMessage</name>
+                  <value>Your infomation has been saved successfully</value>
+                  <read-only>false</read-only>
+                </preference>
+              </preferences>
+            </portlet>
+            <title>SubscribeRight</title>
+            <access-permissions>Everyone</access-permissions>
+            <show-info-bar>false</show-info-bar>
+            <show-application-state>false</show-application-state>
+            <show-application-mode>false</show-application-mode>
+          </portlet-application>
+        </container>
       </container>
-  </container>
-  </container>
-        <container id="Footer"
-      template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+    </container>
+    <container id="Contact"
+               template="system:/groovy/portal/webui/container/UIResponsiveRowContainer.gtmpl">
+      <access-permissions>Everyone</access-permissions>
+      <container id="ContactColumn"
+                 template="system:/groovy/portal/webui/container/UIResponsiveTableTwoColumnContainer.gtmpl">
+        <access-permissions>Everyone</access-permissions>
+        <container id="CongtactLeft"
+                   template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
+          <access-permissions>Everyone</access-permissions>
+          <portlet-application>
+            <portlet>
+              <application-ref>presentation</application-ref>
+              <portlet-ref>SingleContentViewer</portlet-ref>
+              <preferences>
+                <preference>
+                  <name>nodeDrive</name>
+                  <value>Managed Sites</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>workspace</name>
+                  <value>collaboration</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>nodeIdentifier</name>
+                  <value>/sites/@owner@/web contents/site artifacts/contact</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowQuickEdit</name>
+                  <value>true</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowPrintAction</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowTOC</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowCategories</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowTags</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ContextEnable</name>
+                  <value>true</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ParameterName</name>
+                  <value>content-id</value>
+                  <read-only>false</read-only>
+                </preference>
+                <preference>
+                  <name>ShowTitle</name>
+                  <value>false</value>
+                  <read-only>false</read-only>
+                </preference>
+              </preferences>
+            </portlet>
+            <title>CongtactLeft</title>
+            <access-permissions>Everyone</access-permissions>
+            <show-info-bar>false</show-info-bar>
+            <show-application-state>false</show-application-state>
+            <show-application-mode>false</show-application-mode>
+          </portlet-application>
+        </container>
+        <container id="ContactRigh"
+                   template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
+          <access-permissions>Everyone</access-permissions>
+
+          <portlet-application>
+            <portlet>
+              <application-ref>fastcontentcreator</application-ref>
+              <portlet-ref>FastContentCreatorBasicPortlet</portlet-ref>
+              <preferences>
+                <preference>
+                  <name>workspace</name>
+                  <value>collaboration</value>
+                  <read-only>false</read-only>
+                </preference>
+                <!-- Specify the destination path which will be use to store saved
+                  documents -->
+                <preference>
+                  <name>path</name>
+                  <value>/sites/@owner@/web contents/site artifacts/contact-requests</value>
+                  <read-only>false</read-only>
+                </preference>
+                <!-- Specify the node type of document which will be show on the
+                  dialog form -->
+                <preference>
+                  <name>type</name>
+                  <value>exo:contactUs2Horizontal</value>
+                  <read-only>false</read-only>
+                </preference>
+                <!-- The custom button Save -->
+                <preference>
+                  <name>saveButton</name>
+                  <value>Submit</value>
+                  <read-only>false</read-only>
+                </preference>
+                <!-- The custom message when click Save button -->
+                <preference>
+                  <name>saveMessage</name>
+                  <value>Your infomation has been saved successfully</value>
+                  <read-only>false</read-only>
+                </preference>
+              </preferences>
+            </portlet>
+            <title>ContactRigh</title>
+            <access-permissions>Everyone</access-permissions>
+            <show-info-bar>false</show-info-bar>
+            <show-application-state>false</show-application-state>
+            <show-application-mode>false</show-application-mode>
+          </portlet-application>
+        </container>
+      </container>
+    </container>
+    <container id="Footer"
+               template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>

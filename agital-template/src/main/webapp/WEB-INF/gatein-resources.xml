@@ -10,6 +10,26 @@
     <script>
       <path>/javascript/eXo/wcm/WCMTemplatePack.js</path>
     </script>
+    <depends>
+      <module>jquery</module>
+      <as>gj</as>
+    </depends>
+    <depends>
+      <module>jquery_dot</module>
+    </depends>
+  </module>
+
+  <module>
+    <name>jquery_dot</name>
+    <as>jquery_dot</as>
+    <script>
+      <path>/javascript/eXo/wcm/jquery.dotdotdot.js</path>
+    </script>
+    <depends>
+      <module>jquery</module>
+      <as>$</as>
+    </depends>
+
   </module>
 
   <portal-skin>

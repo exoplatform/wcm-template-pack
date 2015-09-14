@@ -216,6 +216,62 @@
         </object-param>
       </init-params>
     </component-plugin>
+    <component-plugin>
+      <name>FilterContentTypeForGlobex</name>
+      <set-method>addContentTypeFilterPlugin</set-method>
+      <type>org.exoplatform.services.cms.templates.ContentTypeFilterPlugin</type>
+      <description>this plugin is used to filter wcm nodetype</description>
+      <init-params>
+        <object-param>
+          <name>questionsFolderFilterGlobex</name>
+          <description>only exo:webContent can be created in exo:questionsFolder</description>
+          <object type="org.exoplatform.services.cms.templates.ContentTypeFilterPlugin$FolderFilterConfig">
+            <field name="folderType">
+              <string>exo:questionsFolder</string>
+            </field>
+            <field name="contentTypes">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <string>exo:webContent</string>
+                </value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>featuresFolderFilterGlobex</name>
+          <description>only exo:webContent can be created in exo:featuresFolder</description>
+          <object type="org.exoplatform.services.cms.templates.ContentTypeFilterPlugin$FolderFilterConfig">
+            <field name="folderType">
+              <string>exo:featuresFolder</string>
+            </field>
+            <field name="contentTypes">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <string>exo:webContent</string>
+                </value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>servicesFolderFilterGlobex</name>
+          <description>only exo:webContent can be created in exo:servicesFolder</description>
+          <object type="org.exoplatform.services.cms.templates.ContentTypeFilterPlugin$FolderFilterConfig">
+            <field name="folderType">
+              <string>exo:servicesFolder</string>
+            </field>
+            <field name="contentTypes">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <string>exo:services</string>
+                </value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+      </init-params>
+    </component-plugin>
   </external-component-plugins>
   
 </configuration>
