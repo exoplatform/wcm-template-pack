@@ -58,7 +58,7 @@
       </preference>
       <preference>
         <name>formViewTemplatePath</name>
-        <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalBanner.gtmpl</value>
+        <value>/exo:ecm/views/templates/content-list-viewer/list/Banner.gtmpl</value>
         <read-only>false</read-only>
       </preference>
       <preference>
@@ -206,7 +206,7 @@
       </preference>
       <preference>
         <name>formViewTemplatePath</name>
-        <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalBlogBlog.gtmpl</value>
+        <value>/exo:ecm/views/templates/content-list-viewer/list/Blog.gtmpl</value>
         <read-only>false</read-only>
       </preference>
       <preference>
@@ -331,7 +331,7 @@
       </preference>
       <preference>
         <name>type</name>
-        <value>exo:contact</value>
+        <value>exo:contactUsForm</value>
         <read-only>false</read-only>
       </preference>
       <preference>

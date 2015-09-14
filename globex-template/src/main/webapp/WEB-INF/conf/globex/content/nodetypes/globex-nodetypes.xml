@@ -1,6 +1,6 @@
 <nodeTypes xmlns:nt="http://www.jcp.org/jcr/nt/1.5" xmlns:mix="http://www.jcp.org/jcr/mix/1.5"
   xmlns:jcr="http://www.jcp.org/jcr/1.5">
-  <nodeType name="exo:globexvideo" isMixin="false"
+  <nodeType name="exo:embeddedVideo" isMixin="false"
     hasOrderableChildNodes="false" primaryItemName="">
     <supertypes>
       <supertype>nt:base</supertype>
@@ -38,7 +38,7 @@
       </propertyDefinition>
     </propertyDefinitions>
   </nodeType>
-  <nodeType name="exo:globexContactUs" isMixin="false"
+  <nodeType name="exo:contactUs2Horizontal" isMixin="false"
     hasOrderableChildNodes="false" primaryItemName="">
     <supertypes>
       <supertype>nt:base</supertype>
@@ -66,7 +66,7 @@
         </propertyDefinition>
       </propertyDefinitions>
   </nodeType>
-  <nodeType name="exo:globexSubscribe" isMixin="false"
+  <nodeType name="exo:subscribe" isMixin="false"
     hasOrderableChildNodes="false" primaryItemName="">
     <supertypes>
       <supertype>nt:base</supertype>
@@ -79,13 +79,13 @@
         </propertyDefinition>
       </propertyDefinitions>
   </nodeType>
-  <nodeType name="exo:globexfeature" isMixin="false"
+  <nodeType name="exo:feature" isMixin="false"
     hasOrderableChildNodes="false" primaryItemName="">
     <supertypes>
       <supertype>exo:webContent</supertype>
     </supertypes>
   </nodeType>
-    <nodeType name="exo:globexContactRequests" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+    <nodeType name="exo:contactUs2HorizontalRequests" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
     <supertypes>
       <supertype>exo:scriptAction</supertype>
     </supertypes>
@@ -94,7 +94,7 @@
         onParentVersion="COPY" protected="false" multiple="false">
         <valueConstraints/>
         <defaultValues>
-          <defaultValue>ecm-explorer/action/GlobexSendContactRequest.groovy</defaultValue>
+          <defaultValue>ecm-explorer/action/SendContactUs2HorizontalRequest.groovy</defaultValue>
         </defaultValues>
       </propertyDefinition>
       <propertyDefinition name="exo:scriptLabel" requiredType="String" autoCreated="true" mandatory="true"
@@ -106,7 +106,7 @@
       </propertyDefinition>           
     </propertyDefinitions>
   </nodeType>
-    <nodeType name="exo:globexSubscribeRequests" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+    <nodeType name="exo:subscribeRequests" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
     <supertypes>
       <supertype>exo:scriptAction</supertype>
     </supertypes>
@@ -115,7 +115,7 @@
         onParentVersion="COPY" protected="false" multiple="false">
         <valueConstraints/>
         <defaultValues>
-          <defaultValue>ecm-explorer/action/GlobexSubscribeRequest.groovy</defaultValue>
+          <defaultValue>ecm-explorer/action/SendSubscribeRequest.groovy</defaultValue>
         </defaultValues>
       </propertyDefinition>
       <propertyDefinition name="exo:scriptLabel" requiredType="String" autoCreated="true" mandatory="true"
@@ -127,12 +127,12 @@
       </propertyDefinition>           
     </propertyDefinitions>
   </nodeType>
-    <nodeType name="exo:globexContactFolder" isMixin="true" hasOrderableChildNodes="false" primaryItemName="">
+    <nodeType name="exo:contactUs2HorizontalFolder" isMixin="true" hasOrderableChildNodes="false" primaryItemName="">
     <supertypes>
       <supertype>nt:base</supertype>
     </supertypes>
   </nodeType>
-      <nodeType name="exo:globexSubscribesFolder" isMixin="true" hasOrderableChildNodes="false" primaryItemName="">
+      <nodeType name="exo:subscribeFolder" isMixin="true" hasOrderableChildNodes="false" primaryItemName="">
     <supertypes>
       <supertype>nt:base</supertype>
     </supertypes>

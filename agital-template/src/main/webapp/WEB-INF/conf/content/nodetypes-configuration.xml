@@ -391,13 +391,13 @@
                 <value>
                   <object type="org.exoplatform.services.cms.templates.impl.TemplateConfig$NodeType">
                     <field name="nodetypeName">
-                      <string>exo:contact</string>
+                      <string>exo:contactUsForm</string>
                     </field>
                     <field name="documentTemplate">
                       <boolean>true</boolean>
                     </field>
                     <field name="label">
-                      <string>Contact Request</string>
+                      <string>Contact Us Form</string>
                     </field>
                     <field name="referencedView">
                       <collection type="java.util.ArrayList">

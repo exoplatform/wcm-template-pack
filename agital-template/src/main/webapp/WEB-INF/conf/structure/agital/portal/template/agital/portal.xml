@@ -29,9 +29,9 @@
     <entry key="showPortletInfo">0</entry>
   </properties>
   <portal-layout id="template-Agital">
-    <container id="Agital-TopPanel" template="system:/groovy/portal/webui/container/UIResponsiveTableSmallBigColumnContainer.gtmpl">
+    <container id="TopPanel" template="system:/groovy/portal/webui/container/UIResponsiveTableSmallBigColumnContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
-      <container id="Agital-Logo" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
+      <container id="Logo" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
         <portlet-application>
           <portlet>
@@ -97,7 +97,7 @@
           <show-application-mode>false</show-application-mode>
         </portlet-application>
       </container>
-      <container id="Agital-Menu" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
+      <container id="Menu" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
 		    <portlet-application>
 		      <portlet>

@@ -25,7 +25,7 @@
     <title>Home Page</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>editor:/platform/web-contributors</edit-permission>
-    <container id="AgitalHome" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
+    <container id="Home" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <container id="HomeBanner" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
@@ -51,7 +51,7 @@
               </preference>
               <preference>
                 <name>formViewTemplatePath</name>
-                <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalBanner.gtmpl</value>
+                <value>/exo:ecm/views/templates/content-list-viewer/list/Banner.gtmpl</value>
                 <read-only>false</read-only>
               </preference>
               <preference>
@@ -416,7 +416,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalHomeNews.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/News.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -506,7 +506,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalWelcome.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/Welcome.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -588,7 +588,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalHomeArticles.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/Articles.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -670,7 +670,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalWhyUs.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/WhyUs.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -752,7 +752,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalHomeServices.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/ServicesShortList.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -819,7 +819,7 @@
     <title>About</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>editor:/platform/web-contributors</edit-permission>
-    <container id="AgitalAbout" template="system:/groovy/portal/webui/container/UIResponsiveTableSmallBigColumnContainer.gtmpl">
+    <container id="About" template="system:/groovy/portal/webui/container/UIResponsiveTableSmallBigColumnContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <container id="AboutLeft" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
@@ -918,7 +918,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalAboutTestimonials.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/Testimonials.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -1007,7 +1007,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalAFewWord.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/AFewWords.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -1089,7 +1089,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalAboutOurTeamWork.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/list/TeamWork.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -1161,7 +1161,7 @@
     <title>Services</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>*:/platform/administrators</edit-permission>
-    <container id="AgitalService" template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
+    <container id="Service" template="system:/groovy/portal/webui/container/UIResponsiveContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>
@@ -1185,7 +1185,7 @@
             </preference>
             <preference>
               <name>formViewTemplatePath</name>
-              <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalServices.gtmpl</value>
+              <value>/exo:ecm/views/templates/content-list-viewer/list/ServicesOverview.gtmpl</value>
               <read-only>false</read-only>
             </preference>
             <preference>
@@ -1249,7 +1249,7 @@
     <title>Blog</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>editor:/platform/web-contributors</edit-permission>
-    <container id="AgitalBlog" template="system:/groovy/portal/webui/container/UIResponsiveTableBigSmallColumnContainer.gtmpl">
+    <container id="Blog" template="system:/groovy/portal/webui/container/UIResponsiveTableBigSmallColumnContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <container id="BlogLeft" template="system:/groovy/portal/webui/container/UIResponsiveColumnContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
@@ -1275,7 +1275,7 @@
                </preference>
                <preference>
                  <name>formViewTemplatePath</name>
-                 <value>/exo:ecm/views/templates/content-list-viewer/list/AgitalBlogBlog.gtmpl</value>
+                 <value>/exo:ecm/views/templates/content-list-viewer/list/Blog.gtmpl</value>
                  <read-only>false</read-only>
                </preference>
                <preference>
@@ -1363,7 +1363,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/navigation/AgitalBlogCategories.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/navigation/BlogCategories.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -1439,7 +1439,7 @@
                 </preference>
                 <preference>
                   <name>formViewTemplatePath</name>
-                  <value>/exo:ecm/views/templates/content-list-viewer/navigation/AgitalBlogArchives.gtmpl</value>
+                  <value>/exo:ecm/views/templates/content-list-viewer/navigation/BlogArchives.gtmpl</value>
                   <read-only>false</read-only>
                 </preference>
                 <preference>
@@ -1500,7 +1500,7 @@
     <title>Contact</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>editor:/platform/web-contributors</edit-permission>
-    <container id="AgitalMail" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
+    <container id="Mail" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <container id="MailTop" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
         <access-permissions>Everyone</access-permissions>
@@ -1667,7 +1667,7 @@
 					      <!-- Specify the node type of document which will be show on the dialog form -->
 					      <preference>
 					        <name>type</name>
-					        <value>exo:contact</value>
+					        <value>exo:contactUsForm</value>
 					        <read-only>false</read-only>
 					      </preference>
 					      <!-- The custom button Save -->
@@ -1723,7 +1723,7 @@
           </preference>
           <preference>
             <name>searchPaginatorTemplatePath</name>
-            <value>/exo:ecm/views/templates/search/search-paginator/AgitalPaginator.gtmpl</value>
+            <value>/exo:ecm/views/templates/search/search-paginator/SimplePaginator.gtmpl</value>
             <read-only>false</read-only>
           </preference>
           <preference>
@@ -1791,7 +1791,7 @@
     <title>Document detail</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>*:/platform/administrators</edit-permission>
-    <container id="AgitalDetails" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
+    <container id="Details" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>
@@ -1869,7 +1869,7 @@
     <title>About us</title>
     <access-permissions>Everyone</access-permissions>
     <edit-permission>*:/platform/administrators</edit-permission>
-    <container id="AgitalAboutUs" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
+    <container id="AboutUs" template="system:/groovy/portal/webui/container/UIContainer.gtmpl">
       <access-permissions>Everyone</access-permissions>
       <portlet-application>
         <portlet>

@@ -35,7 +35,7 @@
       </preference>
       <preference>
         <name>type</name>
-        <value>exo:globexSubscribe</value>
+        <value>exo:subscribe</value>
         <read-only>false</read-only>
       </preference>
       <preference>

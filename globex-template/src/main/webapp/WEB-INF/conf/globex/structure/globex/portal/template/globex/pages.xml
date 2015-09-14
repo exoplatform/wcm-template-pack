@@ -185,7 +185,7 @@
             </preference>
             <preference>
               <name>formViewTemplatePath</name>
-              <value>/exo:ecm/views/templates/content-list-viewer/list/GlobexServices.gtmpl</value>
+              <value>/exo:ecm/views/templates/content-list-viewer/list/ServiceOverviewOrange.gtmpl</value>
               <read-only>false</read-only>
             </preference>
             <preference>
@@ -272,7 +272,7 @@
             </preference>
             <preference>
               <name>formViewTemplatePath</name>
-              <value>/exo:ecm/views/templates/content-list-viewer/list/GlobexFeatures.gtmpl</value>
+              <value>/exo:ecm/views/templates/content-list-viewer/list/Features.gtmpl</value>
               <read-only>false</read-only>
             </preference>
             <preference>
@@ -730,7 +730,7 @@
             </preference>
             <preference>
               <name>formViewTemplatePath</name>
-              <value>/exo:ecm/views/templates/content-list-viewer/list/GlobexWhatTheySay.gtmpl</value>
+              <value>/exo:ecm/views/templates/content-list-viewer/list/WhatTheySay.gtmpl</value>
               <read-only>false</read-only>
             </preference>
             <preference>
@@ -817,7 +817,7 @@
             </preference>
             <preference>
               <name>formViewTemplatePath</name>
-              <value>/exo:ecm/views/templates/content-list-viewer/list/GlobexAskedQuestions.gtmpl</value>
+              <value>/exo:ecm/views/templates/content-list-viewer/list/AskedQuestions.gtmpl</value>
               <read-only>false</read-only>
             </preference>
             <preference>
@@ -984,7 +984,7 @@
               the dialog form -->
             <preference>
               <name>type</name>
-              <value>exo:globexSubscribe</value>
+              <value>exo:subscribe</value>
               <read-only>false</read-only>
             </preference>
             <!-- The custom button Save -->
@@ -1113,7 +1113,7 @@
             dialog form -->
           <preference>
             <name>type</name>
-            <value>exo:globexContactUs</value>
+            <value>exo:contactUs2Horizontal</value>
             <read-only>false</read-only>
           </preference>
           <!-- The custom button Save -->

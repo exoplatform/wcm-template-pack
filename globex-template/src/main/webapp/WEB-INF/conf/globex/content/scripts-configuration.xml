@@ -29,8 +29,8 @@
                   <!-- ecm-explorer/action -->
                   <value>
                     <object type="org.exoplatform.services.cms.impl.ResourceConfig$Resource">
-                      <field  name="description"><string>Send Contact Request</string></field>
-                      <field  name="name"><string>ecm-explorer/action/GlobexSendContactRequest.groovy</string></field>
+                      <field  name="description"><string>Send Contact Us 2 Horizontal Request</string></field>
+                      <field  name="name"><string>ecm-explorer/action/SendContactUs2HorizontalRequest.groovy</string></field>
                     </object>
                   </value>
                 </collection>
@@ -66,7 +66,7 @@
                   <value>
                     <object type="org.exoplatform.services.cms.impl.ResourceConfig$Resource">
                       <field  name="description"><string>Send Subscribe Request</string></field>
-                      <field  name="name"><string>ecm-explorer/action/GlobexSubscribeRequest.groovy</string></field>
+                      <field  name="name"><string>ecm-explorer/action/SendSubscribeRequest.groovy</string></field>
                     </object>
                   </value>
                 </collection>

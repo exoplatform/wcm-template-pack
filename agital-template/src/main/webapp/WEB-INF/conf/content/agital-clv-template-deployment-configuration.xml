@@ -45,14 +45,14 @@
         </value-param>
         
         <object-param>
-          <name>Agital Banner</name>
-          <description>Agital Banner</description>
+          <name>Banner</name>
+          <description>Banner</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Agital Banner</string>
+               <string>Banner</string>
             </field>
             <field name="templateName">
-              <string>AgitalBanner.gtmpl</string>
+              <string>Banner.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -61,14 +61,14 @@
         </object-param>
         
         <object-param>
-          <name>Agital Home News</name>
-          <description>Agital Home News</description>
+          <name>News</name>
+          <description>News</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Agital Home News</string>
+               <string>News</string>
             </field>
             <field name="templateName">
-              <string>AgitalHomeNews.gtmpl</string>
+              <string>News.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -76,14 +76,14 @@
           </object>
         </object-param>
         <object-param>
-          <name>AgitalWelcome</name>
-          <description>Agital Home Welcome</description>
+          <name>Welcome</name>
+          <description>Welcome</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Agital Home Welcome</string>
+               <string>Welcome</string>
             </field>
             <field name="templateName">
-              <string>AgitalWelcome.gtmpl</string>
+              <string>Welcome.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -91,14 +91,14 @@
           </object>
         </object-param>
                 <object-param>
-          <name>AgitalWhyUs</name>
-          <description>Agital Home Why Us</description>
+          <name>WhyUs</name>
+          <description>Why Us</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Agital Home Why Us</string>
+               <string>Why Us</string>
             </field>
             <field name="templateName">
-              <string>AgitalWhyUs.gtmpl</string>
+              <string>WhyUs.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -106,14 +106,14 @@
           </object>
         </object-param>
         <object-param>
-          <name>AgitalAFewWord</name>
-          <description>Agital A Few Word</description>
+          <name>AFewWords</name>
+          <description>A Few Words</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Agital Home Welcome</string>
+               <string>A Few Words</string>
             </field>
             <field name="templateName">
-              <string>AgitalAFewWord.gtmpl</string>
+              <string>AFewWords.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -121,14 +121,14 @@
           </object>
         </object-param>
         <object-param>
-          <name>AgitalHomeServices</name>
-          <description>Agital Home Services</description>
+          <name>ServicesShortList</name>
+          <description>Services Short List</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Agital Home Services</string>
+               <string>Services Short List</string>
             </field>
             <field name="templateName">
-              <string>AgitalHomeServices.gtmpl</string>
+              <string>ServicesShortList.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -136,14 +136,14 @@
           </object>
         </object-param>
         <object-param>
-          <name>Agital Home Articles</name>
-          <description>Agital Home Articles</description>
+          <name>Articles</name>
+          <description>Articles</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Agital Home Articles</string>
+               <string>Articles</string>
             </field>
             <field name="templateName">
-              <string>AgitalHomeArticles.gtmpl</string>
+              <string>Articles.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -151,14 +151,14 @@
           </object>
         </object-param>
         <object-param>
-          <name>Agital About Testimonials</name>
-          <description>Agital About Testimonials</description>
+          <name>Testimonials</name>
+          <description>Testimonials</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Agital About Testimonials</string>
+               <string>Testimonials</string>
             </field>
             <field name="templateName">
-              <string>AgitalAboutTestimonials.gtmpl</string>
+              <string>Testimonials.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -166,14 +166,14 @@
           </object>
         </object-param>
         <object-param>
-          <name>Agital About Our TeamWork</name>
-          <description>Agital About Our TeamWork</description>
+          <name>Team Work</name>
+          <description>Team Work</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Agital About Our Team Work</string>
+               <string>Team Work</string>
             </field>
             <field name="templateName">
-              <string>AgitalAboutOurTeamWork.gtmpl</string>
+              <string>TeamWork.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -181,14 +181,14 @@
           </object>
         </object-param>
         <object-param>
-          <name>Agital Services</name>
-          <description>Agital Services</description>
+          <name>Services Overview</name>
+          <description>Services Overview</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Agital Services</string>
+               <string>AServices Overview</string>
             </field>
             <field name="templateName">
-              <string>AgitalServices.gtmpl</string>
+              <string>ServicesOverview.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -196,14 +196,14 @@
           </object>
         </object-param>
         <object-param>
-          <name>Agital Blog Blog</name>
-          <description>Agital Blog Blog</description>
+          <name>Blog</name>
+          <description>Blog</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Agital Blog Blog</string>
+               <string>Blog</string>
             </field>
             <field name="templateName">
-              <string>AgitalBlogBlog.gtmpl</string>
+              <string>Blog.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -212,14 +212,14 @@
         </object-param>
         
         <object-param>
-          <name>Agital Blog Archives</name>
-          <description>Agital Blog Archives</description>
+          <name>Blog Archives</name>
+          <description>Blog Archives</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-              <string>Agital Blog Archives</string>
+              <string>Blog Archives</string>
             </field>
             <field name="templateName">
-              <string>AgitalBlogArchives.gtmpl</string>
+              <string>BlogArchives.gtmpl</string>
             </field>
             <field name="category">
               <string>navigation</string>
@@ -227,14 +227,14 @@
           </object>
         </object-param>
         <object-param>
-          <name>Agital Blog Categories</name>
-          <description>Agital Blog Categories</description>
+          <name>Blog Categories</name>
+          <description>Blog Categories</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-              <string>Agital Blog Categories</string>
+              <string>Blog Categories</string>
             </field>
             <field name="templateName">
-              <string>AgitalBlogCategories.gtmpl</string>
+              <string>BlogCategories.gtmpl</string>
             </field>
             <field name="category">
               <string>navigation</string>
@@ -244,13 +244,13 @@
         
         <object-param>
           <name>default.paginator</name>
-          <description>Agital Default paginator groovy template</description>
+          <description>Simple paginator groovy template</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Agital Default Paginator</string>
+               <string>Simple Paginator</string>
                         </field>
             <field name="templateName">
-              <string>AgitalDefaultPaginator.gtmpl</string>
+              <string>SimplePaginator.gtmpl</string>
             </field>
             <field name="category">
               <string>paginators</string>

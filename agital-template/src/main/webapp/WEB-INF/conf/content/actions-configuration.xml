@@ -33,7 +33,7 @@
                       </field>
                       <field  name="affectedNodeTypes">
                         <collection type="java.util.ArrayList">
-                          <value><string>exo:contact</string></value>
+                          <value><string>exo:contactUsForm</string></value>
                         </collection>
                       </field>
                       <field  name="nodeTypeName">

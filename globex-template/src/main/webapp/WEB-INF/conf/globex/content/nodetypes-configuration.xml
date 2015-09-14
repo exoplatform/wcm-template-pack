@@ -48,13 +48,13 @@
                 <value>
                   <object type="org.exoplatform.services.cms.templates.impl.TemplateConfig$NodeType">
                     <field name="nodetypeName">
-                      <string>exo:globexfeature</string>
+                      <string>exo:feature</string>
                     </field>
                     <field name="documentTemplate">
                       <boolean>true</boolean>
                     </field>
                     <field name="label">
-                      <string>Globex Feature</string>
+                      <string>Feature</string>
                     </field>
                     <field name="referencedView">
                       <collection type="java.util.ArrayList">
@@ -90,13 +90,13 @@
                 <value>
                   <object type="org.exoplatform.services.cms.templates.impl.TemplateConfig$NodeType">
                     <field name="nodetypeName">
-                      <string>exo:globexvideo</string>
+                      <string>exo:embeddedVideo</string>
                     </field>
                     <field name="documentTemplate">
                       <boolean>true</boolean>
                     </field>
                     <field name="label">
-                      <string>Globex Video</string>
+                      <string>Video</string>
                     </field>
                     <field name="referencedView">
                       <collection type="java.util.ArrayList">
@@ -131,13 +131,13 @@
                 <value>
                   <object type="org.exoplatform.services.cms.templates.impl.TemplateConfig$NodeType">
                     <field name="nodetypeName">
-                      <string>exo:globexContactUs</string>
+                      <string>exo:contactUs2Horizontal</string>
                     </field>
                     <field name="documentTemplate">
                       <boolean>true</boolean>
                     </field>
                     <field name="label">
-                      <string>Globex Contact Us</string>
+                      <string>Contact Us 2 Horizontal</string>
                     </field>
                     <field name="referencedView">
                       <collection type="java.util.ArrayList">
@@ -172,13 +172,13 @@
                 <value>
                   <object type="org.exoplatform.services.cms.templates.impl.TemplateConfig$NodeType">
                     <field name="nodetypeName">
-                      <string>exo:globexSubscribe</string>
+                      <string>exo:subscribe</string>
                     </field>
                     <field name="documentTemplate">
                       <boolean>true</boolean>
                     </field>
                     <field name="label">
-                      <string>Globex Subscribe</string>
+                      <string>Subscribe</string>
                     </field>
                     <field name="referencedView">
                       <collection type="java.util.ArrayList">

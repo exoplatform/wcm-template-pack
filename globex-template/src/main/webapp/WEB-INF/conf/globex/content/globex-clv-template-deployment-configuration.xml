@@ -45,14 +45,14 @@
         </value-param>
         
         <object-param>
-          <name>Globex Asked Questions</name>
-          <description>Globex Banner</description>
+          <name>Asked Questions</name>
+          <description>Asked Questions</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Globex Asked Questions</string>
+               <string>Asked Questions</string>
             </field>
             <field name="templateName">
-              <string>GlobexAskedQuestions.gtmpl</string>
+              <string>AskedQuestions.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -61,14 +61,14 @@
         </object-param>
         
         <object-param>
-          <name>Globex Features</name>
-          <description>Globex Features</description>
+          <name>Features</name>
+          <description>Features</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Globex Features</string>
+               <string>Features</string>
             </field>
             <field name="templateName">
-              <string>GlobexFeatures.gtmpl</string>
+              <string>Features.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -76,14 +76,14 @@
           </object>
         </object-param>
         <object-param>
-          <name>Globex Services</name>
-          <description>Globex Services</description>
+          <name>Service Overview Orange</name>
+          <description>Service Overview Orange</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Globex Services</string>
+               <string>Service Overview Orange</string>
             </field>
             <field name="templateName">
-              <string>GlobexServices.gtmpl</string>
+              <string>ServiceOverviewOrange.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>
@@ -91,14 +91,14 @@
           </object>
         </object-param>
         <object-param>
-          <name>Globex What They Say</name>
-          <description>Globex What They Say</description>
+          <name>What They Say</name>
+          <description>What They Say</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>Globex What They Say</string>
+               <string>What They Say</string>
             </field>
             <field name="templateName">
-              <string>GlobexWhatTheySay.gtmpl</string>
+              <string>WhatTheySay.gtmpl</string>
             </field>
             <field name="category">
               <string>list</string>

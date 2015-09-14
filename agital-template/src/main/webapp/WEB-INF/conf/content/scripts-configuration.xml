@@ -29,8 +29,8 @@
                   <!-- ecm-explorer/action -->
                   <value>
                     <object type="org.exoplatform.services.cms.impl.ResourceConfig$Resource">
-                      <field  name="description"><string>Send Contact Request</string></field>
-                      <field  name="name"><string>ecm-explorer/action/SendContactRequest.groovy</string></field>
+                      <field  name="description"><string>Send Contact Us Form Request</string></field>
+                      <field  name="name"><string>ecm-explorer/action/SendContactUsFormRequest.groovy</string></field>
                     </object>
                   </value>
                 </collection>

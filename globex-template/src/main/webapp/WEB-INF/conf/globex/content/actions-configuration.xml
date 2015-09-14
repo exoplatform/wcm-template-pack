@@ -20,7 +20,7 @@
                 <collection type="java.util.ArrayList">
                   <value>
                     <object type="org.exoplatform.services.cms.actions.impl.ActionConfig$Action">
-                      <field  name="type"><string>exo:globexContactRequests</string></field>
+                      <field  name="type"><string>exo:contactUs2HorizontalRequests</string></field>
                       <field  name="name"><string>GlobexSendContactRequest</string></field>                  
                       <field  name="description"><string>trigger actions for items in Contact Requests folder</string></field>
                       <field  name="srcWorkspace"><string>collaboration</string></field>
@@ -33,12 +33,12 @@
                       </field>
                       <field  name="affectedNodeTypes">
                         <collection type="java.util.ArrayList">
-                          <value><string>exo:globexContactUs</string></value>
+                          <value><string>exo:contactUs2Horizontal</string></value>
                         </collection>
                       </field>
                       <field  name="nodeTypeName">
                         <collection type="java.util.ArrayList">
-                          <value><string>exo:globexContactFolder</string></value>
+                          <value><string>exo:contactUs2HorizontalFolder</string></value>
                         </collection>
                       </field>
                     </object>  
@@ -67,7 +67,7 @@
                 <collection type="java.util.ArrayList">
                   <value>
                     <object type="org.exoplatform.services.cms.actions.impl.ActionConfig$Action">
-                      <field  name="type"><string>exo:globexSubscribeRequests</string></field>
+                      <field  name="type"><string>exo:subscribeRequests</string></field>
                       <field  name="name"><string>GlobexSubscribeRequest</string></field>                  
                       <field  name="description"><string>trigger actions for items in Subscribes folder</string></field>
                       <field  name="srcWorkspace"><string>collaboration</string></field>
@@ -80,12 +80,12 @@
                       </field>
                       <field  name="affectedNodeTypes">
                         <collection type="java.util.ArrayList">
-                          <value><string>exo:globexSubscribe</string></value>
+                          <value><string>exo:subscribe</string></value>
                         </collection>
                       </field>
                       <field  name="nodeTypeName">
                         <collection type="java.util.ArrayList">
-                          <value><string>exo:globexSubscribesFolder</string></value>
+                          <value><string>exo:subscribeFolder</string></value>
                         </collection>
                       </field>
                     </object>  
