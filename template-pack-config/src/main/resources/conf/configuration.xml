@@ -28,6 +28,9 @@
                 <value>
                   <string>globex-template</string>
                 </value>
+                <value>
+                  <string>responsive-template</string>
+                </value>
               </collection>
             </field>
           </object>
