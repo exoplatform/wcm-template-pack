@@ -42,5 +42,8 @@
     </label>
   </GlobexVideo>
 <email>Email</email>
+<emailContact>Email</emailContact>
+<fullName>Full name</fullName>
+<messages>Message</messages>
 </bundle>
 

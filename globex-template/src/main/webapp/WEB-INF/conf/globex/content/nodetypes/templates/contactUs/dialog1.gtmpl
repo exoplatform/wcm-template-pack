@@ -9,7 +9,7 @@
  }
  String timestampName = Text.convertJcrChars(getTimestampName());
  def name = _ctx.appRes("Contact.dialog.label.Name");
- def email = "Email";
+ def email = _ctx.appRes("Contact.dialog.label.Email");
  def phone = _ctx.appRes("Contact.dialog.label.Phone");
  def message = _ctx.appRes("Contact.dialog.label.Message");
  def isFCCPortlet = false;
@@ -55,7 +55,7 @@
     <label class="email">
     <%
     String[] emailAddr = ["jcrPath=/node/exo:email", "defaultValues=", "validate=empty,email", ""];
-    uicomponent.addTextField("email", emailAddr);
+    uicomponent.addTextField("emailContact", emailAddr);
    %>
   </label>
   <label class="phone">
@@ -92,7 +92,7 @@ uicomponent.addTextAreaField("messages", messages);
 </div>
 <script type="text/javascript">
   document.getElementById("fullName").setAttribute("placeholder", "$name");
-  document.getElementById("email").setAttribute("placeholder", "$email");
+  document.getElementById("emailContact").setAttribute("placeholder", "$email");
   document.getElementById("phoneNumber").setAttribute("placeholder", "$phone");
   document.getElementById("messages").setAttribute("placeholder", "$message");
 </script>
