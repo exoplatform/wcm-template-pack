@@ -248,7 +248,7 @@
             <field name="contentTypes">
               <collection type="java.util.ArrayList">
                 <value>
-                  <string>exo:webContent</string>
+                  <string>exo:feature</string>
                 </value>
               </collection>
             </field>
