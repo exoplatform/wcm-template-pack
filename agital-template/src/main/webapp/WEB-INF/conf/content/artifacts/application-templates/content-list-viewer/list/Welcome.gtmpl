@@ -26,6 +26,8 @@
 	 	def language = locale.getLanguage();
 	 	def draftMsg = _ctx.appRes("PublicationStates.draft");
 	 	def publishedMsg = _ctx.appRes("PublicationStates.published");
+		def rcontext = _ctx.getRequestContext() ;
+		def jsManager = rcontext.getJavascriptManager().require("SHARED/WCMTemplatePack", "WCMTemplatePack");
 	 	%>
 
 	 	<div class="documentsCLVTemplate" id="$uicomponent.id">

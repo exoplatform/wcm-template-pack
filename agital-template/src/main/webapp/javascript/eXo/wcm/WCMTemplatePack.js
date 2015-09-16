@@ -2,7 +2,7 @@
  * Js for WCM Template Pack
  */
 
-(function() {
+(function(gj) {
   var WCMTemplatePack = function () {
   }
 
@@ -19,4 +19,4 @@
     WCMTemplatePack : eXo.ecm.WCMTemplatePack
   };
 
-});
+})(jQuery);
