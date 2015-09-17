@@ -30,7 +30,7 @@
         documents -->
       <preference>
         <name>path</name>
-        <value>/sites/@owner@/web contents/site artifacts/SubscribesRequest</value>
+        <value>/sites</value>
         <read-only>false</read-only>
       </preference>
       <preference>
