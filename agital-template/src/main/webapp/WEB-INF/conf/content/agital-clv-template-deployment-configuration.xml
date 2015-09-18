@@ -185,7 +185,7 @@
           <description>Services Overview</description>
           <object type="org.exoplatform.services.cms.views.PortletTemplatePlugin$PortletTemplateConfig">
             <field name="title">
-               <string>AServices Overview</string>
+               <string>Services Overview</string>
             </field>
             <field name="templateName">
               <string>ServicesOverview.gtmpl</string>
