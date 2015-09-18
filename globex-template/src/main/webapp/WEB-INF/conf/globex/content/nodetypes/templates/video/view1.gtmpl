@@ -36,9 +36,9 @@
       </div>
       <div class="grid_6">
         <div class="cnt2">
-          <h3>Description</h3>
-          <h4>with video</h4>
-          <p><%=summary%></p>
+          <h3>$title</h3>
+          <h4>$subtitle</h4>
+          <p>$summary</p>
         </div>
       </div>
     </div>
