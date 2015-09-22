@@ -138,4 +138,9 @@
       <supertype>nt:unstructured</supertype>
     </supertypes>
   </nodeType>
+    <nodeType name="exo:servicesFolder" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+    <supertypes>
+      <supertype>nt:unstructured</supertype>
+    </supertypes>
+  </nodeType>
 </nodeTypes>
