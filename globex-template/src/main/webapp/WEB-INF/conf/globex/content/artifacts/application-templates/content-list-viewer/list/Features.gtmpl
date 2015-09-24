@@ -164,19 +164,18 @@
 	 			</div>
 
 	 			</div>
-	 			<%
-	 		}
-	 		if (uicomponent.showPaginator()) { %>
-	 			<div class="paginatorDefault" >
-	 			<%		uicomponent.renderChild(UICustomizeablePaginator.class) %>
-	 			</div>
-	 			<%
-	 		}
-	 		%>
+	 			<%}%>
 
-	 		</div> <%
+
+	 		</div> 
+	 		<%
 	 	}
 	 	%>
 	 	</div>
+	 	<%if (uicomponent.showPaginator()) { %>
+	 			<div class="paginatorDefault" >
+	 			<%		uicomponent.renderChild(UICustomizeablePaginator.class) %>
+	 			</div>
+	 			<%}%>
 	 	</div>
 	 	</section>
