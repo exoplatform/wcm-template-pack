@@ -541,7 +541,7 @@
         </object-param>
         <object-param>
           <name>servicesFolderFilter</name>
-          <description>only exo:testimonial can be created in exo:testimonialFolder</description>
+          <description>only exo:services can be created in exo:servicesFolder</description>
           <object type="org.exoplatform.services.cms.templates.ContentTypeFilterPlugin$FolderFilterConfig">
             <field name="folderType">
               <string>exo:servicesFolder</string>
@@ -550,6 +550,22 @@
               <collection type="java.util.ArrayList">
                 <value>
                   <string>exo:services</string>
+                </value>
+              </collection>
+            </field>
+          </object>
+        </object-param>
+        <object-param>
+          <name>pictureOnHeadWebcontentFilter</name>
+          <description>only exo:pictureOnHeadWebcontent can be created in exo:pictureOnHeadWebcontentFolder</description>
+          <object type="org.exoplatform.services.cms.templates.ContentTypeFilterPlugin$FolderFilterConfig">
+            <field name="folderType">
+              <string>exo:pictureOnHeadWebcontentFolder</string>
+            </field>
+            <field name="contentTypes">
+              <collection type="java.util.ArrayList">
+                <value>
+                  <string>exo:pictureOnHeadWebcontent</string>
                 </value>
               </collection>
             </field>

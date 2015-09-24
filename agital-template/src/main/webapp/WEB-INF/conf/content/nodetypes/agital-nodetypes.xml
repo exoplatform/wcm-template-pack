@@ -143,4 +143,9 @@
       <supertype>nt:unstructured</supertype>
     </supertypes>
   </nodeType>
+    <nodeType name="exo:pictureOnHeadWebcontentFolder" isMixin="false" hasOrderableChildNodes="false" primaryItemName="">
+    <supertypes>
+      <supertype>nt:unstructured</supertype>
+    </supertypes>
+  </nodeType>
 </nodeTypes>
