@@ -826,11 +826,6 @@
               <read-only>false</read-only>
             </preference>
             <preference>
-              <name>itemsPerPage</name>
-              <value>5</value>
-              <read-only>false</read-only>
-            </preference>
-            <preference>
               <name>showTitle</name>
               <value>false</value>
               <read-only>false</read-only>

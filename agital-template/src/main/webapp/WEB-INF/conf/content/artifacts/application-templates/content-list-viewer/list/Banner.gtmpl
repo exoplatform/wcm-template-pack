@@ -2,6 +2,7 @@
 import org.exoplatform.services.wcm.utils.WCMCoreUtils;
 def currentPageData = uicomponent.getCurrentPageData();
 %>
+
 <div id="slider">
 	<div id="flexslider">
 		<ul class="slides clearfix">
@@ -14,8 +15,11 @@ def currentPageData = uicomponent.getCurrentPageData();
 					def imgSubtitle = viewNode.hasProperty("jcr:content/dc:description")? 
 					                  viewNode.getProperty("jcr:content/dc:description").getValues()[0].getString() : "";
 					%>
-
-					<li><img alt="" src="$imgUrl" />
+        
+					<li>
+<%=uicomponent.addQuickEditDiv("Column1 media ",, viewNode)%>
+<img alt="" src="$imgUrl" />
+</div><!-- QuickEditDiv -->
 						<div class="flex-caption">
 							<div>
 							<p class="title1">$imgTitle</p>
@@ -24,6 +28,7 @@ def currentPageData = uicomponent.getCurrentPageData();
 							</div>
 						</div>		
 					</li>
+      
 					<%
 				}
 			}
@@ -34,6 +39,7 @@ def currentPageData = uicomponent.getCurrentPageData();
 
 <script type="text/javascript">
 if (jQuery) {
+  
 	jQuery(window).load(function() {
 	    jQuery('#slides-pagination').flexslider({
 		animation: "fade",
