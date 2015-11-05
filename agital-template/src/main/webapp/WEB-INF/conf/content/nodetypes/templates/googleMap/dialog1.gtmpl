@@ -23,7 +23,7 @@
           <label class="control-label"><%=_ctx.appRes("GoogleMap.dialog.label.name")%>:</label>
           <div class="controls">
             <%
-              String[] locationFieldName = ["jcrPath=/node", "nodetype=exo:googleMap", "mixintype=mix:votable,mix:commentable,mix:i18n", "editable=if-null","validate=name,empty"];
+              String[] locationFieldName = ["jcrPath=/node", "nodetype=exo:googleMap", "mixintype=mix:votable,mix:commentable,mix:i18n", "editable=if-null","validate=empty"];
               uicomponent.addTextField("name", locationFieldName);
             %>
 

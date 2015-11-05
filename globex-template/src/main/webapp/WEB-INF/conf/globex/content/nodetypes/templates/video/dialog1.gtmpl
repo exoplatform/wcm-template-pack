@@ -45,7 +45,7 @@
        <td class="FieldLabel"><%=_ctx.appRes("GlobexVideo.label.Name")%></td>
        <td class="FieldComponent">
        <%
-         String[] fieldName = ["jcrPath=/node", "editable=if-null", "validate=empty,name"];
+         String[] fieldName = ["jcrPath=/node", "editable=if-null", "validate=empty"];
          uicomponent.addTextField("name", fieldName);
        %>
        </td>

@@ -32,7 +32,7 @@
           <label class="control-label" for="name"><%=_ctx.appRes("File.dialog.label.name")%>:</label>
           <div class="controls">
             <%
-              String[] fieldName = ["jcrPath=/node", "mixintype=mix:votable,mix:commentable,mix:i18n,dc:elementSet", "editable=if-null", "validate=empty,name"];
+              String[] fieldName = ["jcrPath=/node", "mixintype=mix:votable,mix:commentable,mix:i18n,dc:elementSet", "editable=if-null", "validate=empty"];
               uicomponent.addTextField("name", fieldName) ; 
             %>
           </div>
