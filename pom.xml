@@ -40,12 +40,13 @@
     <module>template-pack-config</module>
   </modules>
   <scm>
-    <connection>https://github.com/exo-addons/wcm-template-pack/</connection>
-    <developerConnection>https://github.com/exo-addons/wcm-template-pack/</developerConnection>
+    <connection>scm:git:git://github.com/exoplatform/wcm-template-pack.git</connection>
+    <developerConnection>scm:git:git@github.com:exoplatform/wcm-template-pack.git</developerConnection>
     <url>https://github.com/exo-addons/wcm-template-pack/</url>
+    <tag>HEAD</tag>
   </scm>
   <properties>
-    <exoplatform.version>4.3.x-SNAPSHOT</exoplatform.version>
+    <exoplatform.version>4.3.0-RC1-1</exoplatform.version>
   </properties>
   <dependencyManagement>
     <dependencies>
