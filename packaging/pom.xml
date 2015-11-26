@@ -36,29 +36,29 @@
     <dependency>
       <groupId>org.exoplatform.addons.wcm-template</groupId>
       <artifactId>agital-template</artifactId>
-      <type>war</type>      
       <version>${project.version}</version>
+      <type>war</type>
       <scope>provided</scope>
     </dependency>
     <dependency>
-	      <groupId>org.exoplatform.addons.wcm-template</groupId>
-		  <artifactId>globex-template</artifactId>
-		  <type>war</type>
-		  <version>${project.version}</version>
-		  <scope>provided</scope>
-	</dependency>
-    <dependency>
-	          <groupId>org.exoplatform.addons.wcm-template</groupId>
-              <artifactId>responsive-template</artifactId>
-	          <type>war</type>
-              <version>${project.version}</version>
-	          <scope>provided</scope>
+      <groupId>org.exoplatform.addons.wcm-template</groupId>
+      <artifactId>globex-template</artifactId>
+      <version>${project.version}</version>
+      <type>war</type>
+      <scope>provided</scope>
     </dependency>
-	<dependency>
+    <dependency>
+      <groupId>org.exoplatform.addons.wcm-template</groupId>
+      <artifactId>responsive-template</artifactId>
+      <version>${project.version}</version>
+      <type>war</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>org.exoplatform.addons.wcm-template</groupId>
       <artifactId>template-pack-config</artifactId>
-      <type>jar</type>      
       <version>${project.version}</version>
+      <type>jar</type>
       <scope>provided</scope>
     </dependency>
   </dependencies>
