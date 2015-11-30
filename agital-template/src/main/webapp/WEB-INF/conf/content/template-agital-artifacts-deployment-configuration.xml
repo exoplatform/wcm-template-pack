@@ -1512,7 +1512,7 @@
           <description>Deployment Descriptor</description>
           <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
             <field name="sourcePath">
-              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts//home/ngocvd/Downloads/aboutafewwordsfolder/aboutAFewWords</string>
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutafewwordsfolder/aboutAFewWords</string>
             </field>
             <field name="targetPath">
               <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Etiam</string>
@@ -1524,7 +1524,7 @@
           <description>Deployment Descriptor</description>
           <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
             <field name="sourcePath">
-              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/john-franklin</string>
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/emily-dowd</string>
             </field>
             <field name="targetPath">
               <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Aenean</string>
@@ -1536,7 +1536,7 @@
           <description>Deployment Descriptor</description>
           <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
             <field name="sourcePath">
-              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/julie-herzigova</string>
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/amelia-wurm</string>
             </field>
             <field name="targetPath">
               <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Vestibulum</string>
@@ -1548,7 +1548,7 @@
           <description>Deployment Descriptor</description>
           <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
             <field name="sourcePath">
-              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/laura-stegner</string>
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/jack-harvatt</string>
             </field>
             <field name="targetPath">
               <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Ultrices</string>
@@ -1560,7 +1560,7 @@
           <description>Deployment Descriptor</description>
           <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
             <field name="sourcePath">
-              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/marta-healy</string>
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/stephen-lawrence</string>
             </field>
             <field name="targetPath">
               <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Suspendisse</string>
@@ -1572,7 +1572,7 @@
           <description>Deployment Descriptor</description>
           <object type="org.exoplatform.services.deployment.plugins.LinkDeploymentDescriptor">
             <field name="sourcePath">
-              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/sam-kromstain</string>
+              <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/web contents/site artifacts/aboutOurWorkTeam/olivia-healy</string>
             </field>
             <field name="targetPath">
               <string>${gatein.jcr.repository.default:repository}:collaboration:/sites/{portalName}/categories/{portalName}/Ut</string>
@@ -1644,8 +1644,8 @@
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/About</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog/fusce-euismod-consequat-ante-orem-ipsum-dolor-sit-am</string></value>
-                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog/fusce-euismod-consequat-ante-orem-ipsum-dolor-sit-am[2]</string></value>
-                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog/fusce-euismod-consequat-ante-orem-ipsum-dolor-sit-am[3]</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog/adipisicing-elit-sed-do-eiusmod-tempor-incididunt-ut-labore</string></value>
+                <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/blogBlog/consectetur-adipisicing-elit-sed-do-eiusmod-tempor</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/blogCategories</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/AgitalFooter</string></value>
                 <value><string>collaboration:/sites/{portalName}/web contents/site artifacts/AgitalLogo</string></value>
