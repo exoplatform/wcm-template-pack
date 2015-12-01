@@ -42,18 +42,18 @@
   <scm>
     <connection>scm:git:git://github.com/exoplatform/wcm-template-pack.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/wcm-template-pack.git</developerConnection>
-    <url>https://github.com/exo-addons/wcm-template-pack/</url>
+    <url>https://github.com/exoplatform/wcm-template-pack/</url>
     <tag>HEAD</tag>
   </scm>
   <properties>
-    <exoplatform.version>4.3.0-RC1-1</exoplatform.version>
+    <org.exoplatform.platform.version>4.3.0-RC1-1</org.exoplatform.platform.version>
   </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.exoplatform.platform</groupId>
         <artifactId>platform</artifactId>
-        <version>${exoplatform.version}</version>
+        <version>${org.exoplatform.platform.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
