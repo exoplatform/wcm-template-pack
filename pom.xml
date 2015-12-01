@@ -45,14 +45,14 @@
     <url>https://github.com/exoplatform/wcm-template-pack/</url>
   </scm>
   <properties>
-    <exoplatform.version>4.3.x-SNAPSHOT</exoplatform.version>
+    <org.exoplatform.platform.version>4.3.x-SNAPSHOT</org.exoplatform.platform.version>
   </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.exoplatform.platform</groupId>
         <artifactId>platform</artifactId>
-        <version>${exoplatform.version}</version>
+        <version>${org.exoplatform.platform.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
