@@ -117,7 +117,7 @@
 										Node htmlNode = webContentNode.getNode("default.html");
 										htmlContent = htmlNode.getNode("jcr:content").getProperty("jcr:data").getValue().getString();
 									}
-									String[] htmlArguments = ["jcrPath=/node/default.html/jcr:content/jcr:data", "options=toolbar:CompleteWCM,height:'410px',noSanitization", htmlContent];
+									String[] htmlArguments = ["jcrPath=/node/default.html/jcr:content/jcr:data", "options=toolbar:CompleteWCM,height:'410px'", htmlContent];
 									uicomponent.addRichtextField(htmlWYSIWYGFormId, htmlArguments) ;
 										%>
 							</div>
@@ -196,7 +196,7 @@
 										Node cssNode = webContentNode.getNode("css/default.css");
 										cssContent = cssNode.getNode("jcr:content").getProperty("jcr:data").getValue().getString();
 									}
-									String[] fieldContentCSS = ["jcrPath=/node/css/default.css/jcr:content/jcr:data", "options=noSanitization", cssContent] ;
+									String[] fieldContentCSS = ["jcrPath=/node/css/default.css/jcr:content/jcr:data", "", cssContent] ;
 									uicomponent.addTextAreaField(cssFormId, fieldContentCSS) ;
 								%>
 								<div style="display:inline-block;" onmouseover="(function(elm) {eXo.ecm.WCMUtils.showPopover(elm);})(this)"
