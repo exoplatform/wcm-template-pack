@@ -30,7 +30,7 @@
   <artifactId>wcm-template-pack</artifactId>
   <version>1.1.x-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>WCM Template Pack</name>
+  <name>eXo Add-on:: WCM Template Pack</name>
   <description>WCM Template Pack</description>
   <modules>
     <module>agital-template</module>

@@ -30,7 +30,7 @@
   </parent>
   <artifactId>wcm-template-pack-packaging</artifactId>
   <packaging>pom</packaging>
-  <name>WCM Template Pack - packaging</name>
+  <name>eXo Add-on:: WCM Template Pack - packaging</name>
   <description>eXo Wiki Recently Updated Macro Addon - packaging</description>
   <dependencies>
     <dependency>

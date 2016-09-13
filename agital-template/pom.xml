@@ -8,7 +8,7 @@
   </parent>
   <artifactId>agital-template</artifactId>
   <packaging>war</packaging>
-  <name>WCM Template Pack - Agital</name>
+  <name>eXo Add-on:: WCM Template Pack - Agital</name>
   <description>WCM Template Pack - Agital</description>
   <dependencies>
     <dependency>
