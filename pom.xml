@@ -36,6 +36,7 @@
     <module>agital-template</module>
     <module>globex-template</module>
     <module>responsive-template</module>
+    <module>wai-template</module>
     <module>packaging</module>
     <module>template-pack-config</module>
   </modules>

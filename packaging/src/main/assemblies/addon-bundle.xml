@@ -55,7 +55,16 @@
 		  <outputFileNameMapping>responsive-template.war</outputFileNameMapping>
 		  <useProjectArtifact>false</useProjectArtifact>
 	</dependencySet>
-	<dependencySet>
+    <dependencySet>
+      <outputDirectory>/</outputDirectory>
+      <includes>
+        <include>org.exoplatform.addons.wcm-template:wai-template:war</include>
+      </includes>
+      <scope>provided</scope>
+      <outputFileNameMapping>wai-template.war</outputFileNameMapping>
+      <useProjectArtifact>false</useProjectArtifact>
+    </dependencySet>
+    <dependencySet>
       <outputDirectory>/</outputDirectory>
       <includes>
         <include>org.exoplatform.addons.wcm-template:template-pack-config:jar</include>

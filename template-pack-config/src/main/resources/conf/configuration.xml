@@ -31,6 +31,9 @@
                 <value>
                   <string>responsive-template</string>
                 </value>
+                <value>
+                  <string>wai-template</string>
+                </value>
               </collection>
             </field>
           </object>

@@ -56,6 +56,13 @@
     </dependency>
     <dependency>
       <groupId>org.exoplatform.addons.wcm-template</groupId>
+      <artifactId>wai-template</artifactId>
+      <version>${project.version}</version>
+      <type>war</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.exoplatform.addons.wcm-template</groupId>
       <artifactId>template-pack-config</artifactId>
       <version>${project.version}</version>
       <type>jar</type>
