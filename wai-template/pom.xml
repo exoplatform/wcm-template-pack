@@ -4,7 +4,7 @@
   <parent>
     <artifactId>wcm-template-pack</artifactId>
     <groupId>org.exoplatform.addons.wcm-template</groupId>
-    <version>1.2.x-SNAPSHOT</version>
+    <version>1.2.0-M04</version>
   </parent>
   <artifactId>wai-template</artifactId>
   <packaging>war</packaging>
