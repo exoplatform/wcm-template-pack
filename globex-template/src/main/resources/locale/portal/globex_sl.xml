@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>Ime</Name>
+         <Email>E-pošta</Email>
+         <Phone>Telefon</Phone>
+         <Message>Sporočilo</Message>
+         <ContactForm>Obrazec za kontakt</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>Datum</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>Pošlji</Submit>
+     </action>
+   </UIFCCForm> 
+
+  <GlobexVideo>
+    <msg>
+      <NotSupport>Format ni podprt</NotSupport>
+    </msg>
+    <label>
+      <Name>Ime</Name>
+      <URL>Spletni naslov videoposnetka</URL>
+      <Title>Naslov</Title>
+      <Subtitle>Podnaslov</Subtitle>
+      <Description>Opis</Description>
+      <Width>Širina</Width>
+      <Height>Višina</Height>
+    </label>
+  </GlobexVideo>
+<email>E-pošta</email>
+<emailContact>E-pošta</emailContact>
+<fullName>Polno ime</fullName>
+<messages>Sporočilo</messages>
+</bundle>

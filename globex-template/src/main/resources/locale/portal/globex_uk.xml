@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>Ім’я</Name>
+         <Email>Електронна пошта</Email>
+         <Phone>Телефон</Phone>
+         <Message>Повідомлення</Message>
+         <ContactForm>Форма для контакту</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>Дата</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>Відправити</Submit>
+     </action>
+   </UIFCCForm> 
+
+  <GlobexVideo>
+    <msg>
+      <NotSupport>Формат не підтримується</NotSupport>
+    </msg>
+    <label>
+      <Name>Ім’я</Name>
+      <URL>Відео URL</URL>
+      <Title>Назва</Title>
+      <Subtitle>Підзаголовок</Subtitle>
+      <Description>Опис</Description>
+      <Width>Width</Width>
+      <Height>Height</Height>
+    </label>
+  </GlobexVideo>
+<email>Електронна пошта</email>
+<emailContact>Електронна пошта</emailContact>
+<fullName>Повне ім'я</fullName>
+<messages>Повідомлення</messages>
+</bundle>

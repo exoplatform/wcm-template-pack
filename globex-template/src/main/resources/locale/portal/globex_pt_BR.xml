@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>Nome</Name>
+         <Email>E-mail</Email>
+         <Phone>Telefone</Phone>
+         <Message>Mensagem</Message>
+         <ContactForm>Formulário de contato</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>Data</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>Enviar</Submit>
+     </action>
+   </UIFCCForm> 
+
+  <GlobexVideo>
+    <msg>
+      <NotSupport>Este formato não é permitido</NotSupport>
+    </msg>
+    <label>
+      <Name>Nome</Name>
+      <URL>URL do vídeo</URL>
+      <Title>Título</Title>
+      <Subtitle>Legenda</Subtitle>
+      <Description>Descrição</Description>
+      <Width>Largura</Width>
+      <Height>Altura</Height>
+    </label>
+  </GlobexVideo>
+<email>E-mail</email>
+<emailContact>E-mail</emailContact>
+<fullName>Nome completo</fullName>
+<messages>Mensagem</messages>
+</bundle>

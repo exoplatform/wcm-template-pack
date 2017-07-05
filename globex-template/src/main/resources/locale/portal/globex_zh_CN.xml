@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>姓名</Name>
+         <Email>Email</Email>
+         <Phone>电话</Phone>
+         <Message>消息</Message>
+         <ContactForm>联系表单</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>日期</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>提交</Submit>
+     </action>
+   </UIFCCForm> 
+
+  <GlobexVideo>
+    <msg>
+      <NotSupport>该格式不受支持。</NotSupport>
+    </msg>
+    <label>
+      <Name>姓名</Name>
+      <URL>视频的 URL</URL>
+      <Title>头衔</Title>
+      <Subtitle>字幕</Subtitle>
+      <Description>描述</Description>
+      <Width>宽度</Width>
+      <Height>身高</Height>
+    </label>
+  </GlobexVideo>
+<email>Email</email>
+<emailContact>Email</emailContact>
+<fullName>全名</fullName>
+<messages>消息</messages>
+</bundle>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>الاسم</Name>
+         <Email>البريد الإلكتروني</Email>
+         <Phone>الهاتف</Phone>
+         <Message>رسالة</Message>
+         <ContactForm>استمارة الاتصال</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>تاريخ</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>ارسال</Submit>
+     </action>
+   </UIFCCForm> 
+
+  <GlobexVideo>
+    <msg>
+      <NotSupport>التنسيق غير معتمد</NotSupport>
+    </msg>
+    <label>
+      <Name>الاسم</Name>
+      <URL>رابط الفيديو</URL>
+      <Title>عنوان</Title>
+      <Subtitle>العنوان الفرعي</Subtitle>
+      <Description>الوصف</Description>
+      <Width>عرض</Width>
+      <Height>ارتفاع</Height>
+    </label>
+  </GlobexVideo>
+<email>البريد الإلكتروني</email>
+<emailContact>البريد الإلكتروني</emailContact>
+<fullName>الاسم الكامل</fullName>
+<messages>رسالة</messages>
+</bundle>

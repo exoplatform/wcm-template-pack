@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>نام</Name>
+         <Email>ایمیل</Email>
+         <Phone>تلفن</Phone>
+         <Message>پیام</Message>
+         <ContactForm>Contact Form</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>تاریخ</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>ارسال</Submit>
+     </action>
+   </UIFCCForm> 
+
+
+</bundle>

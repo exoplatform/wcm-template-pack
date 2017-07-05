@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>Pavadinimas</Name>
+         <Email>El. paštas</Email>
+         <Phone>Telefonas</Phone>
+         <Message>Pranešimas</Message>
+         <ContactForm>Contact Form</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>Data</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>Pateikti</Submit>
+     </action>
+   </UIFCCForm> 
+
+  <GlobexVideo>
+    <msg>
+      <NotSupport>The format is not supported</NotSupport>
+    </msg>
+    <label>
+      <Name>Pavadinimas</Name>
+      <URL>Video URL</URL>
+      <Title>Antraštė</Title>
+      <Subtitle>Subtitle</Subtitle>
+      <Description>Aprašymas</Description>
+      <Width>Width</Width>
+      <Height>Height</Height>
+    </label>
+  </GlobexVideo>
+<email>El. paštas</email>
+<emailContact>El. paštas</emailContact>
+<fullName>Full name</fullName>
+<messages>Pranešimas</messages>
+</bundle>

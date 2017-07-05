@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>Όνομα</Name>
+         <Email>Διεύθυνση ηλεκτρονικού ταχυδρομείου</Email>
+         <Phone>Τηλέφωνο</Phone>
+         <Message>Μήνυμα</Message>
+         <ContactForm>Contact Form</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>Ημερομηνία</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>Υποβολή</Submit>
+     </action>
+   </UIFCCForm> 
+
+
+</bundle>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>Tên</Name>
+         <Email>Địa chỉ thư điện tử</Email>
+         <Phone>Điện thoại</Phone>
+         <Message>Tin nhắn</Message>
+         <ContactForm>Contact Form</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>Ngày</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>Chấp nhận</Submit>
+     </action>
+   </UIFCCForm> 
+
+
+</bundle>

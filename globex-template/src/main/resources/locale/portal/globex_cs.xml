@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>Jméno</Name>
+         <Email>E-mail</Email>
+         <Phone>Telefon</Phone>
+         <Message>Zpráva</Message>
+         <ContactForm>Contact Form</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>Datum</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>Odeslat</Submit>
+     </action>
+   </UIFCCForm> 
+
+  <GlobexVideo>
+    <msg>
+      <NotSupport>The format is not supported</NotSupport>
+    </msg>
+    <label>
+      <Name>Jméno</Name>
+      <URL>Video URL</URL>
+      <Title>Nadpis</Title>
+      <Subtitle>Subtitle</Subtitle>
+      <Description>Popis</Description>
+      <Width>Width</Width>
+      <Height>Height</Height>
+    </label>
+  </GlobexVideo>
+<email>E-mail</email>
+<emailContact>E-mail</emailContact>
+<fullName>Full name</fullName>
+<messages>Zpráva</messages>
+</bundle>

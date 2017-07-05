@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>Nom</Name>
+         <Email>Correu electrònic</Email>
+         <Phone>Telèfon</Phone>
+         <Message>Missatge</Message>
+         <ContactForm>Formulari de contacte</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>Data</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>Envia</Submit>
+     </action>
+   </UIFCCForm> 
+
+  <GlobexVideo>
+    <msg>
+      <NotSupport>No s'admet aquest format</NotSupport>
+    </msg>
+    <label>
+      <Name>Nom</Name>
+      <URL>URL del vídeo</URL>
+      <Title>Títol</Title>
+      <Subtitle>Subtítol</Subtitle>
+      <Description>Descripció</Description>
+      <Width>Amplada</Width>
+      <Height>Alçada</Height>
+    </label>
+  </GlobexVideo>
+<email>Correu electrònic</email>
+<emailContact>Correu electrònic</emailContact>
+<fullName>Nom complet</fullName>
+<messages>Missatge</messages>
+</bundle>

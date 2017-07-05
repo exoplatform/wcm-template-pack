@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>Tên</Name>
+         <Email>Địa chỉ thư điện tử</Email>
+         <Phone>Điện thoại</Phone>
+         <Message>Tin nhắn</Message>
+         <ContactForm>Contact Form</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>Ngày</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>Chấp nhận</Submit>
+     </action>
+   </UIFCCForm> 
+
+  <GlobexVideo>
+    <msg>
+      <NotSupport>The format is not supported</NotSupport>
+    </msg>
+    <label>
+      <Name>Tên</Name>
+      <URL>Video URL</URL>
+      <Title>Tiêu đề</Title>
+      <Subtitle>Subtitle</Subtitle>
+      <Description>Mô tả</Description>
+      <Width>Chiều rộng</Width>
+      <Height>Chiều cao</Height>
+    </label>
+  </GlobexVideo>
+<email>Địa chỉ thư điện tử</email>
+<emailContact>Địa chỉ thư điện tử</emailContact>
+<fullName>Full name</fullName>
+<messages>Tin nhắn</messages>
+</bundle>

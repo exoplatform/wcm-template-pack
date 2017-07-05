@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>Nombre</Name>
+         <Email>Correo electrónico</Email>
+         <Phone>Teléfono</Phone>
+         <Message>Mensaje</Message>
+         <ContactForm>Formulario de contacto</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>Fecha</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>Enviar</Submit>
+     </action>
+   </UIFCCForm> 
+
+
+</bundle>

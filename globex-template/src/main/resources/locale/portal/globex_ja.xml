@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>名前</Name>
+         <Email>電子メール</Email>
+         <Phone>電話</Phone>
+         <Message>メッセージ</Message>
+         <ContactForm>お問合せフォーム</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>日時</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>送信</Submit>
+     </action>
+   </UIFCCForm> 
+
+  <GlobexVideo>
+    <msg>
+      <NotSupport>この形式に対応していません</NotSupport>
+    </msg>
+    <label>
+      <Name>名前</Name>
+      <URL>動画URL</URL>
+      <Title>タイトル</Title>
+      <Subtitle>サブタイトル</Subtitle>
+      <Description>説明</Description>
+      <Width>幅</Width>
+      <Height>高さ</Height>
+    </label>
+  </GlobexVideo>
+<email>電子メール</email>
+<emailContact>電子メール</emailContact>
+<fullName>姓名</fullName>
+<messages>メッセージ</messages>
+</bundle>
