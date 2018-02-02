@@ -37,5 +37,10 @@
     <skin-module>agitalTemplateResources</skin-module>
     <css-path>/skin/css/agital-template-pack.css</css-path>
   </portal-skin>
+  <portal-skin>
+    <skin-name>Enterprise</skin-name>
+    <skin-module>agitalTemplateResources</skin-module>
+    <css-path>/skin/css/agital-template-pack.css</css-path>
+  </portal-skin>
 
 </gatein-resources>
