@@ -11,5 +11,10 @@
     <skin-module>globexTemplateResources</skin-module>
     <css-path>/skin/css/globex-template-pack.css</css-path>
   </portal-skin>
+  <portal-skin>
+    <skin-name>Enterprise</skin-name>
+    <skin-module>globexTemplateResources</skin-module>
+    <css-path>/skin/css/globex-template-pack.css</css-path>
+  </portal-skin>
 
 </gatein-resources>
