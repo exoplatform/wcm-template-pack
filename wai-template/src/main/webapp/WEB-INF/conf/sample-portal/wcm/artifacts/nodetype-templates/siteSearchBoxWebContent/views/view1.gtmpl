@@ -1,5 +1,6 @@
 <%
 	import org.exoplatform.webui.application.portlet.PortletRequestContext;
+       import org.exoplatform.web.application.RequestContext;
 
 	public boolean getPortletPreference(String name) {
 		String value = null;
