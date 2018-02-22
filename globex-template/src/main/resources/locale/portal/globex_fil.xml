@@ -4,11 +4,11 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Name</Name>
-         <Email>Email</Email>
-         <Phone>Phone</Phone>
-         <Message>Message</Message>
-         <ContactForm>Contact Form</ContactForm>
+         <Name>Pangalan</Name>
+         <Email>Ang Email</Email>
+         <Phone>Ang Telepono</Phone>
+         <Message>Ang Mensahe</Message>
+         <ContactForm>Ang Porma ng Kontak</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -16,33 +16,33 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Date</Date>
+         <Date>Ang Pesta</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>Submit</Submit>
+       <Submit>Isumite</Submit>
      </action>
    </UIFCCForm> 
 
   <GlobexVideo>
     <msg>
-      <NotSupport>The format is not supported</NotSupport>
+      <NotSupport>Ang format ay hindi suportado</NotSupport>
     </msg>
     <label>
-      <Name>Name</Name>
-      <URL>Video URL</URL>
-      <Title>Title</Title>
-      <Subtitle>Subtitle</Subtitle>
-      <Description>Description</Description>
-      <Width>Width</Width>
-      <Height>Height</Height>
+      <Name>Pangalan</Name>
+      <URL>Ang URL ng video</URL>
+      <Title>Ang Titulo</Title>
+      <Subtitle>Ang Subtitle</Subtitle>
+      <Description>Ang Paglalarawan</Description>
+      <Width>Ang Lapad</Width>
+      <Height>Ang Taas</Height>
     </label>
   </GlobexVideo>
-<email>Email</email>
-<emailContact>Email</emailContact>
-<fullName>Full name</fullName>
-<messages>Message</messages>
+<email>Ang Email</email>
+<emailContact>Ang Email</emailContact>
+<fullName>Ang Buong pangalan</fullName>
+<messages>Ang Mensahe</messages>
 </bundle>
