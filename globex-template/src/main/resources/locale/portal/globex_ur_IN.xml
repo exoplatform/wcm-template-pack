@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle>
+  
+   <Contact>
+     <dialog>
+       <label>
+         <Name>نام</Name>
+         <Email>ای میل</Email>
+         <Phone>فون</Phone>
+         <Message>پیغام</Message>
+         <ContactForm>Contact Form</ContactForm>
+       </label>
+     </dialog>
+   </Contact>
+   
+   <FormGenerator>
+     <dialog>
+       <label>
+         <Date>تاریخ</Date>
+       </label>
+     </dialog>
+   </FormGenerator>
+   
+   <UIFCCForm>
+     <action>
+       <Submit>جمع کرئیں</Submit>
+     </action>
+   </UIFCCForm> 
+
+  <GlobexVideo>
+    <msg>
+      <NotSupport>The format is not supported</NotSupport>
+    </msg>
+    <label>
+      <Name>نام</Name>
+      <URL>Video URL</URL>
+      <Title>Title</Title>
+      <Subtitle>Subtitle</Subtitle>
+      <Description>تفصیل</Description>
+      <Width>Width</Width>
+      <Height>Height</Height>
+    </label>
+  </GlobexVideo>
+<email>ای میل</email>
+<emailContact>ای میل</emailContact>
+<fullName>Full name</fullName>
+<messages>پیغام</messages>
+</bundle>

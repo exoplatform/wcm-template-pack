@@ -5,10 +5,10 @@
      <dialog>
        <label>
          <Name>Name</Name>
-         <Email>E-poçt</Email>
-         <Phone>Telefon</Phone>
+         <Email>Email</Email>
+         <Phone>Phone</Phone>
          <Message>Message</Message>
-         <ContactForm>Əlaqə Forması</ContactForm>
+         <ContactForm>Contact Form</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -16,33 +16,33 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Tarix</Date>
+         <Date>Date</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>Təqdim et</Submit>
+       <Submit>Submit</Submit>
      </action>
    </UIFCCForm> 
 
   <GlobexVideo>
     <msg>
-      <NotSupport>Bu format dəstəklənmir</NotSupport>
+      <NotSupport>The format is not supported</NotSupport>
     </msg>
     <label>
       <Name>Name</Name>
       <URL>Video URL</URL>
       <Title>Title</Title>
-      <Subtitle>Atyazı</Subtitle>
-      <Description>Açıqlama</Description>
-      <Width>Genişlik</Width>
-      <Height>Hündürlük</Height>
+      <Subtitle>Subtitle</Subtitle>
+      <Description>Description</Description>
+      <Width>Width</Width>
+      <Height>Height</Height>
     </label>
   </GlobexVideo>
-<email>E-poçt</email>
-<emailContact>E-poçt</emailContact>
-<fullName>Tam ad</fullName>
+<email>Email</email>
+<emailContact>Email</emailContact>
+<fullName>Full name</fullName>
 <messages>Message</messages>
 </bundle>

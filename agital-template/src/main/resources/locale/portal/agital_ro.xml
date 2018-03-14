@@ -8,7 +8,7 @@
          <Email>E-mail</Email>
          <Phone>Telefon</Phone>
          <Message>Mesaj</Message>
-         <ContactForm>Contact Form</ContactForm>
+         <ContactForm>Formular de Contact</ContactForm>
        </label>
      </dialog>
    </Contact>

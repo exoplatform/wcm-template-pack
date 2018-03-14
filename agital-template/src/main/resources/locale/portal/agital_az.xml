@@ -5,10 +5,10 @@
      <dialog>
        <label>
          <Name>Name</Name>
-         <Email>Email</Email>
-         <Phone>Phone</Phone>
+         <Email>E-poçt</Email>
+         <Phone>Telefon</Phone>
          <Message>Message</Message>
-         <ContactForm>Contact Form</ContactForm>
+         <ContactForm>Əlaqə Forması</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -16,14 +16,14 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Date</Date>
+         <Date>Tarix</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>Submit</Submit>
+       <Submit>Təqdim et</Submit>
      </action>
    </UIFCCForm> 
 
