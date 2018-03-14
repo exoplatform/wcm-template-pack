@@ -4,11 +4,11 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Jméno</Name>
-         <Email>E-mail</Email>
-         <Phone>Telefon</Phone>
-         <Message>Zpráva</Message>
-         <ContactForm>Kontaktní formulář</ContactForm>
+         <Name>Name</Name>
+         <Email>Email</Email>
+         <Phone>Phone</Phone>
+         <Message>Message</Message>
+         <ContactForm>Contact Form</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -16,14 +16,14 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Datum</Date>
+         <Date>Date</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>Odeslat</Submit>
+       <Submit>Submit</Submit>
      </action>
    </UIFCCForm> 
 

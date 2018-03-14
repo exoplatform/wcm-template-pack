@@ -4,11 +4,11 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Jméno</Name>
-         <Email>E-mail</Email>
-         <Phone>Telefon</Phone>
-         <Message>Zpráva</Message>
-         <ContactForm>Kontaktní formulář</ContactForm>
+         <Name>Ang Pangalan</Name>
+         <Email>Ang Email</Email>
+         <Phone>Telepono</Phone>
+         <Message>Ang Mensahe</Message>
+         <ContactForm>Ang Form ng Kontak</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -16,14 +16,14 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Datum</Date>
+         <Date>Ang Petsa</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>Odeslat</Submit>
+       <Submit>Ipasa</Submit>
      </action>
    </UIFCCForm> 
 

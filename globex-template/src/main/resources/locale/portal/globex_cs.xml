@@ -8,7 +8,7 @@
          <Email>E-mail</Email>
          <Phone>Telefon</Phone>
          <Message>Zpráva</Message>
-         <ContactForm>Contact Form</ContactForm>
+         <ContactForm>Kontaktní formulář</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -29,13 +29,13 @@
 
   <GlobexVideo>
     <msg>
-      <NotSupport>The format is not supported</NotSupport>
+      <NotSupport>Formát není podporován</NotSupport>
     </msg>
     <label>
       <Name>Jméno</Name>
-      <URL>Video URL</URL>
+      <URL>URL videa</URL>
       <Title>Nadpis</Title>
-      <Subtitle>Subtitle</Subtitle>
+      <Subtitle>Titulek</Subtitle>
       <Description>Popis</Description>
       <Width>Width</Width>
       <Height>Height</Height>
@@ -43,6 +43,6 @@
   </GlobexVideo>
 <email>E-mail</email>
 <emailContact>E-mail</emailContact>
-<fullName>Full name</fullName>
+<fullName>Celé jméno</fullName>
 <messages>Zpráva</messages>
 </bundle>

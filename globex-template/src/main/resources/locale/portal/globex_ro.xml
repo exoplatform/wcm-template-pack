@@ -8,7 +8,7 @@
          <Email>E-mail</Email>
          <Phone>Telefon</Phone>
          <Message>Mesaj</Message>
-         <ContactForm>Contact Form</ContactForm>
+         <ContactForm>Formular de Contact</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -29,13 +29,13 @@
 
   <GlobexVideo>
     <msg>
-      <NotSupport>The format is not supported</NotSupport>
+      <NotSupport>Formatul nu este acceptat</NotSupport>
     </msg>
     <label>
       <Name>Nume</Name>
-      <URL>Video URL</URL>
+      <URL>URL-ul videoului</URL>
       <Title>Titlu</Title>
-      <Subtitle>Subtitle</Subtitle>
+      <Subtitle>Subtitrare</Subtitle>
       <Description>Descriere</Description>
       <Width>Lăţime</Width>
       <Height>Înălțime</Height>
@@ -43,6 +43,6 @@
   </GlobexVideo>
 <email>E-mail</email>
 <emailContact>E-mail</emailContact>
-<fullName>Full name</fullName>
+<fullName>Numele complet</fullName>
 <messages>Mesaj</messages>
 </bundle>
