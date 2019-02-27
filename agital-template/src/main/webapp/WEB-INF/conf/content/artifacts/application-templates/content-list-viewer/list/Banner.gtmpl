@@ -40,7 +40,7 @@ def currentPageData = uicomponent.getCurrentPageData();
 <script type="text/javascript">
 if (jQuery) {
   
-	jQuery(window).load(function() {
+	jQuery(window).on('load',function() {
 	    jQuery('#slides-pagination').flexslider({
 		animation: "fade",
 		controlNav: false,

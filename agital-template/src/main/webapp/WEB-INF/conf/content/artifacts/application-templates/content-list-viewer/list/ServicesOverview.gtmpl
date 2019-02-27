@@ -188,7 +188,7 @@
 	 	</div>
 	 	</div>
 <script>
-    jQuery(window).load(function() {
+    jQuery(window).on('load',function() {
 	     // Initialize the gallery
       jQuery('.media-content a.image').touchTouch();
 	  });
