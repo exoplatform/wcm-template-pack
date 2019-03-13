@@ -4,10 +4,10 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Name</Name>
-         <Email>Email</Email>
+         <Name>الاسم</Name>
+         <Email>البريد الإلكتروني</Email>
          <Phone>الهاتف</Phone>
-         <Message>Message</Message>
+         <Message>رسالة</Message>
          <ContactForm>استمارة الاتصال</ContactForm>
        </label>
      </dialog>
@@ -16,14 +16,14 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Date</Date>
+         <Date>تاريخ</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>Submit</Submit>
+       <Submit>ارسال</Submit>
      </action>
    </UIFCCForm> 
 

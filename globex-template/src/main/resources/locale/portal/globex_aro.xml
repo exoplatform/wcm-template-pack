@@ -4,10 +4,10 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Name</Name>
-         <Email>Email</Email>
+         <Name>الاسم</Name>
+         <Email>البريد الإلكتروني</Email>
          <Phone>الهاتف</Phone>
-         <Message>Message</Message>
+         <Message>رسالة</Message>
          <ContactForm>استمارة الاتصال</ContactForm>
        </label>
      </dialog>
@@ -16,14 +16,14 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Date</Date>
+         <Date>تاريخ</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>Submit</Submit>
+       <Submit>ارسال</Submit>
      </action>
    </UIFCCForm> 
 
@@ -32,17 +32,17 @@
       <NotSupport>التنسيق غير معتمد</NotSupport>
     </msg>
     <label>
-      <Name>Name</Name>
+      <Name>الاسم</Name>
       <URL>رابط الفيديو</URL>
-      <Title>Title</Title>
+      <Title>عنوان</Title>
       <Subtitle>العنوان الفرعي</Subtitle>
-      <Description>Description</Description>
+      <Description>الوصف</Description>
       <Width>عرض</Width>
       <Height>ارتفاع</Height>
     </label>
   </GlobexVideo>
-<email>Email</email>
-<emailContact>Email</emailContact>
+<email>البريد الإلكتروني</email>
+<emailContact>البريد الإلكتروني</emailContact>
 <fullName>الاسم الكامل</fullName>
-<messages>Message</messages>
+<messages>رسالة</messages>
 </bundle>
