@@ -28,7 +28,7 @@
   </parent>
   <groupId>org.exoplatform.addons.wcm-template</groupId>
   <artifactId>wcm-template-pack</artifactId>
-  <version>2.3.x-SNAPSHOT</version>
+  <version>2.3.0-M06</version>
   <packaging>pom</packaging>
   <name>eXo Add-on:: WCM Template Pack</name>
   <description>WCM Template Pack</description>
@@ -44,7 +44,7 @@
     <connection>scm:git:git://github.com/exoplatform/wcm-template-pack.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/wcm-template-pack.git</developerConnection>
     <url>https://github.com/exoplatform/wcm-template-pack/</url>
-    <tag>HEAD</tag>
+    <tag>2.3.0-M06</tag>
   </scm>
   <properties>
     <org.exoplatform.platform.version>5.3.0-M06</org.exoplatform.platform.version>
