@@ -4,7 +4,7 @@
   <parent>
     <artifactId>wcm-template-pack</artifactId>
     <groupId>org.exoplatform.addons.wcm-template</groupId>
-    <version>3.0.x-SNAPSHOT</version>
+    <version>3.0.0-M09</version>
   </parent>
   <artifactId>agital-template</artifactId>
   <packaging>war</packaging>
