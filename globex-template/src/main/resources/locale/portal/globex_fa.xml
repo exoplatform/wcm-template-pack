@@ -8,7 +8,7 @@
          <Email>ایمیل</Email>
          <Phone>تلفن</Phone>
          <Message>پیام</Message>
-         <ContactForm>Contact Form</ContactForm>
+         <ContactForm>فرم تماس</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -29,13 +29,13 @@
 
   <GlobexVideo>
     <msg>
-      <NotSupport>The format is not supported</NotSupport>
+      <NotSupport>فرمت فایل پشتیبانی نمی شود</NotSupport>
     </msg>
     <label>
       <Name>نام</Name>
       <URL>Video URL</URL>
       <Title>عنوان</Title>
-      <Subtitle>Subtitle</Subtitle>
+      <Subtitle>زیرنویس</Subtitle>
       <Description>شرح</Description>
       <Width>Width</Width>
       <Height>Height</Height>
@@ -43,6 +43,6 @@
   </GlobexVideo>
 <email>ایمیل</email>
 <emailContact>ایمیل</emailContact>
-<fullName>Full name</fullName>
+<fullName>نام کامل</fullName>
 <messages>پیام</messages>
 </bundle>

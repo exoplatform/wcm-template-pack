@@ -4,11 +4,11 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Name</Name>
-         <Email>Email</Email>
-         <Phone>Phone</Phone>
-         <Message>Message</Message>
-         <ContactForm>Contact Form</ContactForm>
+         <Name>Meno</Name>
+         <Email>E-mail</Email>
+         <Phone>Telefón</Phone>
+         <Message>Správa</Message>
+         <ContactForm>Kontaktný formulár</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -16,33 +16,33 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Date</Date>
+         <Date>Dátum</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>Submit</Submit>
+       <Submit>Odoslať</Submit>
      </action>
    </UIFCCForm> 
 
   <GlobexVideo>
     <msg>
-      <NotSupport>The format is not supported</NotSupport>
+      <NotSupport>Formát súboru nie je podporovaný</NotSupport>
     </msg>
     <label>
-      <Name>Name</Name>
+      <Name>Názov</Name>
       <URL>Video URL</URL>
-      <Title>Title</Title>
+      <Title>Nadpis</Title>
       <Subtitle>Subtitle</Subtitle>
-      <Description>Description</Description>
-      <Width>Width</Width>
-      <Height>Height</Height>
+      <Description>Popis</Description>
+      <Width>Šírka</Width>
+      <Height>Výška</Height>
     </label>
   </GlobexVideo>
-<email>Email</email>
-<emailContact>Email</emailContact>
-<fullName>Full name</fullName>
-<messages>Message</messages>
+<email>E-mail</email>
+<emailContact>E-mail</emailContact>
+<fullName>Celé meno</fullName>
+<messages>Správa</messages>
 </bundle>

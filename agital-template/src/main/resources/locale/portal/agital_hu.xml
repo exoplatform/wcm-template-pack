@@ -5,10 +5,10 @@
      <dialog>
        <label>
          <Name>Name</Name>
-         <Email>Email</Email>
+         <Email>E-mail</Email>
          <Phone>Phone</Phone>
          <Message>Message</Message>
-         <ContactForm>Contact Form</ContactForm>
+         <ContactForm>Kapcsolatfelvételi űrlap</ContactForm>
        </label>
      </dialog>
    </Contact>

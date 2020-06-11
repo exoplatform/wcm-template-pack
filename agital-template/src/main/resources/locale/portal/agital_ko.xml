@@ -4,8 +4,8 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Name</Name>
-         <Email>Email</Email>
+         <Name>이름</Name>
+         <Email>이메일</Email>
          <Phone>Phone</Phone>
          <Message>Message</Message>
          <ContactForm>Contact Form</ContactForm>
@@ -16,7 +16,7 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Date</Date>
+         <Date>날짜</Date>
        </label>
      </dialog>
    </FormGenerator>

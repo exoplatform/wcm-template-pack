@@ -4,11 +4,11 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Name</Name>
-         <Email>Email</Email>
-         <Phone>Phone</Phone>
-         <Message>Message</Message>
-         <ContactForm>Contact Form</ContactForm>
+         <Name>Nama</Name>
+         <Email>E-mel</Email>
+         <Phone>Pengghubung</Phone>
+         <Message>Mesej</Message>
+         <ContactForm>Borang hubungan</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -16,33 +16,33 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Date</Date>
+         <Date>Tarikh</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>Submit</Submit>
+       <Submit>Hantar</Submit>
      </action>
    </UIFCCForm> 
 
   <GlobexVideo>
     <msg>
-      <NotSupport>The format is not supported</NotSupport>
+      <NotSupport>Format tidak disokong</NotSupport>
     </msg>
     <label>
-      <Name>Name</Name>
-      <URL>Video URL</URL>
-      <Title>Title</Title>
+      <Name>Nama</Name>
+      <URL>Vidio URL</URL>
+      <Title>Tajuk</Title>
       <Subtitle>Subtitle</Subtitle>
-      <Description>Description</Description>
-      <Width>Width</Width>
-      <Height>Height</Height>
+      <Description>Keterangan</Description>
+      <Width>Lebar</Width>
+      <Height>Tinggi</Height>
     </label>
   </GlobexVideo>
-<email>Email</email>
-<emailContact>Email</emailContact>
-<fullName>Full name</fullName>
-<messages>Message</messages>
+<email>E-mel</email>
+<emailContact>E-mel</emailContact>
+<fullName>Nama panjang</fullName>
+<messages>Mesej</messages>
 </bundle>

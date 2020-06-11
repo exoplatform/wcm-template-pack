@@ -4,10 +4,10 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Name</Name>
+         <Name>Ad</Name>
          <Email>E-poçt</Email>
          <Phone>Telefon</Phone>
-         <Message>Message</Message>
+         <Message>Mesaj</Message>
          <ContactForm>Əlaqə Forması</ContactForm>
        </label>
      </dialog>

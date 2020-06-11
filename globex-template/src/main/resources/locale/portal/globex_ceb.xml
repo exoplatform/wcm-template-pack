@@ -4,7 +4,7 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Name</Name>
+         <Name>Ngalan</Name>
          <Email>Email</Email>
          <Phone>Ang telepono</Phone>
          <Message>Mensahe</Message>
@@ -32,11 +32,11 @@
       <NotSupport>The format is not supported</NotSupport>
     </msg>
     <label>
-      <Name>Name</Name>
+      <Name>Ngalan</Name>
       <URL>Video URL</URL>
       <Title>Title</Title>
       <Subtitle>Subtitle</Subtitle>
-      <Description>Description</Description>
+      <Description>Hulagway</Description>
       <Width>Width</Width>
       <Height>Height</Height>
     </label>

@@ -8,7 +8,7 @@
          <Email>ای میل</Email>
          <Phone>فون</Phone>
          <Message>پیغام</Message>
-         <ContactForm>Contact Form</ContactForm>
+         <ContactForm>رابطہ فارم</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -34,7 +34,7 @@
     <label>
       <Name>نام</Name>
       <URL>Video URL</URL>
-      <Title>Title</Title>
+      <Title>عنوان</Title>
       <Subtitle>Subtitle</Subtitle>
       <Description>تفصیل</Description>
       <Width>Width</Width>

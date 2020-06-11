@@ -4,10 +4,10 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Name</Name>
+         <Name>Ad</Name>
          <Email>E-poçt</Email>
          <Phone>Telefon</Phone>
-         <Message>Message</Message>
+         <Message>Mesaj</Message>
          <ContactForm>Əlaqə Forması</ContactForm>
        </label>
      </dialog>
@@ -32,9 +32,9 @@
       <NotSupport>Bu format dəstəklənmir</NotSupport>
     </msg>
     <label>
-      <Name>Name</Name>
+      <Name>Ad</Name>
       <URL>Video URL</URL>
-      <Title>Title</Title>
+      <Title>Başlıq</Title>
       <Subtitle>Atyazı</Subtitle>
       <Description>Açıqlama</Description>
       <Width>Genişlik</Width>
@@ -44,5 +44,5 @@
 <email>E-poçt</email>
 <emailContact>E-poçt</emailContact>
 <fullName>Tam ad</fullName>
-<messages>Message</messages>
+<messages>Mesaj</messages>
 </bundle>

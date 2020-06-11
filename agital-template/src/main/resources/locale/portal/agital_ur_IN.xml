@@ -8,7 +8,7 @@
          <Email>ای میل</Email>
          <Phone>فون</Phone>
          <Message>پیغام</Message>
-         <ContactForm>Contact Form</ContactForm>
+         <ContactForm>رابطہ فارم</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -23,7 +23,7 @@
    
    <UIFCCForm>
      <action>
-       <Submit>جمع کرئیں</Submit>
+       <Submit>جمع کرائیں</Submit>
      </action>
    </UIFCCForm> 
 

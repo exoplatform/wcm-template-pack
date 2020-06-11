@@ -4,11 +4,11 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Name</Name>
-         <Email>Email</Email>
-         <Phone>Phone</Phone>
-         <Message>Message</Message>
-         <ContactForm>Contact Form</ContactForm>
+         <Name>Nama</Name>
+         <Email>E-mel</Email>
+         <Phone>Penghubung</Phone>
+         <Message>Mesej</Message>
+         <ContactForm>Borang hubungan</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -16,14 +16,14 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Date</Date>
+         <Date>Tarikh</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>Submit</Submit>
+       <Submit>Serahkan</Submit>
      </action>
    </UIFCCForm> 
 
