@@ -4,10 +4,10 @@
    <Contact>
      <dialog>
        <label>
-         <Name>نام</Name>
-         <Email>ای میل</Email>
-         <Phone>فون</Phone>
-         <Message>پیغام</Message>
+         <Name>Name</Name>
+         <Email>Email</Email>
+         <Phone>Phone</Phone>
+         <Message>Message</Message>
          <ContactForm>Contact Form</ContactForm>
        </label>
      </dialog>
@@ -16,14 +16,14 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>تاریخ</Date>
+         <Date>Date</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>جمع کرئیں</Submit>
+       <Submit>Submit</Submit>
      </action>
    </UIFCCForm> 
 
@@ -32,17 +32,17 @@
       <NotSupport>The format is not supported</NotSupport>
     </msg>
     <label>
-      <Name>نام</Name>
+      <Name>Name</Name>
       <URL>Video URL</URL>
       <Title>Title</Title>
       <Subtitle>Subtitle</Subtitle>
-      <Description>تفصیل</Description>
+      <Description>Description</Description>
       <Width>Width</Width>
       <Height>Height</Height>
     </label>
   </GlobexVideo>
-<email>ای میل</email>
-<emailContact>ای میل</emailContact>
+<email>Email</email>
+<emailContact>Email</emailContact>
 <fullName>Full name</fullName>
-<messages>پیغام</messages>
+<messages>Message</messages>
 </bundle>
