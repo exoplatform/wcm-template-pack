@@ -4,7 +4,7 @@
    <Contact>
      <dialog>
        <label>
-         <Name>ชื่อ</Name>
+         <Name>Name</Name>
          <Email>Email</Email>
          <Phone>Phone</Phone>
          <Message>Message</Message>
@@ -16,33 +16,33 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>วันที่</Date>
+         <Date>Date</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>ตกลง</Submit>
+       <Submit>Submit</Submit>
      </action>
    </UIFCCForm> 
 
   <GlobexVideo>
     <msg>
-      <NotSupport>รูปแบบไม่สนับสนุน</NotSupport>
+      <NotSupport>The format is not supported</NotSupport>
     </msg>
     <label>
-      <Name>ชื่อ</Name>
-      <URL>URL ของวิดีโอ</URL>
-      <Title>ชื่อเรื่อง</Title>
-      <Subtitle>คำบรรยาย</Subtitle>
-      <Description>คำอธิบาย</Description>
-      <Width>ความกว้าง</Width>
+      <Name>Name</Name>
+      <URL>Video URL</URL>
+      <Title>Title</Title>
+      <Subtitle>Subtitle</Subtitle>
+      <Description>Description</Description>
+      <Width>Width</Width>
       <Height>Height</Height>
     </label>
   </GlobexVideo>
-<email>อีเมลล์</email>
-<emailContact>อีเมลล์</emailContact>
-<fullName>ชื่อเต็ม</fullName>
-<messages>ข้อความ</messages>
+<email>Email</email>
+<emailContact>Email</emailContact>
+<fullName>Full name</fullName>
+<messages>Message</messages>
 </bundle>

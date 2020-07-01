@@ -4,9 +4,9 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Nimi</Name>
-         <Email>Sähköpostiosoite</Email>
-         <Phone>Puhelin</Phone>
+         <Name>Name</Name>
+         <Email>Email</Email>
+         <Phone>Phone</Phone>
          <Message>Message</Message>
          <ContactForm>Contact Form</ContactForm>
        </label>
@@ -16,7 +16,7 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Päivämäärä</Date>
+         <Date>Date</Date>
        </label>
      </dialog>
    </FormGenerator>
@@ -32,17 +32,17 @@
       <NotSupport>The format is not supported</NotSupport>
     </msg>
     <label>
-      <Name>Nimi</Name>
+      <Name>Name</Name>
       <URL>Video URL</URL>
       <Title>Title</Title>
       <Subtitle>Subtitle</Subtitle>
-      <Description>Kuvaus</Description>
-      <Width>Leveys</Width>
-      <Height>Korkeus</Height>
+      <Description>Description</Description>
+      <Width>Width</Width>
+      <Height>Height</Height>
     </label>
   </GlobexVideo>
-<email>Sähköpostiosoite</email>
-<emailContact>Sähköpostiosoite</emailContact>
+<email>Email</email>
+<emailContact>Email</emailContact>
 <fullName>Full name</fullName>
 <messages>Message</messages>
 </bundle>

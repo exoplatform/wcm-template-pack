@@ -5,10 +5,10 @@
      <dialog>
        <label>
          <Name>Name</Name>
-         <Email>E-mail</Email>
+         <Email>Email</Email>
          <Phone>Phone</Phone>
          <Message>Message</Message>
-         <ContactForm>Kapcsolatfelvételi űrlap</ContactForm>
+         <ContactForm>Contact Form</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -33,16 +33,16 @@
     </msg>
     <label>
       <Name>Name</Name>
-      <URL>Videó URL</URL>
-      <Title>Cím</Title>
-      <Subtitle>Alcím</Subtitle>
-      <Description>Leírás</Description>
-      <Width>Szélesség</Width>
-      <Height>Magasság</Height>
+      <URL>Video URL</URL>
+      <Title>Title</Title>
+      <Subtitle>Subtitle</Subtitle>
+      <Description>Description</Description>
+      <Width>Width</Width>
+      <Height>Height</Height>
     </label>
   </GlobexVideo>
-<email>E-mail</email>
-<emailContact>E-mail</emailContact>
+<email>Email</email>
+<emailContact>Email</emailContact>
 <fullName>Full name</fullName>
 <messages>Message</messages>
 </bundle>

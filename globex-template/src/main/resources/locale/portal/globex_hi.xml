@@ -7,8 +7,8 @@
          <Name>Name</Name>
          <Email>Email</Email>
          <Phone>Phone</Phone>
-         <Message>संदेश</Message>
-         <ContactForm>संपर्क फॉर्म</ContactForm>
+         <Message>Message</Message>
+         <ContactForm>Contact Form</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -16,33 +16,33 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>दिनांक</Date>
+         <Date>Date</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>जमा करें</Submit>
+       <Submit>Submit</Submit>
      </action>
    </UIFCCForm> 
 
   <GlobexVideo>
     <msg>
-      <NotSupport>फॉर्मेट समर्थित नहीं है</NotSupport>
+      <NotSupport>The format is not supported</NotSupport>
     </msg>
     <label>
       <Name>Name</Name>
-      <URL>वीडियो यूआरएल</URL>
+      <URL>Video URL</URL>
       <Title>Title</Title>
-      <Subtitle>उपशीर्षक</Subtitle>
+      <Subtitle>Subtitle</Subtitle>
       <Description>Description</Description>
-      <Width>चौड़ाई</Width>
-      <Height>ऊंचाई</Height>
+      <Width>Width</Width>
+      <Height>Height</Height>
     </label>
   </GlobexVideo>
 <email>Email</email>
 <emailContact>Email</emailContact>
-<fullName>पूरा नाम</fullName>
+<fullName>Full name</fullName>
 <messages>Message</messages>
 </bundle>

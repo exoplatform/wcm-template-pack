@@ -8,7 +8,7 @@
          <Email>ایمیل</Email>
          <Phone>تلفن</Phone>
          <Message>پیام</Message>
-         <ContactForm>فرم تماس</ContactForm>
+         <ContactForm>Contact Form</ContactForm>
        </label>
      </dialog>
    </Contact>

@@ -4,7 +4,7 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Ngalan</Name>
+         <Name>Name</Name>
          <Email>Email</Email>
          <Phone>Ang telepono</Phone>
          <Message>Mensahe</Message>

@@ -4,8 +4,8 @@
    <Contact>
      <dialog>
        <label>
-         <Name>이름</Name>
-         <Email>이메일</Email>
+         <Name>Name</Name>
+         <Email>Email</Email>
          <Phone>Phone</Phone>
          <Message>Message</Message>
          <ContactForm>Contact Form</ContactForm>
@@ -16,7 +16,7 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>날짜</Date>
+         <Date>Date</Date>
        </label>
      </dialog>
    </FormGenerator>
@@ -32,17 +32,17 @@
       <NotSupport>The format is not supported</NotSupport>
     </msg>
     <label>
-      <Name>이름</Name>
+      <Name>Name</Name>
       <URL>Video URL</URL>
-      <Title>제목</Title>
+      <Title>Title</Title>
       <Subtitle>Subtitle</Subtitle>
-      <Description>설명</Description>
+      <Description>Description</Description>
       <Width>Width</Width>
       <Height>Height</Height>
     </label>
   </GlobexVideo>
-<email>이메일</email>
-<emailContact>이메일</emailContact>
+<email>Email</email>
+<emailContact>Email</emailContact>
 <fullName>Full name</fullName>
 <messages>Message</messages>
 </bundle>

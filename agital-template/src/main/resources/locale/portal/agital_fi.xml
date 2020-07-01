@@ -4,9 +4,9 @@
    <Contact>
      <dialog>
        <label>
-         <Name>Nimi</Name>
-         <Email>Sähköpostiosoite</Email>
-         <Phone>Puhelin</Phone>
+         <Name>Name</Name>
+         <Email>Email</Email>
+         <Phone>Phone</Phone>
          <Message>Message</Message>
          <ContactForm>Contact Form</ContactForm>
        </label>
@@ -16,7 +16,7 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>Päivämäärä</Date>
+         <Date>Date</Date>
        </label>
      </dialog>
    </FormGenerator>

@@ -4,11 +4,11 @@
    <Contact>
      <dialog>
        <label>
-         <Name>नाम</Name>
-         <Email>ई-मेल</Email>
-         <Phone>फ़ोन</Phone>
-         <Message>संदेश</Message>
-         <ContactForm>संपर्क प्रपत्र</ContactForm>
+         <Name>Name</Name>
+         <Email>Email</Email>
+         <Phone>Phone</Phone>
+         <Message>Message</Message>
+         <ContactForm>Contact Form</ContactForm>
        </label>
      </dialog>
    </Contact>
@@ -16,14 +16,14 @@
    <FormGenerator>
      <dialog>
        <label>
-         <Date>तिथि</Date>
+         <Date>Date</Date>
        </label>
      </dialog>
    </FormGenerator>
    
    <UIFCCForm>
      <action>
-       <Submit>जमा करें</Submit>
+       <Submit>Submit</Submit>
      </action>
    </UIFCCForm> 
 
